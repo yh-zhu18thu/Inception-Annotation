@@ -110,6 +110,75 @@
                 <div class="mt-3 mb-3">
                     <h4 id="question-text">The description for example</h4>
                 </div>
+
+                 <!-- Belief Rating -->
+                <div class="belief-rating">
+                    <p class="mb-1">Rate how much you believe:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief1" value="1">
+                        <label class="form-check-label" for="belief1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief2" value="2">
+                        <label class="form-check-label" for="belief2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief3" value="3">
+                        <label class="form-check-label" for="belief3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief4" value="4">
+                        <label class="form-check-label" for="belief4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief5" value="5">
+                        <label class="form-check-label" for="belief5">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief6" value="6">
+                        <label class="form-check-label" for="belief6">6</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefRating" id="belief7" value="7">
+                        <label class="form-check-label" for="belief7">7</label>
+                    </div>
+                    <!-- ... more ratings 2-7 ... -->
+                </div>
+
+                <!-- Change in Belief Rating -->
+                <div class="belief-change-rating mt-3">
+                    <p class="mb-1">Rate how much your belief changed:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange1" value="1">
+                        <label class="form-check-label" for="beliefChange1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange2" value="2">
+                        <label class="form-check-label" for="beliefChange2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange3" value="3">
+                        <label class="form-check-label" for="beliefChange3">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange4" value="4">
+                        <label class="form-check-label" for="beliefChange4">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange5" value="5">
+                        <label class="form-check-label" for="beliefChange5">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange6" value="6">
+                        <label class="form-check-label" for="beliefChange6">6</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange7" value="7">
+                        <label class="form-check-label" for="beliefChange7">7</label>
+                    </div>
+                    <!-- ... more ratings 2-7 ... -->
+                </div>
+
                 <!-- Options -->
                 <!-- ... -->
                 <!-- Options -->
@@ -193,6 +262,7 @@
         $('#next-button').click(function() {
             // Handle next button click here
             // save the current user selection to server 
+            // clear all the input content
             // update the progress bar
             // load new question set to the page
             $.getJSON('/get_next_question', function(data) {
