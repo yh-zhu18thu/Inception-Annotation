@@ -57,6 +57,15 @@
             background-color: blue;
             color: white;
         }
+
+        .styled-button {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+
     </style>
 
 </head>
@@ -107,31 +116,31 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title" id="instance">Option</h5>
-                        <!-- a horizontal single selection section with 7 options-->
                         <!-- Statements -->
                         <div class="statements" id="statements">
                             <!-- Initial statement -->
-                            <div class="form-group">
+                            <div class="form-row form-group align-items-center">
                                 <!-- Option selection -->
-                                <select class="form-control option-select mb-2">
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                    <option value="option4">Option 4</option>
-                                </select>
-                                <!-- Node selection -->
-                                <div class="input-group">
-                                    <input type="text" class="form-control node-input" readonly>
-                                    <div class="input-group-append">
-                                        <button type="button" class="btn btn-primary select-node">Select Node</button>
+                                <div class="col-md-3">
+                                    <select class="form-control option-select">
+                                        <option value="option1">同能力比较</option>
+                                        <option value="option2">不同能力比较</option>
+                                        <option value="option3">能力错配</option>
+                                        <option value="option4">能力范畴比较</option>
+                                    </select>
+                                </div>
+                                <!-- Expression -->
+                                <div class="col-md-9">
+                                    <div class="input-group expression-group">
+                                         <!-- The expression will be constructed here dynamically -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Add Statement Button -->
-                        <button type="button" class="btn btn-secondary add-statement mt-3" data-statements="statements">Add Statement</button>
+                        <button type="button" class="btn btn-secondary add-statement mt-3" data-statements="statements"><i class="fas fa-plus"></i></button>
                     </div>
-                </div>
+                </div>                                              
                 <!-- ... -->
 
                 <!-- Next Button -->
@@ -154,23 +163,23 @@
         });
 
         // Variable to hold currently selected input field
-        var selectedInputField = null;
         var selectedButton = null;
 
         // Enable node selection when "Select Node" button is clicked
         $('body').on('click', '.select-node', function() {
             // Enter node selection mode
-            selectedInputField = $(this).parent().prev();  // Store reference to input field
             selectedButton = $(this);  // Store reference to button
             $('.node-link').addClass('selectable');  // Highlight nodes
             selectedButton.addClass('active');  // Highlight button
         });
 
+
         // Update input box when node is clicked in node selection mode
         $('body').on('click', '.selectable', function() {
             // Update input field with node value
             var nodeValue = $(this).text();
-            selectedInputField.val(nodeValue);
+            //set the value of the selected button
+            selectedButton.text(nodeValue);
 
             // Exit node selection mode
             selectedInputField = null;
@@ -210,20 +219,23 @@
         $('.add-statement').click(function() {
             var statementsId = $(this).data('statements');
             $('#' + statementsId).append('\
-                <div class="form-group">\
-                    <select class="form-control option-select mb-2">\
-                        <option value="option1">Option 1</option>\
-                        <option value="option2">Option 2</option>\
-                        <option value="option3">Option 3</option>\
-                        <option value="option4">Option 4</option>\
+            <div class="form-row form-group align-items-center">\
+                <!-- Option selection -->\
+                <div class="col-md-3">\
+                    <select class="form-control option-select">\
+                        <option value="option1">同能力比较</option>\
+                        <option value="option2">不同能力比较</option>\
+                        <option value="option3">能力错配</option>\
+                        <option value="option4">能力范畴比较</option>\
                     </select>\
-                    <div class="input-group">\
-                        <input type="text" class="form-control node-input" readonly>\
-                        <div class="input-group-append">\
-                            <button type="button" class="btn btn-primary select-node">Select Node</button>\
-                        </div>\
+                </div>\
+                <!-- Expression -->\
+                <div class="col-md-9">\
+                    <div class="input-group expression-group">\
+                            <!-- The expression will be constructed here dynamically -->\
                     </div>\
                 </div>\
+            </div>\
             ');
         });
 
@@ -234,6 +246,60 @@
                 update_question_set(data);
             });
         });
+
+        // On option change
+        $('.option-select').change(function() {
+            var option = $(this).val();
+            var expressionGroup = $(this).parent().next().find('.expression-group');
+
+            // Clear the previous expression
+            expressionGroup.empty();
+
+            if(option === "option1") {
+                // Construct the expression for option 1
+                expressionGroup.append('样例体现的');
+                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                expressionGroup.append('能力')
+                expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">强于</button><div class="dropdown-menu"><a class="dropdown-item" href="#">强于</a><a class="dropdown-item" href="#">弱于</a><a class="dropdown-item" href="#">接近</a></div></div>');
+                expressionGroup.append('当前指令要求')
+            }
+            else if(option === "option2") {
+                expressionGroup.append('样例体现的');
+                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                expressionGroup.append('能力')
+                expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">强于</button><div class="dropdown-menu"><a class="dropdown-item" href="#">强于</a><a class="dropdown-item" href="#">弱于</a><a class="dropdown-item" href="#">接近</a></div></div>');
+                expressionGroup.append('当前指令的')
+                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                expressionGroup.append('能力要求')
+            }
+            else if(option === "option3") {
+                expressionGroup.append('当前指令要求的');
+                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                expressionGroup.append('能力在样例中没有体现')
+            }
+            else if(option === "option4") {
+                // Construct the expression for option 4, with two node selection sections
+                expressionGroup.append('当前指令要求的');
+                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                expressionGroup.append('能力范畴在样例中没有体现')
+            }
+        });
+
+        // On dropdown item click
+        $(document).on('click', '.dropdown-item', function() {
+            // Your logic here
+            //change the drop down text to the selected item
+            var selected_item = $(this).text();
+            $(this).parent().prev().text(selected_item);
+           // alert('Dropdown item clicked!');
+        });
+
+        
+        $('.styled-button').click(function() {
+            // Your logic here
+            //alert('Button clicked!');
+        });
+
 
 
 
