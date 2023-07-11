@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Main Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for hierarchy -->
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Mindmap styling */
+        #mindmap {
+            font-family: Arial, sans-serif;  /* Font family */
+            font-size: 18px;  /* Font size */
+            color: #333;  /* Font color */
+            line-height: 1.5;  /* Line height */
+        }
+
+        #mindmap ul {
+            padding-left: 30px;  /* Indentation */
+        }
+
+        #mindmap a {
+            color: #007bff;  /* Link color */
+            text-decoration: none;  /* Remove underline */
+        }
+
+        #mindmap a:hover {
+            color: #0056b3;  /* Link color on hover */
+        }
+
+        /* Option card styling */
+        .card {
+            font-size: 12px;  /* Font size */
+        }
+
+        /* Styles for selectable nodes */
+        .node-link.selectable {
+            color: blue;
+            cursor: pointer;
+        }
+
+        /* Styles for active "Select Node" button */
+        .select-node.active {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <h1>Ability Link</h1>
+            </div>
+        </div>
+        <!-- Progress Indicator -->
+        <div class="row mt-3">
+            <div class="col-6 text-center">
+                <!-- Empty -->
+            </div>
+            <div class="col-6 text-right">
+                <p>Progress: <span id="progress">0</span>%</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 d-flex align-items-center justify-content-center">
+                <!-- Mind Map -->
+                <ul id="mindmap">
+                    <!-- Nested lists can be used to represent the mind map hierarchy -->
+                    <li><a href="#" class="node-link" data-node="1">Node 1</a>
+                        <ul>
+                            <li><a href="#" class="node-link" data-node="1.1">Node 1.1</a></li>
+                            <li><a href="#" class="node-link" data-node="1.2">Node 1.2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="node-link" data-node="2">Node 2</a>
+                        <ul>
+                            <li><a href="#" class="node-link" data-node="2.1">Node 2.1</a></li>
+                            <li><a href="#" class="node-link" data-node="2.2">Node 2.2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Add more nodes as needed -->
+                </ul>
+            </div>
+            <div class="col-6">
+                <!-- Question Introduction -->
+                <div class="mt-3 mb-3">
+                    <h4 id="question-text">The description for example</h4>
+                </div>
+                <!-- Options -->
+                <!-- ... -->
+                <!-- Options -->
+                {% for i in range(3) %}
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Option {{i+1}}</h5>
+                        <!-- a horizontal single selection section with 7 options-->
+                        <!-- Statements -->
+                        <div class="statements" id="statements-{{i+1}}">
+                            <!-- Initial statement -->
+                            <div class="form-group">
+                                <!-- Option selection -->
+                                <select class="form-control option-select mb-2">
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                    <option value="option4">Option 4</option>
+                                </select>
+                                <!-- Node selection -->
+                                <div class="input-group">
+                                    <input type="text" class="form-control node-input" readonly>
+                                    <div class="input-group-append">
+                                        <button type="button" class="btn btn-primary select-node">Select Node</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Statement Button -->
+                        <button type="button" class="btn btn-secondary add-statement mt-3" data-statements="statements-{{i+1}}">Add Statement</button>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- ... -->
+
+                <!-- Next Button -->
+                <button type="button" class="btn btn-primary btn-block" id="next-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        // Handle mind map node clicks
+        $('.node-link').click(function(e) {
+            e.preventDefault();
+            $(this).next('ul').toggleClass('hidden');
+        });
+
+        // Variable to hold currently selected input field
+        var selectedInputField = null;
+        var selectedButton = null;
+
+        // Enable node selection when "Select Node" button is clicked
+        $('body').on('click', '.select-node', function() {
+            // Enter node selection mode
+            selectedInputField = $(this).parent().prev();  // Store reference to input field
+            selectedButton = $(this);  // Store reference to button
+            $('.node-link').addClass('selectable');  // Highlight nodes
+            selectedButton.addClass('active');  // Highlight button
+        });
+
+        // Update input box when node is clicked in node selection mode
+        $('body').on('click', '.selectable', function() {
+            // Update input field with node value
+            var nodeValue = $(this).text();
+            selectedInputField.val(nodeValue);
+
+            // Exit node selection mode
+            selectedInputField = null;
+            $('.node-link').removeClass('selectable');
+            selectedButton.removeClass('active');  // Remove highlight from button
+            selectedButton = null;
+        });
+
+
+        // TODO: Add your next button handler here
+        $('#next-button').click(function() {
+            // Handle next button click here
+            // save the current user selection to server 
+            // update the progress bar
+            // load new question set to the page
+            $.getJSON('/get_next_question', function(data) {
+                // Clear the current data
+                update_question_set(data);
+            });
+        });
+
+        function update_question_set(data){
+            var example_feasibility = data.feasibility
+            if (example_feasibility == "feasible") {
+                var feasibility_text = "能够稳定"
+            } else {
+                var feasibility_text = "不能正确"
+            }
+            var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令\"${data.example_instance}\，请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`
+            $('#question-text').html(example_text)
+            var option1_instance_text = ``
+            
+        }
+
+        // Add statement button click
+        $('.add-statement').click(function() {
+            var statementsId = $(this).data('statements');
+            $('#' + statementsId).append('\
+                <div class="form-group">\
+                    <select class="form-control option-select mb-2">\
+                        <option value="option1">Option 1</option>\
+                        <option value="option2">Option 2</option>\
+                        <option value="option3">Option 3</option>\
+                        <option value="option4">Option 4</option>\
+                    </select>\
+                    <div class="input-group">\
+                        <input type="text" class="form-control node-input" readonly>\
+                        <div class="input-group-append">\
+                            <button type="button" class="btn btn-primary select-node">Select Node</button>\
+                        </div>\
+                    </div>\
+                </div>\
+            ');
+        });
+
+        //upload data when html is loaded
+        $(document).ready(function() {
+            $.getJSON('/get_next_question', function(data) {
+                // Clear the current data
+                update_question_set(data);
+            });
+        });
+
+
+
+        
+    </script>
+</body>
+</html>
