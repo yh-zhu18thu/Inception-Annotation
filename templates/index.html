@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
 
     <!-- Custom CSS for hierarchy -->
     <style>
@@ -102,13 +104,12 @@
                 <!-- Options -->
                 <!-- ... -->
                 <!-- Options -->
-                {% for i in range(3) %}
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title">Option {{i+1}}</h5>
+                        <h5 class="card-title" id="instance">Option</h5>
                         <!-- a horizontal single selection section with 7 options-->
                         <!-- Statements -->
-                        <div class="statements" id="statements-{{i+1}}">
+                        <div class="statements" id="statements">
                             <!-- Initial statement -->
                             <div class="form-group">
                                 <!-- Option selection -->
@@ -128,10 +129,9 @@
                             </div>
                         </div>
                         <!-- Add Statement Button -->
-                        <button type="button" class="btn btn-secondary add-statement mt-3" data-statements="statements-{{i+1}}">Add Statement</button>
+                        <button type="button" class="btn btn-secondary add-statement mt-3" data-statements="statements">Add Statement</button>
                     </div>
                 </div>
-                {% endfor %}
                 <!-- ... -->
 
                 <!-- Next Button -->
@@ -199,10 +199,11 @@
             } else {
                 var feasibility_text = "不能正确"
             }
-            var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令\"${data.example_instance}\，请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`
+            var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令<br/>\"${data.example_instance}\"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`
             $('#question-text').html(example_text)
-            var option1_instance_text = ``
-            
+            // update the remaining 3 command instances to corrsponding parts
+            var instance1_text = data.instance1
+            $('#instance').html(instance1_text)
         }
 
         // Add statement button click
