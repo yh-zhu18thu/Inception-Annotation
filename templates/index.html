@@ -82,7 +82,7 @@
                 <!-- Empty -->
             </div>
             <div class="col-6 text-right">
-                <p>Progress: <span id="progress">0</span>%</p>
+                <p>进度: <span id="progress">0</span></p>
             </div>
         </div>
         <div class="row mt-3">
@@ -90,16 +90,32 @@
                 <!-- Mind Map -->
                 <ul id="mindmap">
                     <!-- Nested lists can be used to represent the mind map hierarchy -->
-                    <li><a href="#" class="node-link" data-node="1">Node 1</a>
+                    <li><a href="#" class="node-link" data-node="1">理解</a>
                         <ul>
-                            <li><a href="#" class="node-link" data-node="1.1">Node 1.1</a></li>
-                            <li><a href="#" class="node-link" data-node="1.2">Node 1.2</a></li>
+                            <li><a href="#" class="node-link" data-node="1.1">模糊语义理解</a>
+                                <ul>
+                                    <li><a href="#" class="node-link" data-node="1.1.1">缺失参数补足</a></li>
+                                    <li><a href="#" class="node-link" data-node="1.1.2">范围程度推断</a></li>
+                                    <li><a href="#" class="node-link" data-node="1.1.3">模糊指代识别</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="node-link" data-node="1.2">口语化表达理解</a></li>
+                            <li><a href="#" class="node-link" data-node="1.3">评估与判断</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="node-link" data-node="2">Node 2</a>
+                    <li><a href="#" class="node-link" data-node="2">规划</a>
                         <ul>
-                            <li><a href="#" class="node-link" data-node="2.1">Node 2.1</a></li>
-                            <li><a href="#" class="node-link" data-node="2.2">Node 2.2</a></li>
+                            <li><a href="#" class="node-link" data-node="2.1">条件触发</a></li>
+                            <li><a href="#" class="node-link" data-node="2.2">循环重复</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="node-link" data-node="3">执行</a>
+                        <ul>
+                            <li><a href="#" class="node-link" data-node="3.1">操作能力</a></li>
+                            <li><a href="#" class="node-link" data-node="3.2">信息能力</a></li>
+                            <li><a href="#" class="node-link" data-node="3.3">可靠程度</a></li>
+                            <li><a href="#" class="node-link" data-node="3.4">领域能力</a></li>
+                            <li><a href="#" class="node-link" data-node="3.5">智能能力</a></li>
                         </ul>
                     </li>
                     <!-- Add more nodes as needed -->
@@ -111,73 +127,7 @@
                     <h4 id="question-text">The description for example</h4>
                 </div>
 
-                 <!-- Belief Rating -->
-                <div class="belief-rating">
-                    <p class="mb-1">Rate how much you believe:</p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief1" value="1">
-                        <label class="form-check-label" for="belief1">1</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief2" value="2">
-                        <label class="form-check-label" for="belief2">2</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief3" value="3">
-                        <label class="form-check-label" for="belief3">3</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief4" value="4">
-                        <label class="form-check-label" for="belief4">4</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief5" value="5">
-                        <label class="form-check-label" for="belief5">5</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief6" value="6">
-                        <label class="form-check-label" for="belief6">6</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefRating" id="belief7" value="7">
-                        <label class="form-check-label" for="belief7">7</label>
-                    </div>
-                    <!-- ... more ratings 2-7 ... -->
-                </div>
-
-                <!-- Change in Belief Rating -->
-                <div class="belief-change-rating mt-3">
-                    <p class="mb-1">Rate how much your belief changed:</p>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange1" value="1">
-                        <label class="form-check-label" for="beliefChange1">1</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange2" value="2">
-                        <label class="form-check-label" for="beliefChange2">2</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange3" value="3">
-                        <label class="form-check-label" for="beliefChange3">3</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange4" value="4">
-                        <label class="form-check-label" for="beliefChange4">4</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange5" value="5">
-                        <label class="form-check-label" for="beliefChange5">5</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange6" value="6">
-                        <label class="form-check-label" for="beliefChange6">6</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange7" value="7">
-                        <label class="form-check-label" for="beliefChange7">7</label>
-                    </div>
-                    <!-- ... more ratings 2-7 ... -->
-                </div>
+                 
 
                 <!-- Options -->
                 <!-- ... -->
@@ -186,6 +136,73 @@
                     <div class="card-body">
                         <h5 class="card-title" id="instance">Option</h5>
                         <!-- Statements -->
+                        <!-- Belief Rating -->
+                        <div class="belief-rating">
+                            <p class="mb-1">Rate how much you believe:</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief1" value="1">
+                                <label class="form-check-label" for="belief1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief2" value="2">
+                                <label class="form-check-label" for="belief2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief3" value="3">
+                                <label class="form-check-label" for="belief3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief4" value="4">
+                                <label class="form-check-label" for="belief4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief5" value="5">
+                                <label class="form-check-label" for="belief5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief6" value="6">
+                                <label class="form-check-label" for="belief6">6</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefRating" id="belief7" value="7">
+                                <label class="form-check-label" for="belief7">7</label>
+                            </div>
+                            <!-- ... more ratings 2-7 ... -->
+
+                        <!-- Change in Belief Rating -->
+                        <div class="belief-change-rating mt-3">
+                            <p class="mb-1">Rate how much your belief changed:</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange1" value="1">
+                                <label class="form-check-label" for="beliefChange1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange2" value="2">
+                                <label class="form-check-label" for="beliefChange2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange3" value="3">
+                                <label class="form-check-label" for="beliefChange3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange4" value="4">
+                                <label class="form-check-label" for="beliefChange4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange5" value="5">
+                                <label class="form-check-label" for="beliefChange5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange6" value="6">
+                                <label class="form-check-label" for="beliefChange6">6</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange7" value="7">
+                                <label class="form-check-label" for="beliefChange7">7</label>
+                            </div>
+                            <!-- ... more ratings 2-7 ... -->
+                        </div>
+                    </br>
                         <div class="statements" id="statements">
                             <!-- Initial statement -->
                             <div class="form-row form-group align-items-center">
@@ -227,8 +244,11 @@
     <script>
         // Handle mind map node clicks
         $('.node-link').click(function(e) {
-            e.preventDefault();
-            $(this).next('ul').toggleClass('hidden');
+            //hide when not in node selection mode
+            if (selectedButton == null) {
+                e.preventDefault();
+                $(this).next('ul').toggleClass('hidden');
+            }
         });
 
         // Variable to hold currently selected input field
@@ -272,17 +292,17 @@
         });
 
         function update_question_set(data){
-            var example_feasibility = data.feasibility
+            var example_feasibility = data.feasibility;
             if (example_feasibility == "feasible") {
-                var feasibility_text = "能够稳定"
+                var feasibility_text = "能够稳定";
             } else {
-                var feasibility_text = "不能正确"
+                var feasibility_text = "不能正确";
             }
-            var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令<br/>\"${data.example_instance}\"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`
-            $('#question-text').html(example_text)
+            var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令<br/>\"${data.example_instance}\"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`;
+            $('#question-text').html(example_text);
             // update the remaining 3 command instances to corrsponding parts
-            var instance1_text = data.instance1
-            $('#instance').html(instance1_text)
+            var instance_text = data.instance;
+            $('#instance').html(instance_text);
         }
 
         // Add statement button click
@@ -318,7 +338,7 @@
         });
 
         // On option change
-        $('.option-select').change(function() {
+        $('body').on('change','.option-select',function() {
             var option = $(this).val();
             var expressionGroup = $(this).parent().next().find('.expression-group');
 
