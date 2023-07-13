@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Main Page</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
 
 
     <!-- Custom CSS for hierarchy -->
@@ -22,8 +22,8 @@
 
         /* Mindmap styling */
         #mindmap {
-            font-family: Arial, sans-serif;  /* Font family */
-            font-size: 18px;  /* Font size */
+            font-family: 'Microsoft YaHei', Arial, sans-serif;  /* Font family */
+            font-size: 20px;  /* Font size */
             color: #333;  /* Font color */
             line-height: 1.5;  /* Line height */
         }
@@ -35,15 +35,23 @@
         #mindmap a {
             color: #007bff;  /* Link color */
             text-decoration: none;  /* Remove underline */
+            padding: 2px 10px;  /* Padding */
+            border-radius: 5px;  /* Rounded corners */
+            background-color: #f5f5f5;  /* Background color */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);  /* Shadow */
+            display: inline-block;
+            margin: 10px;  /* Increase space around each item */
         }
 
         #mindmap a:hover {
             color: #0056b3;  /* Link color on hover */
+            background-color: #e8e8e8;  /* Background color on hover */
         }
+
 
         /* Option card styling */
         .card {
-            font-size: 12px;  /* Font size */
+            font-size: 18px;  /* Font size */
         }
 
         /* Styles for selectable nodes */
@@ -82,43 +90,44 @@
                 <!-- Empty -->
             </div>
             <div class="col-6 text-right">
-                <p>进度: <span id="progress">0</span></p>
+                <h5>进度: <span id="progress">0</span></h5>
             </div>
         </div>
         <div class="row mt-3">
             <div class="col-6 d-flex align-items-center justify-content-center">
                 <!-- Mind Map -->
-                <ul id="mindmap">
-                    <!-- Nested lists can be used to represent the mind map hierarchy -->
-                    <li><a href="#" class="node-link" data-node="1">理解</a>
-                        <ul>
-                            <li><a href="#" class="node-link" data-node="1.1">模糊语义理解</a>
-                                <ul>
-                                    <li><a href="#" class="node-link" data-node="1.1.1">缺失参数补足</a></li>
-                                    <li><a href="#" class="node-link" data-node="1.1.2">范围程度推断</a></li>
-                                    <li><a href="#" class="node-link" data-node="1.1.3">模糊指代识别</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="node-link" data-node="1.2">口语化表达理解</a></li>
-                            <li><a href="#" class="node-link" data-node="1.3">评估与判断</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="node-link" data-node="2">规划</a>
-                        <ul>
-                            <li><a href="#" class="node-link" data-node="2.1">条件触发</a></li>
-                            <li><a href="#" class="node-link" data-node="2.2">循环重复</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="node-link" data-node="3">执行</a>
-                        <ul>
-                            <li><a href="#" class="node-link" data-node="3.1">操作</a></li>
-                            <li><a href="#" class="node-link" data-node="3.2">信息</a></li>
-                            <li><a href="#" class="node-link" data-node="3.3">稳定</a></li>
-                            <li><a href="#" class="node-link" data-node="3.4">领域</a></li>
-                            <li><a href="#" class="node-link" data-node="3.5">智能</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div id="mindmap">
+                    <ul>
+                        <li>理解
+                            <ul>
+                                <li>模糊语义理解
+                                    <ul>
+                                        <li>缺失参数补足</li>
+                                        <li>范围程度推断</li>
+                                        <li>模糊指代识别</li>
+                                    </ul>
+                                </li>
+                                <li>口语化表达理解</li>
+                                <li>评估与判断</li>
+                            </ul>
+                        </li>
+                        <li>规划
+                            <ul>
+                                <li>条件触发</li>
+                                <li>循环重复</li>
+                            </ul>
+                        </li>
+                        <li>执行
+                            <ul>
+                                <li>操作</li>
+                                <li>信息</li>
+                                <li>稳定</li>
+                                <li>领域</li>
+                                <li>智能</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>                
             </div>
             <div class="col-6">
                 <!-- Question Introduction -->
@@ -237,31 +246,53 @@
         </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script>
-        // Handle mind map node clicks
-        $('.node-link').click(function(e) {
-            //hide when not in node selection mode
-            if (selectedButton == null) {
-                e.preventDefault();
-                $(this).next('ul').toggleClass('hidden');
-            }
-        });
 
         // Variable to hold currently selected input field
         var selectedButton = null;
+        var select_state =false;
+
+        $(function() {
+            $('#mindmap').jstree({
+                'core' : {
+                    'animation' : 0,
+                    'expand_onload' : true,
+                    'themes':{
+                        'icons' : false,
+                        'theme' : 'default',
+                        'dots' : true,
+                        'ellipsis': true,
+                        'stripes': false,
+                    },
+                    'multiple': true,
+                    'dblclick_toggle': false,
+                    'check_callback' : true,
+                },
+            }).on("select_node.jstree", function (e, data) {
+                if (!select_state) {
+                    return;
+                }
+                var nodeValue = data.instance.get_node(data.selected).text;
+                //set the value of the selected button
+                selectedButton.text(nodeValue);
+                selectedButton.removeClass('active');  // Remove highlight from button
+                selectedButton = null;
+                select_state = false;
+            });
+            $('#mindmap').jstree('open_all');
+        });
 
         // Enable node selection when "Select Node" button is clicked
         $('body').on('click', '.select-node', function() {
             // Enter node selection mode
             selectedButton = $(this);  // Store reference to button
-            $('.node-link').addClass('selectable');  // Highlight nodes
             selectedButton.addClass('active');  // Highlight button
+            select_state = true;
         });
 
 
@@ -483,6 +514,8 @@
         $(document).on('click', '.remove-statement', function() {
             $(this).closest('.form-row').remove();
         });
+
+        
 
 
 
