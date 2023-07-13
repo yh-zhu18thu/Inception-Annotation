@@ -43,6 +43,17 @@
             margin: 10px;  /* Increase space around each item */
         }
 
+        .example {
+            color: #ff0000;  /* Link color */
+            text-decoration: none;  /* Remove underline */
+            padding: 2px 10px;  /* Padding */
+            border-radius: 5px;  /* Rounded corners */
+            background-color: #f5f5f5;  /* Background color */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);  /* Shadow */
+            display: inline-block;
+            margin: 10px;  /* Increase space around each item */
+        }
+
         #mindmap a:hover {
             color: #0056b3;  /* Link color on hover */
             background-color: #e8e8e8;  /* Background color on hover */
@@ -51,7 +62,7 @@
 
         /* Option card styling */
         .card {
-            font-size: 18px;  /* Font size */
+            font-size: 20px;  /* Font size */
         }
 
         /* Styles for selectable nodes */
@@ -81,7 +92,7 @@
     <div class="container-fluid">
         <div class="row mt-3">
             <div class="col-12 text-center">
-                <h1>Ability Link</h1>
+                <h1>AI助手能力评估</h1>
             </div>
         </div>
         <!-- Progress Indicator -->
@@ -132,7 +143,7 @@
             <div class="col-6">
                 <!-- Question Introduction -->
                 <div class="mt-3 mb-3">
-                    <h4 id="question-text">一个AI助手<u><span id="feasibility-text"></span></u>响应如下指令<br/>"<span id="example-instance"></span>"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因</h4>
+                    <h4 id="question-text">一个AI助手<u><span id="feasibility-text" class="example"></span></u>响应如下指令<br/>"<span id="example-instance" class="example"></span>"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因</h4>
                 </div>
 
                  
@@ -142,14 +153,14 @@
                 <!-- Options -->
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title" id="instance">Option</h5>
+                        <h5 class="card-title example" id="instance">Option</h5>
                         <!-- Statements -->
                         <!-- Belief Rating -->
                         <div class="belief-rating">
                             <p class="mb-1">你认为该AI助手能否响应该指令:</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief1" value="1">
-                                <label class="form-check-label" for="belief1">1</label>
+                                <label class="form-check-label" for="belief1">1(非常悲观)</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief2" value="2">
@@ -161,7 +172,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief4" value="4">
-                                <label class="form-check-label" for="belief4">4</label>
+                                <label class="form-check-label" for="belief4">4(中立)</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief5" value="5">
@@ -173,15 +184,15 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief7" value="7">
-                                <label class="form-check-label" for="belief7">7</label>
+                                <label class="form-check-label" for="belief7">7(非常乐观)</label>
                             </div>
                         </div>
                         <!-- Change in Belief Rating -->
                         <div class="belief-change-rating mt-3">
-                            <p class="mb-1">因为样例的存在，你对当前指令被响应的预期发生了怎样的变化:</p>
+                            <p class="mb-1">样例的存在对你的判断产生了怎样的影响:</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange1" value="1">
-                                <label class="form-check-label" for="beliefChange1">1</label>
+                                <label class="form-check-label" for="beliefChange1">1(非常负向)</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange2" value="2">
@@ -193,7 +204,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange4" value="4">
-                                <label class="form-check-label" for="beliefChange4">4</label>
+                                <label class="form-check-label" for="beliefChange4">4(中性)</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange5" value="5">
@@ -205,7 +216,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange7" value="7">
-                                <label class="form-check-label" for="beliefChange7">7</label>
+                                <label class="form-check-label" for="beliefChange7">7(非常正向)</label>
                             </div>
                         </div>
                     </br>
@@ -242,6 +253,7 @@
 
                 <!-- Next Button -->
                 <button type="button" class="btn btn-primary btn-block" id="next-button">Next</button>
+                <button type="button" class="btn btn-info btn-block" id="skip-button">Skip</button>
             </div>
         </div>
     </div>
@@ -310,17 +322,32 @@
             selectedButton = null;
         });
 
+        var valid_flag = true;
+
 
         // TODO: Add your next button handler here
         $('#next-button').click(function() {
             // Handle next button click here
             // save the current user selection to server
             save_current_selection();
+            if(!valid_flag){
+                valid_flag=true
+                return;
+            }
             // clear all the input content
             clear_current_input();
             // add 1 to progress text
             $('#progress').text(parseInt($('#progress').text()) + 1);
             // load new question set to the page
+            $.getJSON('/get_next_question', function(data) {
+                // Clear the current data
+                update_question_set(data);
+            });
+        });
+
+        // TODO: Add your next button handler here
+        $('#skip-button').click(function() {
+            clear_current_input();
             $.getJSON('/get_next_question', function(data) {
                 // Clear the current data
                 update_question_set(data);
@@ -335,8 +362,16 @@
             var example_feasibility = $("#feasibility-text").text();
             // get the current belief rating
             var belief_rating = $("input[name='beliefRating']:checked").val();
+            if(belief_rating == undefined){
+                valid_flag = false;
+                return;
+            }
             // get the current belief change rating
             var belief_change_rating = $("input[name='beliefChangeRating']:checked").val();
+            if(belief_change_rating == undefined){
+                valid_flag = false;
+                return;
+            }
             // get the current statements
             var statements = [];
             $('#statements').children().each(function(){
@@ -355,8 +390,16 @@
                         expression.push($(this).val());
                     }
                 });
+                if (expression.length == 0){
+                    valid_flag = false;
+                    return;
+                }
                 statements.push({'option':option,'expression':expression});
             });
+            if(statements.length == 0){
+                valid_flag = false;
+                return;
+            }
             // send the data to server
             $.ajax({
                 url: '/save_current_selection',
@@ -454,6 +497,10 @@
                 // Clear the current data
                 update_question_set(data);
             });
+            //get the user annotation cnt and update on page:
+            $.getJSON('/get_user_finished_annotation_cnt', function(data) {
+                $('#progress').text(data);
+            });
         });
 
         // On option change
@@ -468,14 +515,14 @@
             }
             else if(option === "option1") {
                 // Construct the expression for option 1
-                expressionGroup.append('样例体现的');
+                expressionGroup.append('样例要求的');
                 expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
                 expressionGroup.append('能力')
                 expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">强于</button><div class="dropdown-menu"><a class="dropdown-item" href="#">强于</a><a class="dropdown-item" href="#">弱于</a><a class="dropdown-item" href="#">接近</a></div></div>');
                 expressionGroup.append('当前指令要求')
             }
             else if(option === "option2") {
-                expressionGroup.append('样例体现的');
+                expressionGroup.append('样例要求的');
                 expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
                 expressionGroup.append('能力')
                 expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">强于</button><div class="dropdown-menu"><a class="dropdown-item" href="#">强于</a><a class="dropdown-item" href="#">弱于</a><a class="dropdown-item" href="#">接近</a></div></div>');
@@ -484,15 +531,30 @@
                 expressionGroup.append('能力要求')
             }
             else if(option === "option3") {
-                expressionGroup.append('当前指令要求的');
-                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
-                expressionGroup.append('能力在样例中没有体现')
+                var feasibility = $('#feasibility-text').text();
+                if (feasibility == "能够稳定") {
+                    expressionGroup.append('当前指令要求的');
+                    expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                    expressionGroup.append('能力在样例中没有要求')
+                } else {
+                    expressionGroup.append('样例要求的');
+                    expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                    expressionGroup.append('能力在当前指令中没有要求')
+                }
             }
             else if(option === "option4") {
-                // Construct the expression for option 4, with two node selection sections
-                expressionGroup.append('当前指令要求的');
-                expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
-                expressionGroup.append('能力范畴在样例中没有体现')
+                var feasibility = $('#feasibility-text').text();
+                if (feasibility == "能够稳定") {
+                    // Construct the expression for option 4, with two node selection sections
+                    expressionGroup.append('当前指令要求的');
+                    expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                    expressionGroup.append('能力范畴在样例中没有要求')
+                }else{
+                    expressionGroup.append('样例要求的');
+                    expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+                    expressionGroup.append('能力范畴在当前指令中没有要求')
+                }
+                
             }
         });
 

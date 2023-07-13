@@ -57,7 +57,10 @@ def save_current_selection():
     print(data)
     data_manager.save_current_selection(session['user_id'],data['example_instance'],data["example_feasibility"],data['belief_rating'],data['belief_change_rating'],data['statements'])
     return "success"
-    
+
+@app.route('/get_user_finished_annotation_cnt',methods=['GET'])
+def get_user_finished_annotation_cnt():
+    return jsonify(data_manager.get_user_finished_annotation_cnt(session['user_id']))
 
 @app.route('/')
 def hello_world():
