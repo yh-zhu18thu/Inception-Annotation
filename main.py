@@ -54,7 +54,8 @@ def save_current_selection():
                 })
     '''
     data = request.get_json()
-    data_manager.save_current_selection(session['user_id'],data['question_id'],data['belief_rating'],data['belief_change_rating'],data['statements'])
+    print(data)
+    data_manager.save_current_selection(session['user_id'],data['example_instance'],data["example_feasibility"],data['belief_rating'],data['belief_change_rating'],data['statements'])
     return "success"
     
 

@@ -206,6 +206,7 @@
                                 <!-- Option selection -->
                                 <div class="col-md-3">
                                     <select class="form-control option-select">
+                                        <option value="custom">自定义描述</option>
                                         <option value="option1">同能力比较</option>
                                         <option value="option2">不同能力比较</option>
                                         <option value="option3">能力错配</option>
@@ -215,6 +216,7 @@
                                 <!-- Expression -->
                                 <div class="col-md-8">
                                     <div class="input-group expression-group">
+                                        <input type="text" class="form-control custom-expression-input">
                                          <!-- The expression will be constructed here dynamically -->
                                     </div>
                                 </div>
@@ -299,7 +301,7 @@
             // get the current question id
             var example_instance = $('#example-instance').text();
             // get example feasibility
-            var example_feasibility = $("feasibility-text").text();
+            var example_feasibility = $("#feasibility-text").text();
             // get the current belief rating
             var belief_rating = $("input[name='beliefRating']:checked").val();
             // get the current belief change rating
@@ -317,6 +319,9 @@
                     }
                     if($(this).hasClass('dropdown')){
                         expression.push($(this).children('.dropdown-toggle').text());
+                    }
+                    if($(this).hasClass('custom-expression-input')){
+                        expression.push($(this).val());
                     }
                 });
                 statements.push({'option':option,'expression':expression});
@@ -359,7 +364,7 @@
                 <!-- Expression -->\
                 <div class="col-md-8">\
                     <div class="input-group expression-group">\
-                            <!-- The expression will be constructed here dynamically -->\
+                        <input type="text" class="form-control custom-expression-input">\
                     </div>\
                 </div>\
                 <div class="col-md-1">\
@@ -402,7 +407,7 @@
                 <!-- Expression -->\
                 <div class="col-md-8">\
                     <div class="input-group expression-group">\
-                            <!-- The expression will be constructed here dynamically -->\
+                        <input type="text" class="form-control custom-expression-input">\
                     </div>\
                 </div>\
                 <div class="col-md-1">\
@@ -427,8 +432,10 @@
 
             // Clear the previous expression
             expressionGroup.empty();
-
-            if(option === "option1") {
+            if(option === "custom"){
+                expressionGroup.append('<input type="text" class="form-control custom-expression-input">');
+            }
+            else if(option === "option1") {
                 // Construct the expression for option 1
                 expressionGroup.append('样例体现的');
                 expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');

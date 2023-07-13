@@ -1,3 +1,5 @@
 一个AI助手不能正确响应如下指令"我身体不舒服，给老师发个邮件请假"，请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因",2,3,[{'option': 'option1', 'expression': ['模糊指代识别', '接近']}, {'option': 'option2', 'expression': ['口语化表达理解', '强于', '信息']}, {'option': 'option3', 'expression': ['条件触发']}]
 一个AI助手不能正确响应如下指令"我身体不舒服，给老师发个邮件请假"，请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因",3,3,[{'option': 'option1', 'expression': ['操作', '接近']}, {'option': 'option1', 'expression': ['模糊指代识别', '弱于']}, {'option': 'option4', 'expression': ['xxx']}]
 一个AI助手不能正确响应如下指令"我身体不舒服，给老师发个邮件请假"，请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因",4,6,[{'option': 'option1', 'expression': []}]
+我忘了我昨天晚上吃的是什么，帮我查一下外卖记录。,,4,6,[{'option': 'custom', 'expression': ['']}]
+我忘了我昨天晚上吃的是什么，帮我查一下外卖记录。,能够稳定,6,3,[{'option': 'custom', 'expression': ['test']}]
