@@ -213,10 +213,13 @@
                                     </select>
                                 </div>
                                 <!-- Expression -->
-                                <div class="col-md-9">
+                                <div class="col-md-8">
                                     <div class="input-group expression-group">
                                          <!-- The expression will be constructed here dynamically -->
                                     </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <button type="button" class="btn btn-danger remove-statement"><i class="fas fa-trash-alt"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -351,10 +354,13 @@
                     </select>\
                 </div>\
                 <!-- Expression -->\
-                <div class="col-md-9">\
+                <div class="col-md-8">\
                     <div class="input-group expression-group">\
                             <!-- The expression will be constructed here dynamically -->\
                     </div>\
+                </div>\
+                <div class="col-md-1">\
+                    <button type="button" class="btn btn-danger remove-statement"><i class="fas fa-trash-alt"></i></button>\
                 </div>\
             </div>\
             ');
@@ -389,10 +395,13 @@
                     </select>\
                 </div>\
                 <!-- Expression -->\
-                <div class="col-md-9">\
+                <div class="col-md-8">\
                     <div class="input-group expression-group">\
                             <!-- The expression will be constructed here dynamically -->\
                     </div>\
+                </div>\
+                <div class="col-md-1">\
+                    <button type="button" class="btn btn-danger remove-statement"><i class="fas fa-trash-alt"></i></button>\
                 </div>\
             </div>\
             ');
@@ -458,6 +467,11 @@
             // Your logic here
             //alert('Button clicked!');
         });
+
+        $(document).on('click', '.remove-statement', function() {
+            $(this).closest('.form-row').remove();
+        });
+
 
 
 
