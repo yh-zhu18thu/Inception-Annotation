@@ -123,7 +123,7 @@
             <div class="col-6">
                 <!-- Question Introduction -->
                 <div class="mt-3 mb-3">
-                    <h4 id="question-text">The description for example</h4>
+                    <h4 id="question-text">一个AI助手<u><span id="feasibility-text"></span></u>响应如下指令<br/>"<span id="example-instance"></span>"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因</h4>
                 </div>
 
                  
@@ -297,7 +297,9 @@
         function save_current_selection(){
             // save the current user selection to server
             // get the current question id
-            var question_id = $('#question-text').text();
+            var example_instance = $('#example-instance').text();
+            // get example feasibility
+            var example_feasibility = $("feasibility-text").text();
             // get the current belief rating
             var belief_rating = $("input[name='beliefRating']:checked").val();
             // get the current belief change rating
@@ -324,7 +326,8 @@
                 url: '/save_current_selection',
                 type: 'POST',
                 data: JSON.stringify({
-                    'question_id': question_id,
+                    'example_instance': example_instance,
+                    'example_feasibility': example_feasibility,
                     'belief_rating': belief_rating,
                     'belief_change_rating': belief_change_rating,
                     'statements': statements
@@ -373,8 +376,10 @@
             } else {
                 var feasibility_text = "不能正确";
             }
-            var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令<br/>\"${data.example_instance}\"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`;
-            $('#question-text').html(example_text);
+            $('#feasibility-text').text(feasibility_text);
+            $('#example-instance').text(data.example_instance);
+            //var example_text = `一个AI助手<u>${feasibility_text}</u>响应如下指令<br/>\"${data.example_instance}\"，<br/>请评价你因为这个实例对该AI助手响应如下指令的信任度变化和其中原因"`;
+            //$('#question-text').html(example_text);
             // update the remaining 3 command instances to corrsponding parts
             var instance_text = data.instance;
             $('#instance').html(instance_text);
