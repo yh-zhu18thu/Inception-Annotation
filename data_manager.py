@@ -13,5 +13,9 @@ class DataManager:
     
     def generate_next_question(self):
         return self.question_generater.get_1v3_question()
-        
+    
+    def save_current_selection(self,user_id,question_id,belief_rating,belief_change_rating,statements):
+        # create a new file with user id if not exist, append a line to the file
+        with open(f"data/{user_id}.csv",'a') as f:
+            f.write(f"{question_id},{belief_rating},{belief_change_rating},{statements}\n")
 

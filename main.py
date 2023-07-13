@@ -43,6 +43,21 @@ def get_next_question():
                     'instance':temp_user_question_dict[current_user]['instances'].pop()}
     return jsonify(quesiton_set)
 
+@app.route('/save_current_selection',methods=['POST'])
+def save_current_selection():
+    '''
+    data: JSON.stringify({
+                    'question_id': question_id,
+                    'belief_rating': belief_rating,
+                    'belief_change_rating': belief_change_rating,
+                    'statements': statements
+                })
+    '''
+    data = request.get_json()
+    data_manager.save_current_selection(session['user_id'],data['question_id'],data['belief_rating'],data['belief_change_rating'],data['statements'])
+    return "success"
+    
+
 @app.route('/')
 def hello_world():
     return redirect(url_for('login'))

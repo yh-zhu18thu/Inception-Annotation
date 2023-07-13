@@ -111,14 +111,13 @@
                     </li>
                     <li><a href="#" class="node-link" data-node="3">执行</a>
                         <ul>
-                            <li><a href="#" class="node-link" data-node="3.1">操作能力</a></li>
-                            <li><a href="#" class="node-link" data-node="3.2">信息能力</a></li>
-                            <li><a href="#" class="node-link" data-node="3.3">可靠程度</a></li>
-                            <li><a href="#" class="node-link" data-node="3.4">领域能力</a></li>
-                            <li><a href="#" class="node-link" data-node="3.5">智能能力</a></li>
+                            <li><a href="#" class="node-link" data-node="3.1">操作</a></li>
+                            <li><a href="#" class="node-link" data-node="3.2">信息</a></li>
+                            <li><a href="#" class="node-link" data-node="3.3">稳定</a></li>
+                            <li><a href="#" class="node-link" data-node="3.4">领域</a></li>
+                            <li><a href="#" class="node-link" data-node="3.5">智能</a></li>
                         </ul>
                     </li>
-                    <!-- Add more nodes as needed -->
                 </ul>
             </div>
             <div class="col-6">
@@ -138,7 +137,7 @@
                         <!-- Statements -->
                         <!-- Belief Rating -->
                         <div class="belief-rating">
-                            <p class="mb-1">Rate how much you believe:</p>
+                            <p class="mb-1">你认为该AI助手能否响应该指令:</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief1" value="1">
                                 <label class="form-check-label" for="belief1">1</label>
@@ -167,11 +166,10 @@
                                 <input class="form-check-input" type="radio" name="beliefRating" id="belief7" value="7">
                                 <label class="form-check-label" for="belief7">7</label>
                             </div>
-                            <!-- ... more ratings 2-7 ... -->
-
+                        </div>
                         <!-- Change in Belief Rating -->
                         <div class="belief-change-rating mt-3">
-                            <p class="mb-1">Rate how much your belief changed:</p>
+                            <p class="mb-1">因为样例的存在，你对当前指令被响应的预期发生了怎样的变化:</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange1" value="1">
                                 <label class="form-check-label" for="beliefChange1">1</label>
@@ -200,7 +198,6 @@
                                 <input class="form-check-input" type="radio" name="beliefChangeRating" id="beliefChange7" value="7">
                                 <label class="form-check-label" for="beliefChange7">7</label>
                             </div>
-                            <!-- ... more ratings 2-7 ... -->
                         </div>
                     </br>
                         <div class="statements" id="statements">
@@ -281,9 +278,12 @@
         // TODO: Add your next button handler here
         $('#next-button').click(function() {
             // Handle next button click here
-            // save the current user selection to server 
+            // save the current user selection to server
+            save_current_selection();
             // clear all the input content
-            // update the progress bar
+            clear_current_input();
+            // add 1 to progress text
+            $('#progress').text(parseInt($('#progress').text()) + 1);
             // load new question set to the page
             $.getJSON('/get_next_question', function(data) {
                 // Clear the current data
@@ -291,9 +291,78 @@
             });
         });
 
+        function save_current_selection(){
+            // save the current user selection to server
+            // get the current question id
+            var question_id = $('#question-text').text();
+            // get the current belief rating
+            var belief_rating = $("input[name='beliefRating']:checked").val();
+            // get the current belief change rating
+            var belief_change_rating = $("input[name='beliefChangeRating']:checked").val();
+            // get the current statements
+            var statements = [];
+            $('#statements').children().each(function(){
+                var option = $(this).find('.option-select').val();
+                var expression_group = $(this).find('.expression-group');
+                //get all the selected nodes in the expression group
+                var expression = [];
+                expression_group.children().each(function(){
+                    if($(this).hasClass('select-node')){
+                        expression.push($(this).text());
+                    }
+                    if($(this).hasClass('dropdown')){
+                        expression.push($(this).children('.dropdown-toggle').text());
+                    }
+                });
+                statements.push({'option':option,'expression':expression});
+            });
+            // send the data to server
+            $.ajax({
+                url: '/save_current_selection',
+                type: 'POST',
+                data: JSON.stringify({
+                    'question_id': question_id,
+                    'belief_rating': belief_rating,
+                    'belief_change_rating': belief_change_rating,
+                    'statements': statements
+                }),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                async: false,
+                success: function(msg) {
+                    console.log(msg);
+                }
+            });
+        }
+
+        function clear_current_input(){
+            // clear the current input
+            $("input[name='beliefRating']").prop('checked', false);
+            $("input[name='beliefChangeRating']").prop('checked', false);
+            $('#statements').html('\
+            <div class="form-row form-group align-items-center">\
+                <!-- Option selection -->\
+                <div class="col-md-3">\
+                    <select class="form-control option-select">\
+                        <option value="option1">同能力比较</option>\
+                        <option value="option2">不同能力比较</option>\
+                        <option value="option3">能力错配</option>\
+                        <option value="option4">能力范畴比较</option>\
+                    </select>\
+                </div>\
+                <!-- Expression -->\
+                <div class="col-md-9">\
+                    <div class="input-group expression-group">\
+                            <!-- The expression will be constructed here dynamically -->\
+                    </div>\
+                </div>\
+            </div>\
+            ');
+        }
+
         function update_question_set(data){
             var example_feasibility = data.feasibility;
-            if (example_feasibility == "feasible") {
+            if (example_feasibility == true) {
                 var feasibility_text = "能够稳定";
             } else {
                 var feasibility_text = "不能正确";
