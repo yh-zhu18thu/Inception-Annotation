@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Main Page</title>
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='jstree/dist/themes/default/style.min.css') }}" />
 
 
     <!-- Custom CSS for hierarchy -->
@@ -23,7 +23,7 @@
         /* Mindmap styling */
         #mindmap {
             font-family: 'Microsoft YaHei', Arial, sans-serif;  /* Font family */
-            font-size: 20px;  /* Font size */
+            font-size: 16px;  /* Font size */
             color: #333;  /* Font color */
             line-height: 1.5;  /* Line height */
         }
@@ -62,7 +62,7 @@
 
         /* Option card styling */
         .card {
-            font-size: 20px;  /* Font size */
+            font-size: 16px;  /* Font size */
         }
 
         /* Styles for selectable nodes */
@@ -111,30 +111,116 @@
                     <ul>
                         <li>理解
                             <ul>
-                                <li>模糊语义理解
+                                <li>模糊表达理解
                                     <ul>
-                                        <li>缺失参数补足</li>
-                                        <li>范围程度推断</li>
-                                        <li>模糊指代识别</li>
+                                        <li>省略信息理解
+                                            <ul>
+                                                <li>不完整方法理解</li>
+                                                <li>不完整目标理解</li>
+                                                <li>缺失限定/修饰理解</li>
+                                            </ul>
+                                        </li>
+                                        <li>模糊范围程度理解</li>
+                                        <li>模糊指代理解
+                                            <ul>
+                                                <li>定冠词指代理解</li>
+                                                <li>别名理解</li>
+                                                <li>缺失定语理解</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li>口语化表达理解</li>
-                                <li>评估与判断</li>
+                                <li>口语化表达理解
+                                    <ul>
+                                        <li>特殊语序理解
+                                            <ul>
+                                                <li>倒装语序理解</li>
+                                                <li>疑问语序理解</li>
+                                                <li>祈使语序理解</li>
+                                                <li>虚拟语气理解</li>
+                                            </ul>
+                                        </li>
+                                        <li>非常规用词理解</li>
+                                        <li>句子成分缺失理解</li>
+                                        <li>抗冗余表达干扰</li>
+                                    </ul>
+                                </li>
+                                <li>高级智能理解
+                                    <ul>
+                                        <li>情景感知</li>
+                                        <li>复合问题理解</li>
+                                        <li>个性化知识理解</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li>规划
                             <ul>
-                                <li>条件触发</li>
-                                <li>循环重复</li>
+                                <li>设置条件触发</li>
+                                <li>构建循环</li>
+                                <li>隐性步骤提取</li>
+                                <li>多任务调度</li>
                             </ul>
                         </li>
                         <li>执行
                             <ul>
-                                <li>操作</li>
-                                <li>信息</li>
-                                <li>稳定</li>
-                                <li>领域</li>
-                                <li>智能</li>
+                                <li>操作
+                                    <ul>
+                                        <li>特定执行器件
+                                            <ul>
+                                                <li>特定执行动作</li>
+                                            </ul>
+                                        </li>
+                                        <li>可靠执行
+                                            <ul>
+                                                <li>长任务</li>
+                                                <li>复杂任务</li>
+                                            </ul>
+                                        </li>
+                                        <li>其它设备协作</li>
+                                    </ul>
+                                </li>
+                                <li>信息
+                                    <ul>
+                                        <li>信息获取
+                                            <ul>
+                                                <li>自主寻找</li>
+                                                <li>信息权限</li>
+                                                <li>设备联通</li>
+                                            </ul>
+                                        </li>
+                                        <li>信息处理
+                                            <ul>
+                                                <li>信息运算</li>
+                                                <li>信息分析
+                                                    <ul>
+                                                        <li>条件判断</li>
+                                                        <li>偏好分析</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>信息存储与提取</li>
+                                    </ul>
+                                </li>
+                                <li>领域
+                                    <ul>
+                                        <li>特定应用
+                                            <ul>
+                                                <li>特定应用功能</li>
+                                            </ul>
+                                        </li>
+                                        <li>相似语义功能</li>
+                                    </ul>
+                                </li>
+                                <li>智能
+                                    <ul>
+                                        <li>智能识别</li>
+                                        <li>道德与反歧视</li>
+                                        <li>高级任务解决</li>
+                                        <li>创造</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -258,10 +344,10 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='jstree/dist/jstree.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
 
     <script>
 
@@ -296,7 +382,7 @@
                 selectedButton = null;
                 select_state = false;
             });
-            $('#mindmap').jstree('open_all');
+            //$('#mindmap').jstree('open_all');
         });
 
         // Enable node selection when "Select Node" button is clicked

@@ -1,5 +1,5 @@
 from flask import Flask,render_template, redirect, url_for, request,session,jsonify
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='/static')
 app.secret_key = "super secret key" #change to something more secure
 from data_manager import DataManager
 import json
