@@ -149,7 +149,7 @@
                                     <ul>
                                         <li>情景感知</li>
                                         <li>复合问题理解</li>
-                                        <li>个性化知识理解</li>
+                                        <li desc="根据对用户个人相关习惯与信息的理解完成指令解析">个性化知识理解</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -346,7 +346,6 @@
 
     <script src="{{ url_for('static', filename='jquery.js') }}"></script>
     <script src="{{ url_for('static', filename='jstree/dist/jstree.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='popper.js') }}"></script>
     <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
 
     <script>
@@ -354,6 +353,13 @@
         // Variable to hold currently selected input field
         var selectedButton = null;
         var select_state =false;
+
+        var mouseX = 0, mouseY = 0;
+
+        $(document).mousemove(function(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
 
         $(function() {
             $('#mindmap').jstree({
@@ -381,6 +387,27 @@
                 selectedButton.removeClass('active');  // Remove highlight from button
                 selectedButton = null;
                 select_state = false;
+            }).on("hover_node.jstree",function (e, data){
+                var nodeDetail = data.instance.get_node(data.node).li_attr["desc"];
+                //if undefined, no tip
+                if (nodeDetail == undefined){
+                    return;
+                }
+                var tooltip = $('<div class="tooltip">')
+                    .text(nodeDetail)
+                    .css({
+                        'background': '#ffffff',
+                        'color': '#000000',
+                        'font-color': '#000000',
+                        'padding': '5px',
+                        'border-radius': '5px',
+                        'top': mouseY+5,
+                        'left': mouseX+5,
+                        'opacity': '0.8',
+                    });
+                $('body').append(tooltip);
+            }).on("dehover_node.jstree",function(){
+                $('.tooltip').remove();
             });
             //$('#mindmap').jstree('open_all');
         });
