@@ -55,7 +55,7 @@ def save_current_selection():
     '''
     data = request.get_json()
     print(data)
-    data_manager.save_current_selection(session['user_id'],data['example_instance'],data["example_feasibility"],data['belief_rating'],data['belief_change_rating'],data['statements'])
+    data_manager.save_current_selection(session['user_id'],data['example_instance'],data["example_feasibility"],data["instance"],data['belief_rating'],data['belief_change_rating'],data['statements'])
     return "success"
 
 @app.route('/get_user_finished_annotation_cnt',methods=['GET'])

@@ -442,10 +442,12 @@
 
         function save_current_selection(){
             // save the current user selection to server
-            // get the current question id
+            // get the current question text
             var example_instance = $('#example-instance').text();
             // get example feasibility
             var example_feasibility = $("#feasibility-text").text();
+            // get current instance text
+            var current_instance = $('#instance').text();
             // get the current belief rating
             var belief_rating = $("input[name='beliefRating']:checked").val();
             if(belief_rating == undefined){
@@ -493,6 +495,7 @@
                 data: JSON.stringify({
                     'example_instance': example_instance,
                     'example_feasibility': example_feasibility,
+                    'instance': current_instance,
                     'belief_rating': belief_rating,
                     'belief_change_rating': belief_change_rating,
                     'statements': statements
