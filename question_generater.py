@@ -38,7 +38,7 @@ class QuestionGenerater:
                 picked_list.append(index)
         return picked_list
     
-    def get_1v3_question(self):
+    def get_question(self,item_cnt=3):
         instance_id = self.pick_random_example_id()
         #print(df.iloc[instance_id])
         instance_row = self.df.iloc[instance_id]
@@ -49,7 +49,7 @@ class QuestionGenerater:
             similarity = float(instance_row.loc[f"similarity_{i}"])
             similarity_dict[i] = similarity
         sorted_similarity_list = sorted(similarity_dict.items(),key=lambda x:x[1],reverse=True)[1:]
-        picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt=3)
+        picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt)
         picked_index_list = [sorted_similarity_list[rank][0] for rank in picked_list]
         expression_list = [self.df.iloc[id].loc["expression"] for id in picked_index_list]
         return {"example_instance":instance_expression,"feasibility":correct,"instances":expression_list}

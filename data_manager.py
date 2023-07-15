@@ -6,6 +6,7 @@ class DataManager:
     # taking control of the user dataset and the question dataset
     def __init__(self) -> None:
         self.question_generater = QuestionGenerater()
+        self.item_cnt = 1
 
     def validate_user(self,id,password):
         if id=='admin' and password=='admin':
@@ -14,7 +15,7 @@ class DataManager:
             return validate_user(id,password)
     
     def generate_next_question(self):
-        return self.question_generater.get_1v3_question()
+        return self.question_generater.get_question(self.item_cnt)
     
     def save_current_selection(self,user_id,example_instance,example_feasibility,instance,belief_rating,belief_change_rating,statements):
         # create a new file with user id if not exist, append a line to the file

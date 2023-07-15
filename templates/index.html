@@ -344,7 +344,9 @@
 
     <script src="{{ url_for('static', filename='jquery.js') }}"></script>
     <script src="{{ url_for('static', filename='jstree/dist/jstree.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper/dist/umd/popper.min.js') }}"></script>
     <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    
 
     <script>
 
@@ -391,6 +393,10 @@
                 if (nodeDetail == undefined){
                     return;
                 }
+                var node = data.instance.get_node(data.node,true);
+                var nodePosition = $(node).offset();
+                var nodeHeight = $(node).height();
+                var nodeWidth = $(node).width();
                 var tooltip = $('<div class="tooltip">')
                     .text(nodeDetail)
                     .css({
@@ -399,8 +405,8 @@
                         'font-color': '#c0c0c0',
                         'padding': '5px',
                         'border-radius': '5px',
-                        'top': mouseY+5,
-                        'left': mouseX+5,
+                        'top': nodePosition.top+nodeHeight-15,
+                        'left': nodePosition.left+nodeWidth-15,
                         'opacity': '0.8',
                     });
                 $('body').append(tooltip);

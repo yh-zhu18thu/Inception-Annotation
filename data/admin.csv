@@ -6,3 +6,4 @@
 在滴滴上叫一辆车来公司。,能够稳定,2,2,[{'option': 'option1', 'expression': ['口语化表达理解', '强于']}]
 明天伦敦天气怎么样,不能正确,3,4,[{'option': 'option2', 'expression': ['评估与判断', '强于', 'xxx']}]
 新建个相簿存昨天聚会的照片,能够稳定,4,4,[{'option': 'custom', 'expression': ['test']}]
+给每条集赞朋友圈点个赞,不能正确,现在我朋友圈集了多少赞了,3,3,[{'option': 'option1', 'expression': ['特定应用功能', '强于']}, {'option': 'option3', 'expression': ['构建循环']}, {'option': 'option3', 'expression': ['条件判断']}]
