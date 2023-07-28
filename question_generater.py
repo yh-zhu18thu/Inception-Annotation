@@ -37,8 +37,11 @@ class QuestionGenerater:
             if index not in picked_list:
                 picked_list.append(index)
         return picked_list
+
+    def get_default_question(self):
+        return {"type":"1v1","example_instance":"","feasibility":True,"instance":[""]}
     
-    def get_question(self,item_cnt=3):
+    def get_question(self,item_cnt):
         instance_id = self.pick_random_example_id()
         #print(df.iloc[instance_id])
         instance_row = self.df.iloc[instance_id]
@@ -52,4 +55,4 @@ class QuestionGenerater:
         picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt)
         picked_index_list = [sorted_similarity_list[rank][0] for rank in picked_list]
         expression_list = [self.df.iloc[id].loc["expression"] for id in picked_index_list]
-        return {"example_instance":instance_expression,"feasibility":correct,"instances":expression_list}
+        return {"type":"1v1","example_instance":instance_expression,"feasibility":correct,"instance":expression_list[0]}

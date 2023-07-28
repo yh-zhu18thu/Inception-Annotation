@@ -4,7 +4,6 @@ app.secret_key = "super secret key" #change to something more secure
 from data_manager import DataManager
 import json
 
-temp_user_question_dict = {}
 data_manager = DataManager()
 
 @app.route('/login',methods=['POST'])
@@ -14,7 +13,7 @@ def login():
     if data_manager.validate_user(user_id,password):
         session['logged_in']=True
         session['user_id']=user_id
-        return redirect(url_for('index',user_id=user_id))
+        return redirect(url_for('index'))
     else:
         return redirect(url_for('login'))
     
@@ -25,23 +24,32 @@ def login_page():
 @app.route('/index')
 def index():
     if 'logged_in' in session:
-        return render_template('index.html',user_id=session['user_id'])
+        return render_template('index.html')
     else:
         return redirect(url_for('login'))
 
 @app.route('/get_next_question',methods=['GET'])
 def get_next_question():
+    #TODO: reimplement to decide which pattern of question is next, and render the question accordingly
     test = list()
     current_user = session['user_id']
-    if current_user not in temp_user_question_dict:
-        temp_user_question_dict[current_user] = data_manager.generate_next_question()
-    if len(temp_user_question_dict[current_user]['instances'])==0:
-        temp_user_question_dict[current_user] = data_manager.generate_next_question()
-        print(f"generated new question {temp_user_question_dict[current_user]}")
-    quesiton_set = {"example_instance":temp_user_question_dict[current_user]['example_instance'],
-                    'feasibility':temp_user_question_dict[current_user]['feasibility'],
-                    'instance':temp_user_question_dict[current_user]['instances'].pop()}
-    return jsonify(quesiton_set)
+    question = data_manager.generate_next_question()
+    print(f"generated new question {question}")
+    if question["type"]=="1v1":
+        question_set = {"example_instance":question['example_instance'],
+                        "example_feasibility":question['feasibility'],
+                            'instance':question['instance']}
+        return render_template('index_1v1.html',question_set=question_set)
+    elif question["type"]=="nv1":
+        question_set = {"example_instances":question['example_instances'],
+                        "feasiblities":question['feasibilities'],
+                            'instances':question['instances']}
+        return render_template('index_nv1.html',question_set=question_set)
+    elif question["type"]=="1":
+        question_set = {"example_instance":question['example_instance']}
+        return render_template('index_1.html',question_set=question_set)
+    else:
+        return "UNDEFINED",400
 
 @app.route('/save_current_selection',methods=['POST'])
 def save_current_selection():
