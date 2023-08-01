@@ -31,9 +31,8 @@ def index():
 @app.route('/get_next_question',methods=['GET'])
 def get_next_question():
     #TODO: reimplement to decide which pattern of question is next, and render the question accordingly
-    test = list()
     current_user = session['user_id']
-    question = data_manager.generate_next_question()
+    question = data_manager.generate_next_question(current_user)
     print(f"generated new question {question}")
     if question["type"]=="1v1":
         question_set = {"example_instance":question['example_instance'],
@@ -46,7 +45,7 @@ def get_next_question():
                             'instances':question['instances']}
         return render_template('index_nv1.html',question_set=question_set)
     elif question["type"]=="1":
-        question_set = {"example_instance":question['example_instance']}
+        question_set = {"instance":question['instance']}
         return render_template('index_1.html',question_set=question_set)
     else:
         return "UNDEFINED",400

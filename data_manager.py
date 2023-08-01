@@ -14,16 +14,13 @@ class DataManager:
             return validate_user(id,password)
     
     def generate_next_question(self,user_id):
-        if user_id not in self.question_statistic:
-            self.question_statistic[user_id] = []
         return self.question_generater.get_question(user_id)
     
     def generate_default_question(self):
         return self.question_generater.get_default_question()
     
-    def save_current_selection(self,data):
+    def save_current_selection(self,user_id,data):
         # create a new file with user id if not exist, append a line to the file
-        user_id = data["user_id"]
         type = data["type"]
         
         with open(f"data/{user_id}.csv",'a') as f:
