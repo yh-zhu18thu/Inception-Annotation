@@ -42,7 +42,7 @@ def get_next_question():
     elif question["type"]=="nv1":
         question_set = {"example_instances":question['example_instances'],
                         "feasiblities":question['feasibilities'],
-                            'instances':question['instances']}
+                            'instance':question['instance']}
         return render_template('index_nv1.html',question_set=question_set)
     elif question["type"]=="1":
         question_set = {"instance":question['instance']}
