@@ -2,17 +2,26 @@ import pandas as pd
 import random
 import bisect
 import itertools
+import numpy as np
 
 class QuestionGenerater:
     def __init__(self) -> None:
         self.instance_dataset_path = "src/instances_with_similarity_Robuddy.csv"
+        self.user_data_path = "data/formal"
+        self.statistics_path = "statistics/"
         self.load_instance_dataset()
-        self.instance_cnt = len(self.df)
         self.user_question_statistic = {}
-        
+        self.overall_statistic = {}
+
+    def init_statistics(self):
+        instance_freq = np.zeros(self.instance_cnt,dtype=np.int32)
+        np.zeros((self.instance_cnt,self.instance_cnt),dtype=np.int32)
+
 
     def load_instance_dataset(self):
         self.df = pd.read_csv(self.instance_dataset_path)
+        self.instance_cnt = len(self.df)
+
     
     def pick_random_example_id(self):
         random_number = random.randint(0,self.instance_cnt)
@@ -43,6 +52,10 @@ class QuestionGenerater:
         return {"type":"1v1","example_instance":"","feasibility":True,"instance":[""]}
     
     def get_1v1_question(self,user_id):
+        # randomly pick one instance as example according to current picked times versus uniform distribution
+        # get a list of semanticly similar instances using reverse distribution
+        # score the list according to ability pair frequency and ability pair ref
+        # pick one according to score
         instance_id = self.pick_random_example_id()
         #print(df.iloc[instance_id])
         instance_row = self.df.iloc[instance_id]
@@ -59,6 +72,9 @@ class QuestionGenerater:
         self.user_question_statistic[user_id]["single_commands"].add(expression_list[0])
         return {"type":"1v1","example_instance":instance_expression,"feasibility":correct,"instance":expression_list[0]}
     
+    def get_nv1_question(self,user_id):
+        #randomly picked several instances according to the reverse square distribution
+
     def get_1_question(self,user_id):
         # randomly pick one from single commands and delete it from the set
         single_commands = self.user_question_statistic[user_id]["single_commands"]
