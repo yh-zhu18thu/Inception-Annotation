@@ -161,7 +161,7 @@ class QuestionGenerater:
                     temp_ability_pair_freq[self.ability_index_dict[instance_ability]][self.ability_index_dict[expression_ability]]+=1
             # normalize the ability pair freq
             print(f"""temp_ability_pair_freq:{temp_ability_pair_freq}""")
-            temp_ability_pair_freq = temp_ability_pair_freq/np.sum(temp_ability_pair_freq)
+            temp_ability_pair_freq = temp_ability_pair_freq/(sum(self.instance_freq)+1)
             # calculate the difference between the ability pair freq and ability pair ref
             score = np.sum(np.abs(temp_ability_pair_freq-self.ability_pair_ref))
             score_list.append(score)
