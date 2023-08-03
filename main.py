@@ -47,6 +47,8 @@ def get_next_question():
     elif question["type"]=="1":
         question_set = {"instance":question['instance']}
         return render_template('index_1.html',question_set=question_set)
+    elif question["type"]=="finished":
+        return render_template('index_finished.html')
     else:
         return "UNDEFINED",400
 

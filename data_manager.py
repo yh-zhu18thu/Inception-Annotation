@@ -35,6 +35,12 @@ class DataManager:
                 belief_rating = data["belief_rating"]
                 statements = data["statements"]
                 f.write(f"{type},{example_instance},{example_feasibility},{instance},{belief_rating},{statements}\n")
+            elif type=='nv1':
+                example_instances = data["example_instances"]
+                feasiblities = data["example_feasiblities"]
+                instance = data["instance"]
+                belief_rating = data["belief_rating"]
+                f.write(f"{type},{example_instances},{feasiblities},{instance},{belief_rating}\n")
 
 
     def get_user_finished_annotation_cnt(self,user_id) -> int:

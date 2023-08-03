@@ -1,0 +1,122 @@
+<!-- Question Introduction -->
+<div class="mt-3 mb-3" id="question-intro">
+    <h4 id="question-text">一个AI助手<u>
+        {% for example_instance, feasibility in question_set["example_instances"], question_set["example_feasibilities"]|zip %}
+            <span id="feasibility-text" class="example">{% if feasibility %}能够稳定{% else %}不能正确{% endif %}</span>响应如下指令: "<span class="example">{{example_instance}}</span>"，<br/>
+        {% endfor %}
+    <button type="button" class="btn btn-primary btn-block" id="start-btn">我已了解</button>
+</div>
+
+<!-- Options -->
+<!-- ... -->
+<!-- Options -->
+<div class="card mb-3 hide" id="question-content">
+    <div class="card-body">
+        <h5 class="card-title example" id="instance">{{question_set["instance"]}}</h5>
+        <!-- Statements -->
+        <!-- Belief Rating -->
+        <div class="belief-rating">
+            <p class="mb-1">你认为该AI助手能否响应该指令:</p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief1" value="1">
+                <label class="form-check-label" for="belief1">1(非常悲观)</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief2" value="2">
+                <label class="form-check-label" for="belief2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief3" value="3">
+                <label class="form-check-label" for="belief3">3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief4" value="4">
+                <label class="form-check-label" for="belief4">4(中立)</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief5" value="5">
+                <label class="form-check-label" for="belief5">5</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief6" value="6">
+                <label class="form-check-label" for="belief6">6</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="beliefRating" id="belief7" value="7">
+                <label class="form-check-label" for="belief7">7(非常乐观)</label>
+            </div>
+        </div>
+    <!-- Next Button -->
+    <button type="button" class="btn btn-primary btn-block" id="next-button">Next</button>
+</div>                                              
+<!-- ... -->
+
+
+
+<script>
+    var valid_flag = true;
+    // TODO: Add your next button handler here
+    $('#next-button').click(function() {
+        // Handle next button click here
+        // save the current user selection to server
+        save_current_selection();
+        if(!valid_flag){
+            valid_flag=true
+            return;
+        }
+        // clear all the input content
+        clear_current_input();
+        // add 1 to progress text
+        $('#progress').text(parseInt($('#progress').text()) + 1);
+        // load new question set to the page
+        $.get('/get_next_question', function(data) {
+            // Clear the current data
+            $('#question-part').html(data);
+        });
+    });
+
+    function save_current_selection(){
+        // save the current user selection to server
+        var question = JSON.parse('{{question_set|tojson|safe}}')
+        // get the current question text
+        var example_instances = question["example_instances"];
+        // get example feasibility
+        var example_feasibilities = question["feasibilities"];
+        // get current instance text
+        var current_instance = $('#instance').text();
+        // get the current belief rating
+        var belief_rating = $("input[name='beliefRating']:checked").val();
+        if(belief_rating == undefined){
+            valid_flag = false;
+            return;
+        }
+        // send the data to server
+        $.ajax({
+            url: '/save_current_selection',
+            type: 'POST',
+            data: JSON.stringify({
+                'type':'1v1',
+                'example_instances': example_instances,
+                'example_feasibilities': example_feasibilities,
+                'instance': current_instance,
+                'belief_rating': belief_rating
+            }),
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            async: false,
+            success: function(msg) {
+                console.log(msg);
+            }
+        });
+    }
+
+    function clear_current_input(){
+        // clear the current input
+        $("input[name='beliefRating']").prop('checked', false);
+    }
+
+    $(document).on('click','#start-btn',function(){
+        $('#question-intro').addClass('hide');
+        $('#question-content').removeClass('hide');
+    })
+</script>

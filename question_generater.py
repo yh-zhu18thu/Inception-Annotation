@@ -13,6 +13,7 @@ class QuestionGenerater:
         self.user_data_path = "data/formal"
         self.statistics_path = "statistics/"
         self.load_instance_dataset()
+        self.questiion_threshold = 60
         self.user_question_statistic = {}
         self.overall_statistic = {}
 
@@ -168,6 +169,7 @@ class QuestionGenerater:
         instance_id = random.randint(0,self.instance_cnt-1)
         instance_row = self.df.iloc[instance_id]
         instance_expression = instance_row.loc["expression"]
+        self.user_question_statistic[user_id]["single_commands"].add(instance_expression)
         #randomly picked several other instances according to the reverse square distribution
         similarity_dict = {}
         for i in range(self.instance_cnt):
@@ -197,10 +199,22 @@ class QuestionGenerater:
     
     def get_question(self,user_id):
         if user_id not in self.user_question_statistic:
-            self.user_question_statistic[user_id] = {"single_commands":set()}
+            self.user_question_statistic[user_id] = {"single_commands":set(),"cnt":0}
         #0.5 true 0.5 false
         random_number = random.random()
-        if random_number<0.5 and len(self.user_question_statistic[user_id]["single_commands"])>0:
+        if (random_number<0.5 and len(self.user_question_statistic[user_id]["single_commands"])>0) or self.user_question_statistic[user_id]["cnt"]>=60:
+            if len(self.user_question_statistic[user_id]["single_commands"])==0:
+                return {"type":"finished"}
             return self.get_1_question(user_id)
         else:
-            return self.get_1v1_question(user_id)
+            # 0.6 1v1 0.2 3v1 0.1 5v1 0.1 7v1
+            self.user_question_statistic[user_id]["cnt"]+=1
+            random_number = random.random()
+            if random_number<0.6:
+                return self.get_1v1_question(user_id)
+            elif random_number<0.8:
+                return self.get_nv1_question(user_id,3)
+            elif random_number<0.9:
+                return self.get_nv1_question(user_id,5)
+            else:
+                return self.get_nv1_question(user_id,7)
