@@ -10,16 +10,19 @@ import json
 class QuestionGenerater:
     def __init__(self) -> None:
         self.instance_dataset_path = "src/instances_with_similarity_Robuddy.csv"
+        self.instance_tagged_path = "src/instances_Robuddy_with_tag.csv"
         self.user_data_path = "data/formal"
         self.statistics_path = "statistics/"
         self.load_instance_dataset()
         self.questiion_threshold = 60
         self.user_question_statistic = {}
-        self.overall_statistic = {}
+        self.init_statistics()
 
     def init_statistics(self):
-        instance_freq = np.zeros(self.instance_cnt,dtype=np.int32)
-        np.zeros((self.instance_cnt,self.instance_cnt),dtype=np.int32)
+        self.init_instance_freq()
+        self.init_ability_index()
+        self.init_ability_pair_ref()
+        self.init_ability_pair_freq()
     
     def init_instance_freq(self):
         if not os.path.exists("statistics/instance_freq.pkl"):
@@ -43,6 +46,13 @@ class QuestionGenerater:
                 for child in node["children"]:
                     traverse_ability_tree(child)
         traverse_ability_tree(self.ability_tree)
+
+    def get_instance_ability_ancestor_list(self,idx):
+        ability_list = self.df.iloc[idx]["annotation"].split(",")
+        ancestor_list = []
+        for ability in ability_list:
+            ancestor_list.extend(self.get_ancestor_list(ability))
+        return ancestor_list
 
     def get_ancestor_list(self,ability_name):
         ancestor_list = []
@@ -74,14 +84,25 @@ class QuestionGenerater:
 
     def load_instance_dataset(self):
         self.df = pd.read_csv(self.instance_dataset_path)
+        # read in with tag dataset, and add the annotation column into the df
+        df_tag = pd.read_csv(self.instance_tagged_path)
+        annotation_list = []
+        for i in range(len(df_tag)):
+            annotation_list.append(df_tag.iloc[i]["annotation"])
+        self.df["annotation"] = annotation_list
         self.instance_cnt = len(self.df)
+        self.instance_index_dict = {}
+        for i in range(self.instance_cnt):
+            self.instance_index_dict[self.df.iloc[i]["expression"]] = i
 
     
     def pick_random_example_id(self):
         # randomly pick to make the instance freq uniform
         # pick according to current picked times versus uniform distribution
-        temp_instance_freq = self.instance_freq.copy()
-        probability = 1-temp_instance_freq/sum(temp_instance_freq)
+        if sum(self.instance_freq)==0:
+            probability = np.ones(self.instance_cnt)/self.instance_cnt
+        else:
+            probability = 1-self.instance_freq/sum(self.instance_freq)
         probability = probability/sum(probability)
         cumulative_probability = list(itertools.accumulate(probability))
         random_number = random.random()
@@ -129,21 +150,24 @@ class QuestionGenerater:
         expression_list = [self.df.iloc[id].loc["expression"] for id in picked_index_list]
         # score the list according to ability pair frequency and ability pair ref
         score_list = []
-        instance_ability_list = self.get_ancestor_list(instance_expression)
-        for expression in expression_list:
-            expression_ability_list = self.get_ancestor_list(expression)
+        instance_ability_list = self.get_instance_ability_ancestor_list(instance_id)
+        for index in picked_index_list:
+            expression_ability_list = self.get_instance_ability_ancestor_list(index)
             score = 0
             temp_ability_pair_freq = self.ability_pair_freq.copy()
             for instance_ability in instance_ability_list:
                 for expression_ability in expression_ability_list:
+                    print(f"""instance_ability:{instance_ability},expression_ability:{expression_ability}""")
                     temp_ability_pair_freq[self.ability_index_dict[instance_ability]][self.ability_index_dict[expression_ability]]+=1
             # normalize the ability pair freq
+            print(f"""temp_ability_pair_freq:{temp_ability_pair_freq}""")
             temp_ability_pair_freq = temp_ability_pair_freq/np.sum(temp_ability_pair_freq)
             # calculate the difference between the ability pair freq and ability pair ref
             score = np.sum(np.abs(temp_ability_pair_freq-self.ability_pair_ref))
             score_list.append(score)
         # pick probability according to the score
         probs = self.get_distribution_from_sorted_list(score_list)
+        print(f"""score_list:{score_list}""")
         cumulative_probs = list(itertools.accumulate(probs))
         random_number = random.random()
         index = bisect.bisect(cumulative_probs,random_number)
@@ -160,8 +184,14 @@ class QuestionGenerater:
         for instance_ability in instance_ability_list:
             for expression_ability in expression_ability_list:
                 self.ability_pair_freq[self.ability_index_dict[instance_ability]][self.ability_index_dict[expression_ability]]+=1
+        # save ability pair freq
+        with open("statistics/ability_pair_freq.pickle","wb") as f:
+            pickle.dump(self.ability_pair_freq,f)
         # update instance freq
-        self.instance_freq[example_instance]+=1
+        self.instance_freq[self.instance_index_dict[example_instance]]+=1
+        # save instance freq
+        with open("statistics/instance_freq.pkl","wb") as f:
+            pickle.dump(self.instance_freq,f)
         
     
     def get_nv1_question(self,user_id,n):

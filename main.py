@@ -6,6 +6,11 @@ import json
 
 data_manager = DataManager()
 
+# Custom Jinja2 filter
+@app.template_filter('zip')
+def zip_lists(a, b):
+    return zip(a, b)
+
 @app.route('/login',methods=['POST'])
 def login():
     user_id=request.form['user_id']
@@ -41,7 +46,7 @@ def get_next_question():
         return render_template('index_1v1.html',question_set=question_set)
     elif question["type"]=="nv1":
         question_set = {"example_instances":question['example_instances'],
-                        "feasiblities":question['feasibilities'],
+                        "feasibilities":question['feasibilities'],
                             'instance':question['instance']}
         return render_template('index_nv1.html',question_set=question_set)
     elif question["type"]=="1":

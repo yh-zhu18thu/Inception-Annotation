@@ -1,9 +1,10 @@
 <!-- Question Introduction -->
 <div class="mt-3 mb-3" id="question-intro">
-    <h4 id="question-text">一个AI助手<u>
-        {% for example_instance, feasibility in question_set["example_instances"], question_set["example_feasibilities"]|zip %}
-            <span id="feasibility-text" class="example">{% if feasibility %}能够稳定{% else %}不能正确{% endif %}</span>响应如下指令: "<span class="example">{{example_instance}}</span>"，<br/>
+    <h4 id="question-text">一个AI助手<br/>
+        {% for example in question_set["example_instances"] %}
+            <span id="feasibility-text" class="example">{% if question_set["feasibilities"][loop.index0] %}能够稳定{% else %}不能正确{% endif %}</span>响应如下指令: "<span class="example">{{example}}</span>"，<br/>
         {% endfor %}
+        请评价你因为这些实例对该AI助手响应如下指令的信任度
     <button type="button" class="btn btn-primary btn-block" id="start-btn">我已了解</button>
 </div>
 
@@ -95,7 +96,7 @@
             url: '/save_current_selection',
             type: 'POST',
             data: JSON.stringify({
-                'type':'1v1',
+                'type':'nv1',
                 'example_instances': example_instances,
                 'example_feasibilities': example_feasibilities,
                 'instance': current_instance,
