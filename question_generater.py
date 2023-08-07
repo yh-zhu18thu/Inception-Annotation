@@ -9,8 +9,8 @@ import json
 
 class QuestionGenerator:
     def __init__(self) -> None:
-        self.instance_dataset_path = "src/instances_InceptionSub_with_similarity.csv"
-        self.instance_tagged_path = "src/instances_InceptionSub_with_tag.csv"
+        self.instance_dataset_path = "src/instances_Inception_with_similarity_600.csv"
+        self.instance_tagged_path = "src/instances_Inception_with_tag_600.csv"
         self.user_data_path = "data/formal"
         self.statistics_path = "statistics/"
         self.load_instance_dataset()
@@ -111,6 +111,7 @@ class QuestionGenerator:
         random_number = random.random()
         index = bisect.bisect(cumulative_probability,random_number)
         return index
+        #return random.randint(0,self.instance_cnt-1)
 
 
     def pick_positive_or_negative(self):
@@ -247,7 +248,6 @@ class QuestionGenerator:
             return self.get_1_question(user_id)
         else:
             if len(self.user_question_statistic[user_id]["single_commands"])==0 and self.user_question_statistic[user_id]["cnt"]>=60:
-                print(f"""user {user_id} finished, cnt:{self.user_question_statistic[user_id]["cnt"]}, single_commands{len(self.user_question_statistic[user_id]["single_commands"])}""")
                 return {"type":"finished"}
             # 0.6 1v1 0.2 3v1 0.1 5v1 0.1 7v1
             self.user_question_statistic[user_id]["cnt"]+=1
