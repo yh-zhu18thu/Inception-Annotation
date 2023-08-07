@@ -1,11 +1,11 @@
-from question_generater import QuestionGenerater
+from question_generater import QuestionGenerator
 from accounts.manage_account import validate_user
 import os
 
 class DataManager:
     # taking control of the user dataset and the question dataset
     def __init__(self) -> None:
-        self.question_generater = QuestionGenerater()
+        self.question_generater = QuestionGenerator()
 
     def validate_user(self,id,password):
         if id=='admin' and password=='admin':

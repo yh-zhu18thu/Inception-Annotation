@@ -7,10 +7,10 @@ import os
 import pickle
 import json
 
-class QuestionGenerater:
+class QuestionGenerator:
     def __init__(self) -> None:
-        self.instance_dataset_path = "src/instances_with_similarity_Robuddy.csv"
-        self.instance_tagged_path = "src/instances_Robuddy_with_tag.csv"
+        self.instance_dataset_path = "src/instances_InceptionSub_with_similarity.csv"
+        self.instance_tagged_path = "src/instances_InceptionSub_with_tag.csv"
         self.user_data_path = "data/formal"
         self.statistics_path = "statistics/"
         self.load_instance_dataset()
@@ -58,6 +58,7 @@ class QuestionGenerater:
         ancestor_list = []
         def traverse_tree(node):
             if node["name"]==ability_name:
+                #ancestor_list.append(node["name"])
                 return True
             if "children" in node:
                 for child in node["children"]:
@@ -66,6 +67,8 @@ class QuestionGenerater:
                         return True
             return False
         traverse_tree(self.ability_tree)
+        ancestor_list.append("能力")
+        #print(ancestor_list)
         return ancestor_list
 
     def init_ability_pair_ref(self):
@@ -115,7 +118,7 @@ class QuestionGenerater:
         return choice
 
     def get_distribution_from_sorted_list(self,sorted_list):
-        inverse_probs = [1/(rank*rank) for rank in range(1,len(sorted_list)+1)]
+        inverse_probs = [1/rank for rank in range(1,len(sorted_list)+1)]
         total_inverse_probs = sum(inverse_probs)
         discounted_inverse_probs = [inv_prob/total_inverse_probs for inv_prob in inverse_probs]
         return discounted_inverse_probs
@@ -155,19 +158,26 @@ class QuestionGenerater:
             expression_ability_list = self.get_instance_ability_ancestor_list(index)
             score = 0
             temp_ability_pair_freq = self.ability_pair_freq.copy()
+            #print(f"""instance_ability_list:{instance_ability_list},expression_ability_list:{expression_ability_list}""")
             for instance_ability in instance_ability_list:
                 for expression_ability in expression_ability_list:
-                    print(f"""instance_ability:{instance_ability},expression_ability:{expression_ability}""")
+                    #print(f"""instance_ability:{instance_ability},expression_ability:{expression_ability}""")
                     temp_ability_pair_freq[self.ability_index_dict[instance_ability]][self.ability_index_dict[expression_ability]]+=1
             # normalize the ability pair freq
-            print(f"""temp_ability_pair_freq:{temp_ability_pair_freq}""")
+            #print(f"""temp_ability_pair_freq:{temp_ability_pair_freq}""")
+            #print(f"""sum(self.instance_freq):{sum(self.instance_freq)}""")
             temp_ability_pair_freq = temp_ability_pair_freq/(sum(self.instance_freq)+1)
+            #print(temp_ability_pair_freq)
             # calculate the difference between the ability pair freq and ability pair ref
             score = np.sum(np.abs(temp_ability_pair_freq-self.ability_pair_ref))
             score_list.append(score)
         # pick probability according to the score
-        probs = self.get_distribution_from_sorted_list(score_list)
-        print(f"""score_list:{score_list}""")
+        #print(score_list)
+        # the probability is the inverse of the score
+        probs = [1/score for score in score_list]
+        # normalize the probs
+        probs = probs/sum(probs)
+        #print(f"""score_list:{score_list}""")
         cumulative_probs = list(itertools.accumulate(probs))
         random_number = random.random()
         index = bisect.bisect(cumulative_probs,random_number)
@@ -230,13 +240,15 @@ class QuestionGenerater:
     def get_question(self,user_id):
         if user_id not in self.user_question_statistic:
             self.user_question_statistic[user_id] = {"single_commands":set(),"cnt":0}
+        #print(f"""cnt:{self.user_question_statistic[user_id]["cnt"]}, single_commands{len(self.user_question_statistic[user_id]["single_commands"])}""")
         #0.5 true 0.5 false
         random_number = random.random()
-        if (random_number<0.5 and len(self.user_question_statistic[user_id]["single_commands"])>0) or self.user_question_statistic[user_id]["cnt"]>=60:
-            if len(self.user_question_statistic[user_id]["single_commands"])==0:
-                return {"type":"finished"}
+        if len(self.user_question_statistic[user_id]["single_commands"])>0 and (random_number<0.5 or self.user_question_statistic[user_id]["cnt"]>=60):
             return self.get_1_question(user_id)
         else:
+            if len(self.user_question_statistic[user_id]["single_commands"])==0 and self.user_question_statistic[user_id]["cnt"]>=60:
+                print(f"""user {user_id} finished, cnt:{self.user_question_statistic[user_id]["cnt"]}, single_commands{len(self.user_question_statistic[user_id]["single_commands"])}""")
+                return {"type":"finished"}
             # 0.6 1v1 0.2 3v1 0.1 5v1 0.1 7v1
             self.user_question_statistic[user_id]["cnt"]+=1
             random_number = random.random()
