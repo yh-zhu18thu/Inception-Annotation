@@ -11,8 +11,8 @@ def generate_password():
     return password
 
 # Function to create a new user account
-def create_account(username):
-    username = username +'_'+''.join(random.choices(string.ascii_letters, k=2))
+def create_account(username, k=2):
+    username = username +'_'+''.join(random.choices(string.ascii_letters, k=k))
     # Generate a random password
     password = generate_password()
     
@@ -73,7 +73,18 @@ def main():
         username = sys.argv[2]
         username,password = create_account(username)
         print("Account created successfully!")
-        print(f"Username: {username}, Password: {password}")
+        print(f"Username:{username},Password: {password}")
+        print()
+
+    elif command == "create_formal":
+        if len(sys.argv) < 3:
+            print("Please provide a username")
+            return
+
+        username = sys.argv[2]
+        username,password = create_account(username,3)
+        print("Formal account created successfully!")
+        print(f"Username:{username},Password: {password}")
         print()
 
     elif command == "validate":

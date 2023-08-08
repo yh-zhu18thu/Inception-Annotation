@@ -8,13 +8,14 @@ import pickle
 import json
 
 class QuestionGenerator:
-    def __init__(self) -> None:
-        self.instance_dataset_path = "src/instances_Inception_with_similarity_600.csv"
-        self.instance_tagged_path = "src/instances_Inception_with_tag_600.csv"
+    def __init__(self,dataset=600,question_threshold=60) -> None:
+        self.dataset = dataset
+        self.instance_dataset_path = f"src/instances_Inception_{dataset}_with_similarity.csv"
+        self.instance_tagged_path = f"src/instances_Inception_{dataset}_with_tag.csv"
         self.user_data_path = "data/formal"
         self.statistics_path = "statistics/"
         self.load_instance_dataset()
-        self.questiion_threshold = 60
+        self.questiion_threshold = question_threshold
         self.user_question_statistic = {}
         self.init_statistics()
 
@@ -23,7 +24,8 @@ class QuestionGenerator:
         self.init_ability_index()
         self.init_ability_pair_ref()
         self.init_ability_pair_freq()
-    
+        self.init_instance_prob()
+
     def init_instance_freq(self):
         if not os.path.exists("statistics/instance_freq.pkl"):
             self.instance_freq = np.zeros(self.instance_cnt,dtype=np.int32)
@@ -32,6 +34,12 @@ class QuestionGenerator:
         else:
             with open("statistics/instance_freq.pkl",'rb') as f:
                 self.instance_freq = pickle.load(f)
+
+
+    def init_instance_prob(self):
+        with open(f"statistics/instance_prob_{self.dataset}.pkl",'rb') as f:
+            self.instance_prob = pickle.load(f)
+
 
     def init_ability_index(self):
         self.ability_index_dict = {}
@@ -72,16 +80,16 @@ class QuestionGenerator:
         return ancestor_list
 
     def init_ability_pair_ref(self):
-        with open("statistics/ability_pair_ref.pickle",'rb') as f:
+        with open(f"statistics/ability_pair_ref_{self.dataset}.pickle",'rb') as f:
             self.ability_pair_ref = pickle.load(f)
 
     def init_ability_pair_freq(self):
-        if os.path.exists("statistics/ability_pair_freq.pickle"):
-            with open("statistics/ability_pair_freq.pickle",'rb') as f:
+        if os.path.exists(f"statistics/ability_pair_freq_{self.dataset}.pickle"):
+            with open(f"statistics/ability_pair_freq_{self.dataset}.pickle",'rb') as f:
                 self.ability_pair_freq = pickle.load(f)
         else:
             self.ability_pair_freq = np.zeros((len(self.ability_index_dict),len(self.ability_index_dict)),dtype=np.int32)
-            with open("statistics/ability_pair_freq.pickle",'wb') as f:
+            with open(f"statistics/ability_pair_freq_{self.dataset}.pickle",'wb') as f:
                 pickle.dump(self.ability_pair_freq,f)
 
 
@@ -100,32 +108,28 @@ class QuestionGenerator:
 
     
     def pick_random_example_id(self):
-        # randomly pick to make the instance freq uniform
-        # pick according to current picked times versus uniform distribution
-        if sum(self.instance_freq)==0:
-            probability = np.ones(self.instance_cnt)/self.instance_cnt
-        else:
-            probability = 1-self.instance_freq/sum(self.instance_freq)
-        probability = probability/sum(probability)
-        cumulative_probability = list(itertools.accumulate(probability))
+        #use the prob in self.instance_prob to pick a random example
         random_number = random.random()
-        index = bisect.bisect(cumulative_probability,random_number)
+        cumulative_probs = list(itertools.accumulate(self.instance_prob))
+        index = bisect.bisect(cumulative_probs,random_number)
         return index
-        #return random.randint(0,self.instance_cnt-1)
 
 
     def pick_positive_or_negative(self):
         choice = random.choices([True,False],weights=[0.7,0.3],k=1)[0]
         return choice
 
-    def get_distribution_from_sorted_list(self,sorted_list):
-        inverse_probs = [1/rank for rank in range(1,len(sorted_list)+1)]
+    def get_distribution_from_sorted_list(self,sorted_list,square=False):
+        if square:
+            inverse_probs = [1/rank**2 for rank in range(1,len(sorted_list)+1)]
+        else:
+            inverse_probs = [1/rank for rank in range(1,len(sorted_list)+1)]
         total_inverse_probs = sum(inverse_probs)
         discounted_inverse_probs = [inv_prob/total_inverse_probs for inv_prob in inverse_probs]
         return discounted_inverse_probs
 
-    def priorized_pick_from_sorted_list(self,sorted_list,item_cnt=1):
-        probs = self.get_distribution_from_sorted_list(sorted_list)
+    def priorized_pick_from_sorted_list(self,sorted_list,item_cnt=1,square=False):
+        probs = self.get_distribution_from_sorted_list(sorted_list,square)
         cumulative_probs = list(itertools.accumulate(probs))
         picked_list = []
         while len(picked_list)<item_cnt:
@@ -185,7 +189,7 @@ class QuestionGenerator:
         picked_expression = expression_list[index]
         correct=self.pick_positive_or_negative()
         self.update_statistics(user_id,instance_expression,picked_expression)
-        return {"type":"1v1","example_instance":instance_expression,"feasibility":correct,"instance":picked_expression}
+        return {"type":"1v1","example_instance":instance_expression,"feasibility":correct,"instance":picked_expression,"dataset":self.dataset}
     
     def update_statistics(self,user_id,example_instance,picked_expression):
         self.user_question_statistic[user_id]["single_commands"].add(picked_expression)
@@ -217,14 +221,14 @@ class QuestionGenerator:
             similarity = float(instance_row.loc[f"similarity_{i}"])
             similarity_dict[i] = similarity
         sorted_similarity_list = sorted(similarity_dict.items(),key=lambda x:x[1],reverse=True)[1:]
-        picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt=n)
+        picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt=n,square=True)
         picked_index_list = [sorted_similarity_list[rank][0] for rank in picked_list]
         expression_list = [self.df.iloc[id].loc["expression"] for id in picked_index_list]
         # generate a list of feasibilities
         feasibility_list = []
         for i in range(n):
             feasibility_list.append(self.pick_positive_or_negative())
-        return {"type":"nv1","example_instances":expression_list,"instance":instance_expression,"feasibilities":feasibility_list}
+        return {"type":"nv1","example_instances":expression_list,"instance":instance_expression,"feasibilities":feasibility_list,"dataset":self.dataset}
         
 
     def get_1_question(self,user_id):
@@ -244,19 +248,18 @@ class QuestionGenerator:
         #print(f"""cnt:{self.user_question_statistic[user_id]["cnt"]}, single_commands{len(self.user_question_statistic[user_id]["single_commands"])}""")
         #0.5 true 0.5 false
         random_number = random.random()
-        if len(self.user_question_statistic[user_id]["single_commands"])>0 and (random_number<0.5 or self.user_question_statistic[user_id]["cnt"]>=60):
+        if len(self.user_question_statistic[user_id]["single_commands"])>0 and (random_number<0.5 or self.user_question_statistic[user_id]["cnt"]>=self.questiion_threshold):
             return self.get_1_question(user_id)
         else:
-            if len(self.user_question_statistic[user_id]["single_commands"])==0 and self.user_question_statistic[user_id]["cnt"]>=60:
+            if len(self.user_question_statistic[user_id]["single_commands"])==0 and self.user_question_statistic[user_id]["cnt"]>=self.questiion_threshold:
                 return {"type":"finished"}
             # 0.6 1v1 0.2 3v1 0.1 5v1 0.1 7v1
             self.user_question_statistic[user_id]["cnt"]+=1
             random_number = random.random()
             if random_number<0.6:
                 return self.get_1v1_question(user_id)
-            elif random_number<0.8:
-                return self.get_nv1_question(user_id,3)
             elif random_number<0.9:
-                return self.get_nv1_question(user_id,5)
+                return self.get_nv1_question(user_id,3)
             else:
-                return self.get_nv1_question(user_id,7)
+                return self.get_nv1_question(user_id,5)
+            

@@ -159,7 +159,13 @@
             var expression = [];
             expression_group.children().each(function(){
                 if($(this).hasClass('select-node')){
-                    expression.push($(this).text());
+                    //get the text and select the text before any space
+                    var text = $(this).text();
+                    var index = text.indexOf(' ');
+                    if(index != -1){
+                        text = text.substring(0,index);
+                    }
+                    expression.push(text);
                 }
                 if($(this).hasClass('dropdown')){
                     expression.push($(this).children('.dropdown-toggle').text());
