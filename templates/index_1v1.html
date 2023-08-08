@@ -159,9 +159,13 @@
             var expression = [];
             expression_group.children().each(function(){
                 if($(this).hasClass('select-node')){
-                    //get the text and select the text before any space
+                    //get the text and select the text before any space or \n
                     var text = $(this).text();
                     var index = text.indexOf(' ');
+                    if(index != -1){
+                        text = text.substring(0,index);
+                    }
+                    index = text.indexOf('\n');
                     if(index != -1){
                         text = text.substring(0,index);
                     }

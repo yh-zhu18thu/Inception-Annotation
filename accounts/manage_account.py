@@ -85,7 +85,6 @@ def main():
         username,password = create_account(username,3)
         print("Formal account created successfully!")
         print(f"Username:{username},Password: {password}")
-        print()
 
     elif command == "validate":
         if len(sys.argv) < 4:
