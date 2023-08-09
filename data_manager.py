@@ -72,6 +72,8 @@ class DataManager:
             else:
                 return {"type":"finished"}
         else:
+            if self.get_user_finished_annotation_cnt(user_id)>=10:
+                return {"type":"finished"}
             return self.question_generater.get_question(user_id)
     
     def generate_default_question(self):

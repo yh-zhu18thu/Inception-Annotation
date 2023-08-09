@@ -7,6 +7,14 @@
         <p class="card-text">Thank you for your participation!</p>
     </div>
     <div class="card-footer">
-        <a href="#" class="btn btn-primary">Back to Homepage</a>
+        <a href="#" class="btn btn-primary" id="back_home">Back to Homepage</a>
     </div>
+
+    <script>
+        //go back to homepage when click #back_home
+        $("#back_home").click(function() {
+            //go to login.html in flask
+            window.location.href = "{{ url_for('login') }}";
+        });
+    </script>
 </div>
