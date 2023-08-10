@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "【在和老师的聊天界面，老师刚布置了一个写稿任务】帮我完成老师给我的这个任务，不需要太认真但是不要让人觉得是AI写的", "example_feasibility": "能够稳定", "instance": "请帮我将线上会议进行自动录制，在会议结束后自动音译成文档，并总结会议内容", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["理解", "强于"]}, {"option": "option1", "expression": ["规划", "强于"]}, {"option": "option1", "expression": ["执行", "弱于"]}]}
+{"type": "1v1", "example_instance": "微博热搜有什么新八卦", "example_feasibility": "不能正确", "instance": "最近有什么娱乐大八卦呢", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "接近"]}, {"option": "option1", "expression": ["规划", "接近"]}, {"option": "option1", "expression": ["执行", "接近"]}]}
+{"type": "1", "instance": "请帮我将线上会议进行自动录制，在会议结束后自动音译成文档，并总结会议内容", "belief_rating": "6"}
+{"type": "1", "instance": "帮我给我妈打个电话", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "帮我设置取快递的提醒", "example_feasibility": "不能正确", "instance": "设置闹钟为12点", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["理解", "接近", "理解"]}, {"option": "option1", "expression": ["规划", "接近"]}, {"option": "option2", "expression": ["执行", "强于", "执行"]}]}
+{"type": "1", "instance": "最近有什么娱乐大八卦呢", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["打开小红书", "如何在mac安装python", "【对着当前的文档】制作成表格", "打开支付宝扫码", "打开中央三台"], "example_feasibilities": [false, false, true, true, true], "instance": "打开番茄TODO", "belief_rating": "6"}
+{"type": "1", "instance": "设置闹钟为12点", "belief_rating": "4"}
+{"type": "1", "instance": "打开番茄TODO", "belief_rating": "5"}

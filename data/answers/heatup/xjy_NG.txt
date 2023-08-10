@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "我需要在2023-12-13做进行组会的事情，请记录并整理日程", "example_feasibility": "能够稳定", "instance": "朗读今天的微博热搜", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["理解", "强于"]}, {"option": "option2", "expression": ["执行", "接近", "理解"]}]}
+{"type": "1v1", "example_instance": "这周末我想去杭州或者重庆玩，帮我分别拟一份行程并比较两地的特点", "example_feasibility": "能够稳定", "instance": "帮我报销上周出差的机票钱", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["执行", "强于"]}, {"option": "option1", "expression": ["理解", "强于"]}, {"option": "option3", "expression": ["当前指令", "规划"]}]}
+{"type": "1", "instance": "帮我报销上周出差的机票钱", "belief_rating": "2"}
+{"type": "nv1", "example_instances": ["根据我的愿望清单，帮我在steam购买打折超过50%的游戏", "找几个适合在家进行的锻炼方式", "如何提升摄影技巧"], "example_feasibilities": [false, false, true], "instance": "推荐好用的网球运动装备", "belief_rating": "4"}
+{"type": "1", "instance": "朗读今天的微博热搜", "belief_rating": "4"}
+{"type": "1", "instance": "推荐好用的网球运动装备", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲", "example_feasibility": "能够稳定", "instance": "帮我和闺蜜说今晚累了不出门", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option1", "expression": ["规划", "弱于"]}, {"option": "option1", "expression": ["执行", "弱于"]}]}
+{"type": "nv1", "example_instances": ["锁屏并释放白噪音帮我专注", "把空调的风调成适合午睡的模式", "小度小度，请调到舒适模式"], "example_feasibilities": [false, true, false], "instance": "音量调大", "belief_rating": "6"}
+{"type": "1", "instance": "音量调大", "belief_rating": "6"}
+{"type": "1", "instance": "帮我和闺蜜说今晚累了不出门", "belief_rating": "4"}

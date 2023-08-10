@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "【预约完一个咸鱼送货订单】定一个明早九点的闹钟", "example_feasibility": "能够稳定", "instance": "把桌子上的充电宝拿给我", "belief_rating": "4", "statements": [{"option": "option2", "expression": ["特定执行动作", "弱于", "特定执行动作"]}]}
+{"type": "1", "instance": "把桌子上的充电宝拿给我", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "美国法和中国法关于未成年人刑事责任问题的看法有什么不同", "example_feasibility": "不能正确", "instance": "这是一组数据，请问你观察到了什么有价值的信息", "belief_rating": "3", "statements": [{"option": "option3", "expression": ["当前指令", "识别与理解"]}, {"option": "option3", "expression": ["当前指令", "自主寻找"]}]}
+{"type": "1", "instance": "这是一组数据，请问你观察到了什么有价值的信息", "belief_rating": "4"}
+{"type": "nv1", "example_instances": ["小元刚刚给我发什么微信消息了", "我现在有事，用我的口吻回一下微信消息", "帮我回复一下新的微信消息说我稍后回复"], "example_feasibilities": [false, true, true], "instance": "提醒我回复张小红微信消息", "belief_rating": "3"}
+{"type": "1", "instance": "提醒我回复张小红微信消息", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "打开微信,给梅老师打电话", "example_feasibility": "能够稳定", "instance": "打电话给李小云", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["特定执行动作", "接近"]}]}
+{"type": "1", "instance": "打电话给李小云", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["对于多模态学习的应用的学术问题，是否同意我的看法，你的意见是什么", "【在一篇公众号文章界面】针对这个话题，你有哪些学术创意？", "请问这题应该怎么做，这么做有什么问题吗"], "example_feasibilities": [false, true, true], "instance": "如果你是一个智能家居的设计师，你需要考虑到哪些用户体验因素，请尽可能全面而详细地回答", "belief_rating": "4"}
+{"type": "1", "instance": "如果你是一个智能家居的设计师，你需要考虑到哪些用户体验因素，请尽可能全面而详细地回答", "belief_rating": "4"}

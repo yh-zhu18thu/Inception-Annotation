@@ -1,0 +1,9 @@
+{"type": "nv1", "example_instances": ["十一点之前不玩手机（开启Forest种树）", "打开腾讯会议并关闭摄像头", "老番茄更新的视频在我休息时自动跳出播放"], "example_feasibilities": [true, false, true], "instance": "连一下校园网后更新游戏", "belief_rating": "2"}
+{"type": "1", "instance": "连一下校园网后更新游戏", "belief_rating": "4"}
+{"type": "1", "instance": "帮我收藏一下今天看过的小说", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "帮我叫一下一起打游戏的人上线", "example_feasibility": "不能正确", "instance": "请帮我将线上会议进行自动录制，在会议结束后自动音译成文档，并总结会议内容", "belief_rating": "3", "statements": [{"option": "option3", "expression": ["样例指令", "不确定方法理解"]}, {"option": "option3", "expression": ["当前指令", "设置条件触发"]}, {"option": "option3", "expression": ["当前指令", "复杂任务"]}]}
+{"type": "1", "instance": "请帮我将线上会议进行自动录制，在会议结束后自动音译成文档，并总结会议内容", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "请帮我购买最新的ipad，到货地址为住家", "example_feasibility": "能够稳定", "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "belief_rating": "3", "statements": [{"option": "option3", "expression": ["当前指令", "特定应用"]}, {"option": "option1", "expression": ["缺失限定语理解", "弱于"]}, {"option": "option1", "expression": ["自主寻找", "弱于"]}]}
+{"type": "1", "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "请帮我购买最新的ipad，到货地址为住家", "example_feasibility": "能够稳定", "instance": "帮我预定一下从北京市前往天津市的耗时最短的高铁二等座，如果在其他票务平台有优惠券可以使用的话请一并使用", "belief_rating": "5", "statements": [{"option": "option3", "expression": ["当前指令", "复杂逻辑理解"]}, {"option": "option1", "expression": ["不确定目标理解", "强于"]}]}
+{"type": "1", "instance": "帮我预定一下从北京市前往天津市的耗时最短的高铁二等座，如果在其他票务平台有优惠券可以使用的话请一并使用", "belief_rating": "5"}

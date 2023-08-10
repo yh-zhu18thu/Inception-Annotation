@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "播放《Halo》歌曲", "example_feasibility": "能够稳定", "instance": "播放张杰最新的一首歌", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "nv1", "example_instances": ["推荐有关企业创业史的相关文章", "搜集股份回购相关的外文文献并翻译成中文", "请以商务纠纷为关键词做一篇类案检索和案例分析"], "example_feasibilities": [true, true, true], "instance": "如果你是一名研究员，请提供最近5年关于股份回购的相关文献及典型案例", "belief_rating": "7"}
+{"type": "1", "instance": "播放张杰最新的一首歌", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "播放放松的歌单", "example_feasibility": "能够稳定", "instance": "hey，siri，最近有什么比较奇葩的社会新闻吗？", "belief_rating": "3", "statements": [{"option": "option3", "expression": ["当前指令", "xxx"]}]}
+{"type": "1", "instance": "hey，siri，最近有什么比较奇葩的社会新闻吗？", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "【对着待办事项】这些任务我应该先做哪个比较好", "example_feasibility": "能够稳定", "instance": "请以强化学习为关键词搜索并按照重要程度顺序排序", "belief_rating": "4", "statements": [{"option": "option2", "expression": ["xxx", "弱于", "xxx"]}]}
+{"type": "1", "instance": "如果你是一名研究员，请提供最近5年关于股份回购的相关文献及典型案例", "belief_rating": "3"}
+{"type": "1", "instance": "请以强化学习为关键词搜索并按照重要程度顺序排序", "belief_rating": "4"}
+{"type": "1", "instance": "帮我调整角度和光影拍出ins风格的照片", "belief_rating": "6"}
