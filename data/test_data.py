@@ -100,6 +100,11 @@ def check_data(command,user_id):
                 for statement in statements:
                     example_related_ability = get_example_related_ability(statement)
                     instance_related_ability = get_instance_related_ability(statement)
+                    #print(f"len(example_related_ability):{len(example_related_ability)},len(instance_related_ability):{len(instance_related_ability)}")
+                    if "xxx" in example_related_ability or "xxx" in instance_related_ability:
+                        cnt+=1
+                        log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"或\"{instance}\"的tag中含有\"xxx\"\n")
+                        continue
                     # get the annotated abilities of the example instance from df_600
                     example_annotated_abilities = df_600.loc[df_600['expression']==example_instance]['annotation'].values[0].split(',')
                     # get the annotated abilities of the instance from df_600
@@ -108,7 +113,7 @@ def check_data(command,user_id):
                         cnt+=1
                         ability_children_list = get_children_list(ability)
                         ability_children_list.append(ability)
-                        print(f"ability:{ability},ability_children_list:{ability_children_list}")
+                        #print(f"ability:{ability},ability_children_list:{ability_children_list}")
                         #check if any of the children of the ability is in the annotated abilities of the example instance
                         if any([child in example_annotated_abilities for child in ability_children_list]):
                             score+=1
@@ -119,7 +124,7 @@ def check_data(command,user_id):
                         cnt+=1
                         ability_children_list = get_children_list(ability)
                         ability_children_list.append(ability)
-                        print(f"ability:{ability},ability_children_list:{ability_children_list}")
+                        #print(f"ability:{ability},ability_children_list:{ability_children_list}")
                         #check if any of the children of the ability is in the annotated abilities of the instance
                         if any([child in instance_annotated_abilities for child in ability_children_list]):
                             score+=1

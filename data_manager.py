@@ -23,7 +23,7 @@ class DataManager:
                     self.user_records[user_id] = len(f.readlines())
 
     def validate_user(self,id,password):
-        if id=='admin' and password=='admin':
+        if id=='admin' and password=='admin_405':
             return True
         else:
             return validate_user(id,password)
