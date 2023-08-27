@@ -1,150 +1,150 @@
-{"type": "nv1", "example_instances": ["请帮我搜集整理与深度学习相关的英文文献并进行整理", "帮我校对一下这些材料，整理一份校对结果", "请帮我整理与大语言模型相关的文献"], "instance": "你帮我整理一下这几篇文献", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我写一篇能发表在cvpr上的论文", "请列出近期研究中阿尔兹海默症的发病机制和药物治疗", "帮我搜索最近法律热点信息并整理"], "instance": "写一篇脊髓硬膜电刺激恢复运动论文，引用最前沿的文献", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1", "instance": "你帮我整理一下这几篇文献"}
-{"type": "1v1", "example_instance": "请帮我找我今晚想看的电影，要求是公路旅行电影，帮我下好4k的片源", "feasibility": true, "instance": "生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复", "dataset": "600"}
-{"type": "nv1", "example_instances": ["【对着一个论文网页】你是超导领域的专家，请帮我概括一下这篇论文的主旨", "你是一位社会科学国际关系的博士生导师，阅读这篇文献，帮我总结主要内容", "【写论文时】你现在是一名计算机专业的学生，你需要完成一篇以NLP语言理解为主题的论文，请写出该论文的大纲框架", "根据我提供的主要观点和参考文献，写一篇discussion paper", "帮我分析一下这两篇文章的异同"], "instance": "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "feasibilities": [true, true, true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我询问一下王小芳今晚什么时候有空打王者荣耀", "帮我在乒乓球友群里问一声有没有人去打乒乓球", "陪我练一下王昭君英雄", "请帮我打开好友王小五的聊天框", "帮我启动一下扫地机器人"], "instance": "帮我叫一下一起打游戏的人上线", "feasibilities": [true, true, true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复", "【在代码编辑器中】代码是否存在问题", "请帮我查一下下面这个报错如何解决"], "instance": "如果你是一名码农，请检查这个代码是否存在错误", "feasibilities": [true, false, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["心情不好,放点歌", "音量调大一点", "给我按摩一下肩膀"], "instance": "帮我播一段好听的音乐", "feasibilities": [false, false, true], "dataset": "150"}
-{"type": "nv1", "example_instances": ["请帮我在日程中标记事件并设置闹铃", "帮我设定一个10点的闹钟，提醒我去锻炼", "一个月减肥十斤的运动和饮食建议"], "instance": "帮我安排一个时长为1小时强度中等的健身计划", "feasibilities": [true, false, true], "dataset": "150"}
-{"type": "1v1", "example_instance": "回复最新的微信消息：收到", "feasibility": false, "instance": "水池里的碗洗干净架起来，地面也清理一下，我到家时帮我煮好米饭，调好空调", "dataset": "600"}
-{"type": "1", "instance": "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话"}
-{"type": "1", "instance": "帮我安排一个时长为1小时强度中等的健身计划"}
-{"type": "1", "instance": "生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复"}
-{"type": "1", "instance": "如果你是一名码农，请检查这个代码是否存在错误"}
-{"type": "1v1", "example_instance": "帮我报销上周出差的机票钱", "feasibility": true, "instance": "请帮我打开最近拍摄的十张照片", "dataset": "600"}
-{"type": "1", "instance": "水池里的碗洗干净架起来，地面也清理一下，我到家时帮我煮好米饭，调好空调"}
-{"type": "1v1", "example_instance": "搜索做菜的教程视频并自动播放", "feasibility": true, "instance": "【在某一个界面】请找到社区工作列表中对应的文化服务部分", "dataset": "150"}
-{"type": "nv1", "example_instances": ["请帮我写一篇能发表在cvpr上的论文", "如果你是应急管理部门工作人员，应对体育场顶部塌陷事件需要出一份公关稿，写一份要点和大纲", "帮我安排未来一周的日程，每天提醒我需要为这一周的日程做哪些工作，在日程开始前提醒我参加，你要达到的标准是我能提前1天完成所有任务的准备，并提前5分钟到达日程现场"], "instance": "如果我需要做一份关于社会实践的报告，请给出报告的大纲", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1v1", "example_instance": "按照Lancet的风格，润色这篇文章", "feasibility": true, "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "dataset": "600"}
-{"type": "1v1", "example_instance": "半小时后自动关闭B站", "feasibility": true, "instance": "最近有什么推荐的剧", "dataset": "600"}
-{"type": "1", "instance": "请帮我打开最近拍摄的十张照片"}
-{"type": "1v1", "example_instance": "规划到学校最近路线及时间", "feasibility": true, "instance": "查找附近跑步线路和天气、路况", "dataset": "600"}
-{"type": "1v1", "example_instance": "我想把这段文字变成简洁好看的ppt", "feasibility": true, "instance": "【在相册应用中】帮我给今天的照片集体加文字和滤镜", "dataset": "150"}
-{"type": "1", "instance": "帮我叫一下一起打游戏的人上线"}
-{"type": "1", "instance": "查找附近跑步线路和天气、路况"}
-{"type": "1", "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”"}
-{"type": "1v1", "example_instance": "帮我查询一下北京市7月21日的天气预报以及紫外线指数和穿衣指数", "feasibility": false, "instance": "明天我能否骑行到天津", "dataset": "600"}
-{"type": "1", "instance": "最近有什么推荐的剧"}
-{"type": "1v1", "example_instance": "帮我礼貌地回复未接到的电话", "feasibility": false, "instance": "请明天务必帮我抢到周杰伦的票", "dataset": "600"}
-{"type": "1", "instance": "请明天务必帮我抢到周杰伦的票"}
-{"type": "1v1", "example_instance": "帮我校对一下这些材料，整理一份校对结果", "feasibility": false, "instance": "请帮我将线上会议进行自动录制，在会议结束后自动音译成文档，并总结会议内容", "dataset": "600"}
-{"type": "1", "instance": "明天我能否骑行到天津"}
-{"type": "nv1", "example_instances": ["最近有什么推荐的剧", "微博热搜有什么新八卦", "打开豆瓣，告诉我最近风评最好的电影是哪部，主要内容是什么"], "instance": "最近有什么娱乐大八卦呢", "feasibilities": [true, false, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["播放一个摇滚乐的歌单", "播放一首周深的歌曲", "播放最近热门歌曲"], "instance": "播放放松的歌单", "feasibilities": [true, true, false], "dataset": "600"}
-{"type": "1v1", "example_instance": "在小红书上找一下上海旅游攻略", "feasibility": true, "instance": "给我讲清楚这篇文献在说什么", "dataset": "600"}
-{"type": "1", "instance": "最近有什么娱乐大八卦呢"}
-{"type": "nv1", "example_instances": ["【选中一个单词】这个单词是什么意思，怎么读", "如何评价《三体》这本书", "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "校对这篇会议记录是否有错别字：“xxx”", "给我讲清楚这篇文献在说什么"], "instance": "卡利斯马表现怎么翻译", "feasibilities": [true, false, true, false, false], "dataset": "600"}
-{"type": "1v1", "example_instance": "想摸小狗了（自动查找附近宠物店）", "feasibility": true, "instance": "目标地点附近车多不多（打开地图搜索地点查看拥堵水平）", "dataset": "600"}
-{"type": "1v1", "example_instance": "闹钟定到明天早上7：50，如果我没醒的话，就别管我了，9：30再叫我一次就行", "feasibility": true, "instance": "证明一下勾股定理", "dataset": "600"}
-{"type": "1", "instance": "给我讲清楚这篇文献在说什么"}
-{"type": "nv1", "example_instances": ["帮我询问一下王小芳今晚什么时候有空打王者荣耀", "打开B站，继续播放昨天没看完的番", "播放高效视频"], "instance": "今晚有EDG的游戏实况直播吗", "feasibilities": [true, true, false], "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我做一个国奖答辩ppt，要酷炫", "feasibility": false, "instance": "搜索如何制作一份好的汇报PPT", "dataset": "600"}
-{"type": "1", "instance": "今晚有EDG的游戏实况直播吗"}
-{"type": "1", "instance": "请帮我将线上会议进行自动录制，在会议结束后自动音译成文档，并总结会议内容"}
-{"type": "1v1", "example_instance": "今天我什么时候晒衣服、什么时候收衣服", "feasibility": true, "instance": "我要出门了，5点钟到家，把被套换洗一下烘干，换上新买的那套", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我分析一下这几个理财方案的利弊", "feasibility": true, "instance": "帮我根据现有财产制订投资计划", "dataset": "600"}
+{"type": "nv1", "example_instances": ["明天早上七点叫我", "明天需要带伞吗", "提醒我明天七点到清华大学（导航）"], "instance": "请问明天的天气怎么样", "feasibilities": [false, true, true], "dataset": "150"}
+{"type": "1", "instance": "请问明天的天气怎么样"}
+{"type": "1v1", "example_instance": "【在使用闲鱼浏览某商品时】对比市场价格", "feasibility": false, "instance": "请每隔一个小时告诉我时间", "dataset": "600"}
+{"type": "1", "instance": "请每隔一个小时告诉我时间"}
+{"type": "1v1", "example_instance": "帮我缝合一下这个伤口", "feasibility": true, "instance": "我想买新衣服，有什么推荐（打开淘宝合适的商品界面）", "dataset": "150"}
+{"type": "1v1", "example_instance": "你了解新能源领域吗？我想写一篇关于这个的文献综述，你能给点建议吗？", "feasibility": true, "instance": "我想写一篇关于不确定理论的论文，有哪些角度可以展开", "dataset": "600"}
+{"type": "1v1", "example_instance": "告诉我应该怎么提高我的写作技巧", "feasibility": true, "instance": "我想要写一个科幻故事，给我一些独特的想法", "dataset": "600"}
+{"type": "1", "instance": "我想写一篇关于不确定理论的论文，有哪些角度可以展开"}
+{"type": "1", "instance": "我想要写一个科幻故事，给我一些独特的想法"}
+{"type": "1", "instance": "帮我根据现有财产制订投资计划"}
+{"type": "1v1", "example_instance": "给我妈报个平安", "feasibility": true, "instance": "帮我给我妈打个电话", "dataset": "600"}
+{"type": "1", "instance": "帮我给我妈打个电话"}
+{"type": "1v1", "example_instance": "打开大众点评，搜索附近5km内评分较高的美食店铺", "feasibility": false, "instance": "打开最近文档里的ppt模板", "dataset": "600"}
+{"type": "1", "instance": "打开最近文档里的ppt模板"}
+{"type": "1", "instance": "我想买新衣服，有什么推荐（打开淘宝合适的商品界面）"}
+{"type": "nv1", "example_instances": ["提前10分钟提醒我参加组会", "请帮我在日程中标记事件并设置闹铃", "帮我定一个5点的闹铃并计入日程", "请帮我记录一个明天早上7点的提醒事项", "打开腾讯会议，加入主题团日会议，关闭摄像头"], "instance": "备忘录记录待办事件开会", "feasibilities": [true, true, true, true, false], "dataset": "150"}
+{"type": "1", "instance": "备忘录记录待办事件开会"}
+{"type": "nv1", "example_instances": ["帮我写篇拓扑几何前沿研究主题的文献综述", "请列出近期研究中阿尔兹海默症的发病机制和药物治疗", "开一把王者荣耀英雄的1v1，查一下新英雄的出装攻略和打法分析"], "instance": "写一篇脊髓硬膜电刺激恢复运动论文，引用最前沿的文献", "feasibilities": [true, false, false], "dataset": "150"}
+{"type": "nv1", "example_instances": ["帮忙规划旅行路线", "规划到学校最近路线及时间", "请帮我找我今晚想看的电影，要求是公路旅行电影，帮我下好4k的片源"], "instance": "请帮我选择一条最近的道路", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "1", "instance": "请帮我选择一条最近的道路"}
+{"type": "nv1", "example_instances": ["打开车内空调", "打开猫耳fm继续播放", "把空调温度调到26度，模式改为抽湿模式", "【在卧室】打开空调，设置空调为26度", "【在房间】打开空调，调整到27度"], "instance": "把车内空调打开", "feasibilities": [true, true, true, false, false], "dataset": "600"}
+{"type": "1", "instance": "把车内空调打开"}
+{"type": "1v1", "example_instance": "找一下es战队本月的赛程并列出来", "feasibility": true, "instance": "你看看我这学期哪几门课有小组作业，提前分一下工，排好时间线和每个阶段的日程", "dataset": "600"}
+{"type": "1v1", "example_instance": "给我讲个故事", "feasibility": true, "instance": "打给我妈", "dataset": "600"}
 {"type": "1", "instance": "写一篇脊髓硬膜电刺激恢复运动论文，引用最前沿的文献"}
-{"type": "1v1", "example_instance": "把文字变成图片进行表达", "feasibility": false, "instance": "把这张照片的亮度调高，细节p一下", "dataset": "600"}
-{"type": "1", "instance": "【在某一个界面】请找到社区工作列表中对应的文化服务部分"}
-{"type": "1", "instance": "卡利斯马表现怎么翻译"}
-{"type": "1", "instance": "目标地点附近车多不多（打开地图搜索地点查看拥堵水平）"}
-{"type": "nv1", "example_instances": ["根据过往情况，判断一下我完成任务清单的可能性", "接下来两个小时的安排", "下一周安排以下任务：“xxx”，处理你自己可以处理的部分"], "instance": "完成数据标注工作最快的方法是什么", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "1", "instance": "把这张照片的亮度调高，细节p一下"}
-{"type": "1v1", "example_instance": "证明一下勾股定理", "feasibility": true, "instance": "在滴答清单帮我安排一个任务，主题是学术会议，时间是下周一下午3点，提前一小时提醒我", "dataset": "600"}
-{"type": "1", "instance": "我要出门了，5点钟到家，把被套换洗一下烘干，换上新买的那套"}
-{"type": "1v1", "example_instance": "我想吃便宜好吃的云南菜", "feasibility": true, "instance": "今天中午想吃麻婆豆腐", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我打扫卫生", "feasibility": true, "instance": "帮我缝合一下这个伤口", "dataset": "150"}
-{"type": "1", "instance": "在滴答清单帮我安排一个任务，主题是学术会议，时间是下周一下午3点，提前一小时提醒我"}
-{"type": "1v1", "example_instance": "我起不来，你把窗帘拉开让我清醒会", "feasibility": true, "instance": "请帮我去买感冒药，帮助我快点好能参加明天的考试", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请推荐扬州市的人文景区", "这周末我想去杭州或者重庆玩，帮我分别拟一份行程并比较两地的特点", "我想用一千块穷游大理（规划行程及预算）", "帮我做个去东南亚的旅行规划，顺便刷一下南航的会员等级", "我要去广西旅行（规划行程）"], "instance": "我要三千块预算以内性价比最高的上海旅游攻略", "feasibilities": [false, false, true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我给微信好友车车回复以下信息“好的收到”", "帮我回复一下新的微信消息说我稍后回复", "请帮我读所有未读消息并进行回复，重要的进行标记", "帮我拒绝不必要的社交", "替我回复拒绝A的短信"], "instance": "请帮我回复I'm Busy的默认信息", "feasibilities": [true, true, false, false, true], "dataset": "600"}
-{"type": "1", "instance": "搜索如何制作一份好的汇报PPT"}
-{"type": "nv1", "example_instances": ["十一点之前不玩手机（开启Forest种树）", "半小时后自动关闭B站", "把空调的风调成适合午睡的模式"], "instance": "小度，晚上11点关闭所有的电灯", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["如果你是一名研究员，请提供最近5年关于股份回购的相关文献及典型案例", "hey，siri，帮我调研一下股份回购相关知识", "请查找有关于商务纠纷的法律条文", "去门口把外卖拿进来", "搜集区块链相关的文献"], "instance": "搜集股份回购相关的外文文献并翻译成中文", "feasibilities": [true, false, true, true, true], "dataset": "600"}
-{"type": "1", "instance": "播放放松的歌单"}
-{"type": "1", "instance": "证明一下勾股定理"}
-{"type": "nv1", "example_instances": ["【在卧室】打开空调，设置空调为26度", "把空调温度调到22度", "请帮我打开窗帘"], "instance": "打开空调，把空调调到26度", "feasibilities": [true, false, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我定7月24日18点的闹钟并备注该吃饭啦", "今晚有EDG的游戏实况直播吗", "帮我叫一下一起打游戏的人上线"], "instance": "帮我询问一下王小芳今晚什么时候有空打王者荣耀", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "1", "instance": "请帮我去买感冒药，帮助我快点好能参加明天的考试"}
-{"type": "1", "instance": "我要三千块预算以内性价比最高的上海旅游攻略"}
-{"type": "1", "instance": "今天中午想吃麻婆豆腐"}
-{"type": "1v1", "example_instance": "帮我做一道家乡菜", "feasibility": true, "instance": "帮我启动一下扫地机器人", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请推荐学校附近好吃的外卖和餐厅", "导航至附近的美食店", "看看附近有哪些好玩的地方"], "instance": "小度小度，请搜索离家最近的餐厅", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1v1", "example_instance": "下载《唐吉坷德》电子书导入微信读书", "feasibility": true, "instance": "【产品相关资料上传后】生成某产品的文案，要求简洁明了。", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我分析电影封神第一部的评价，帮我决定要不要看", "feasibility": true, "instance": "打开勿扰模式", "dataset": "150"}
-{"type": "1", "instance": "帮我启动一下扫地机器人"}
-{"type": "1", "instance": "【产品相关资料上传后】生成某产品的文案，要求简洁明了。"}
-{"type": "1v1", "example_instance": "搜索做菜的教程视频并自动播放", "feasibility": true, "instance": "请帮我看看好友茱莉亚有没有更新朋友圈", "dataset": "150"}
-{"type": "1", "instance": "如果我需要做一份关于社会实践的报告，请给出报告的大纲"}
-{"type": "1", "instance": "帮我询问一下王小芳今晚什么时候有空打王者荣耀"}
-{"type": "1", "instance": "小度，晚上11点关闭所有的电灯"}
-{"type": "1v1", "example_instance": "帮我预定一下从北京市前往天津市的耗时最短的高铁二等座，如果在其他票务平台有优惠券可以使用的话请一并使用", "feasibility": true, "instance": "再赢一把或者连输三把就睡（自动关机）", "dataset": "600"}
-{"type": "1v1", "example_instance": "提示网购平台低价折扣并在授权金额范围内抢单支付", "feasibility": true, "instance": "要买单了（打开付款码）", "dataset": "600"}
-{"type": "1", "instance": "请帮我回复I'm Busy的默认信息"}
-{"type": "1", "instance": "要买单了（打开付款码）"}
-{"type": "1v1", "example_instance": "【在卧室】关窗帘", "feasibility": true, "instance": "【在相册应用中】帮我给今天的照片集体加文字和滤镜", "dataset": "150"}
-{"type": "1v1", "example_instance": "帮我收集一下网上蔡徐坤的信息", "feasibility": true, "instance": "帮我整理一下微信新消息都是哪些人发来的", "dataset": "600"}
-{"type": "1v1", "example_instance": "请播放一首我爱听的类型的歌曲", "feasibility": true, "instance": "单曲循环我这一周最爱听的歌", "dataset": "600"}
-{"type": "1v1", "example_instance": "帮我放一些轻快舒缓的歌", "feasibility": true, "instance": "把我最近一周听的歌分享给我的朋友", "dataset": "600"}
-{"type": "nv1", "example_instances": ["给我讲清楚这篇文献在说什么", "请以商务纠纷为关键词做一篇类案检索和案例分析", "请帮我翻译学术名词\"xxx\""], "instance": "请帮我翻译以下这篇文章", "feasibilities": [false, false, true], "dataset": "600"}
-{"type": "1", "instance": "单曲循环我这一周最爱听的歌"}
-{"type": "1v1", "example_instance": "打开微信或者支付宝的付款码", "feasibility": true, "instance": "我想知道伴性遗传主题方面的前沿文献主要在讲什么", "dataset": "150"}
-{"type": "1", "instance": "请帮我翻译以下这篇文章"}
-{"type": "nv1", "example_instances": ["明天早上七点叫我", "帮我搭配一下明天的衣服", "今晚想吃一荤一素配牛油锅酸奶，做一下吧"], "instance": "明天需要带伞吗", "feasibilities": [false, false, true], "dataset": "150"}
-{"type": "1v1", "example_instance": "请帮我读所有未读消息并进行回复，重要的进行标记", "feasibility": true, "instance": "帮我整理一下微信新消息都是哪些人发来的", "dataset": "600"}
-{"type": "1v1", "example_instance": "今晚想吃一荤一素配牛油锅酸奶，做一下吧", "feasibility": true, "instance": "心情不好,放点歌", "dataset": "150"}
-{"type": "1v1", "example_instance": "请帮我记录生活中有趣美好的小事，并在每天晚上回放给我", "feasibility": false, "instance": "播放我感兴趣的视频", "dataset": "600"}
-{"type": "1", "instance": "完成数据标注工作最快的方法是什么"}
-{"type": "1v1", "example_instance": "请帮我给微信好友车车回复以下信息“好的收到”", "feasibility": true, "instance": "根据大众点评上的美食店推荐，规划最优路线", "dataset": "600"}
-{"type": "nv1", "example_instances": ["播放追娘娘视频", "播放《极乐净土》", "给我讲一个节奏慢点的故事"], "instance": "播放《七里香》", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我搜索与脑机接口相关的学术文献", "查找创新创业论坛文件", "帮我搜索好看的ppt模板"], "instance": "根据我的关键词查找文献", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1", "instance": "帮我整理一下微信新消息都是哪些人发来的"}
-{"type": "nv1", "example_instances": ["帮我搜一下光伏相关的文献，核心期刊的", "搜索监督学习为关键词的相关文献", "搜索关键词为神经网络的相关文献", "请给出与NLP相关的10篇重要文献，要求被引用量大于100", "提取这篇文献的主要研究内容及结论"], "instance": "搜集区块链相关的文献", "feasibilities": [false, false, true, false, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我查询一下北京市7月21日的天气预报以及紫外线指数和穿衣指数", "帮我查一下未来一周上海的天气", "请在日历中7月31日18点-22点设定赶飞机日程"], "instance": "查询天气预报及穿衣指数", "feasibilities": [true, true, false], "dataset": "600"}
-{"type": "1v1", "example_instance": "要买单了（打开付款码）", "feasibility": false, "instance": "你看一下我网络学堂的各门课作业，帮我计划一下写作业的日程，写完了帮我交一下", "dataset": "600"}
-{"type": "1v1", "example_instance": "我要睡觉了（拉窗帘、关灯）", "feasibility": false, "instance": "把衣服晾干并且明天收起来", "dataset": "600"}
-{"type": "1", "instance": "搜集区块链相关的文献"}
-{"type": "nv1", "example_instances": ["播放歌曲<想你的365天>", "帮我播一段好听的音乐", "和我玩成语接龙"], "instance": "心情不好,放点歌", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1", "instance": "你看一下我网络学堂的各门课作业，帮我计划一下写作业的日程，写完了帮我交一下"}
-{"type": "1", "instance": "再赢一把或者连输三把就睡（自动关机）"}
-{"type": "1", "instance": "搜集股份回购相关的外文文献并翻译成中文"}
-{"type": "nv1", "example_instances": ["【在腾讯会议中】帮我记录此次会议重要内容", "从现在开始记录会议，结束后整理一份文字稿", "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲"], "instance": "如果你是一名秘书，请将接下来的会议内容提取要点，缩减至1000字以内", "feasibilities": [true, true, false], "dataset": "600"}
-{"type": "1", "instance": "打开空调，把空调调到26度"}
-{"type": "1", "instance": "【在相册应用中】帮我给今天的照片集体加文字和滤镜"}
-{"type": "nv1", "example_instances": ["请帮我记录一个明天早上7点的提醒事项", "帮我总结一下上周的工作内容", "请在今天下午三点钟提醒我要参加学长毕业欢送会", "规划一下明天的行程安排", "提醒我明天七点到清华大学（导航）"], "instance": "帮我安排未来一周的日程，每天提醒我需要为这一周的日程做哪些工作，在日程开始前提醒我参加，你要达到的标准是我能提前1天完成所有任务的准备，并提前5分钟到达日程现场", "feasibilities": [true, true, false, true, false], "dataset": "150"}
-{"type": "1", "instance": "如果你是一名秘书，请将接下来的会议内容提取要点，缩减至1000字以内"}
-{"type": "1v1", "example_instance": "换一首歌", "feasibility": true, "instance": "给我定制一个跑步十公里的歌单", "dataset": "600"}
-{"type": "1", "instance": "给我定制一个跑步十公里的歌单"}
-{"type": "1v1", "example_instance": "帮我挂一个今天医院放射科的号", "feasibility": false, "instance": "打开语音备忘录", "dataset": "600"}
-{"type": "1", "instance": "把衣服晾干并且明天收起来"}
-{"type": "1", "instance": "根据大众点评上的美食店推荐，规划最优路线"}
-{"type": "1v1", "example_instance": "给我妈报个平安", "feasibility": false, "instance": "请判断我的睡眠周期", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我打电话给张三", "feasibility": true, "instance": "他这样说什么意思，我不想干活但也不想让他觉得我很消极，怎么回复", "dataset": "600"}
-{"type": "1v1", "example_instance": "我想知道伴性遗传主题方面的前沿文献主要在讲什么", "feasibility": true, "instance": "解释一下眼动仪的心理学原理", "dataset": "150"}
-{"type": "1v1", "example_instance": "查找去大理的旅游攻略", "feasibility": true, "instance": "在小红书上找一下上海旅游攻略", "dataset": "600"}
-{"type": "nv1", "example_instances": ["出门后清洁房间", "把衣服晾干并且明天收起来", "我要出门了，5点钟到家，把被套换洗一下烘干，换上新买的那套"], "instance": "水池里的碗洗干净架起来，地面也清理一下，我到家时帮我煮好米饭，调好空调", "feasibilities": [false, true, false], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请在接下来2小时内帮我自动回复导师的信息，帮我掩饰我在外面玩的事情", "请帮我检查邮箱", "请帮我寄件"], "instance": "请帮我自动回复电子邮件", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1v1", "example_instance": "按照重要程度将一些DDL和社工任务排序，并标注颜色，例如最紧迫的是红色，并作出规划和提醒", "feasibility": true, "instance": "帮我总结一下上周的工作内容", "dataset": "150"}
+{"type": "nv1", "example_instances": ["我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "定个明天早上的闹钟", "设置组会日程"], "instance": "设置下午一点的事项，需要去清华大学经管学院开会", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我预定一下从北京市前往天津市的耗时最短的高铁二等座，如果在其他票务平台有优惠券可以使用的话请一并使用", "帮我定去广西的高铁票", "请帮我预定我下一个月出游的机票和酒店"], "instance": "帮我报销上周出差的机票钱", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "1", "instance": "设置下午一点的事项，需要去清华大学经管学院开会"}
+{"type": "1", "instance": "你看看我这学期哪几门课有小组作业，提前分一下工，排好时间线和每个阶段的日程"}
+{"type": "1", "instance": "打给我妈"}
+{"type": "1v1", "example_instance": "检索并排列当前情况下kpl各战队胜负关系", "feasibility": true, "instance": "整理一个养老金相关的政策分析报告，5000字以上", "dataset": "600"}
+{"type": "1v1", "example_instance": "请在今天下午三点钟提醒我要参加学长毕业欢送会", "feasibility": true, "instance": "提前10分钟提醒我参加组会", "dataset": "150"}
+{"type": "nv1", "example_instances": ["设定每天22点提示强制关机", "提示网购平台低价折扣并在授权金额范围内抢单支付", "请在15分钟后叫我"], "instance": "在刺客信条打折开始1小时后和打折结束1小时前通知我", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我找一下之前备课的文件", "feasibility": true, "instance": "请帮我购买最新的ipad，到货地址为住家", "dataset": "600"}
+{"type": "1", "instance": "提前10分钟提醒我参加组会"}
+{"type": "1", "instance": "请帮我购买最新的ipad，到货地址为住家"}
+{"type": "1v1", "example_instance": "预计一小时内有雨时提醒我收衣服", "feasibility": false, "instance": "导航到中关村", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我写一篇能发表在cvpr上的论文", "feasibility": false, "instance": "帮我写篇拓扑几何前沿研究主题的文献综述", "dataset": "150"}
+{"type": "1", "instance": "帮我报销上周出差的机票钱"}
+{"type": "1", "instance": "在刺客信条打折开始1小时后和打折结束1小时前通知我"}
+{"type": "1", "instance": "帮我写篇拓扑几何前沿研究主题的文献综述"}
+{"type": "nv1", "example_instances": ["导航到中关村", "导航到清华大学（导航）", "小爱同学，播放歌曲", "到清华大学（导航）", "导航至电影院"], "instance": "导航到学校并放音乐", "feasibilities": [false, true, false, true, true], "dataset": "600"}
+{"type": "1", "instance": "导航到学校并放音乐"}
+{"type": "1v1", "example_instance": "音量调大一点", "feasibility": true, "instance": "查一下今日热门歌曲排行榜前三的歌曲、歌手名", "dataset": "150"}
+{"type": "1", "instance": "导航到中关村"}
+{"type": "nv1", "example_instances": ["请打开空调", "空调开到27度", "生成一段关于某产品的文案，产品信息：“一款专为男士设计的面膜，清透补水，持久控油”，产品关键字面膜，要求时尚、吸引人。"], "instance": "请把空调调到24度", "feasibilities": [true, true, true], "dataset": "150"}
+{"type": "1", "instance": "整理一个养老金相关的政策分析报告，5000字以上"}
+{"type": "nv1", "example_instances": ["搜索监督学习为关键词的相关文献", "请帮我搜集整理与深度学习相关的英文文献并进行整理", "寻找比较文学方面的文献"], "instance": "帮我搜索清华大学人机交互实验室关键词相关文献及公众号文章信息，并整理到人机交互文件夹", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我将这段旅行的所有素材剪成一个视频", "feasibility": true, "instance": "你是一位社会科学国际关系的博士生导师，阅读这篇文献，帮我总结主要内容", "dataset": "600"}
+{"type": "1v1", "example_instance": "打开B站，继续播放昨天没看完的番", "feasibility": true, "instance": "打开Thenyoung十月up主的最新视频", "dataset": "600"}
+{"type": "nv1", "example_instances": ["你看看我这学期哪几门课有小组作业，提前分一下工，排好时间线和每个阶段的日程", "我要睡觉（关灯）", "【在线上参会】我去上厕所，帮我记一下，有人叫我就震动手环", "你看一下我网络学堂的各门课作业，帮我计划一下写作业的日程，写完了帮我交一下", "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）"], "instance": "【上课时】我想走神一会，帮我记一下", "feasibilities": [false, true, true, true, true], "dataset": "600"}
+{"type": "1", "instance": "帮我搜索清华大学人机交互实验室关键词相关文献及公众号文章信息，并整理到人机交互文件夹"}
+{"type": "1", "instance": "你是一位社会科学国际关系的博士生导师，阅读这篇文献，帮我总结主要内容"}
+{"type": "1v1", "example_instance": "打开腾讯会议并关闭摄像头", "feasibility": false, "instance": "老番茄更新的视频在我休息时自动跳出播放", "dataset": "600"}
+{"type": "nv1", "example_instances": ["打开车内空调", "【在卧室】打开空调，设置空调为26度", "把空调温度调到22度", "把衣服晾干并且明天收起来", "打开空调，把空调调到26度"], "instance": "【在房间】打开空调，调整到27度", "feasibilities": [true, false, false, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我做一个个人简历，要能体现我的牛逼", "【在和老师的聊天界面，老师刚布置了一个写稿任务】帮我完成老师给我的这个任务，不需要太认真但是不要让人觉得是AI写的", "我目前正准备一个团建活动，帮我做出一份完整的团建方案"], "instance": "请帮我画一幅主题为人工智能的画", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "1", "instance": "打开Thenyoung十月up主的最新视频"}
+{"type": "1v1", "example_instance": "把空调温度调到26度，模式改为抽湿模式", "feasibility": true, "instance": "打开微信读书", "dataset": "600"}
+{"type": "1", "instance": "老番茄更新的视频在我休息时自动跳出播放"}
+{"type": "1v1", "example_instance": "拿快递并且拆了", "feasibility": true, "instance": "去门口把外卖拿进来", "dataset": "600"}
+{"type": "1", "instance": "【在房间】打开空调，调整到27度"}
+{"type": "1v1", "example_instance": "打开最近文档里的ppt模板", "feasibility": true, "instance": "【在做高数作业】这道题怎么做", "dataset": "600"}
 {"type": "1v1", "example_instance": "整理一个养老金相关的政策分析报告，5000字以上", "feasibility": true, "instance": "梳理一下养老金改革的历史沿革，2000字以上", "dataset": "600"}
-{"type": "1", "instance": "他这样说什么意思，我不想干活但也不想让他觉得我很消极，怎么回复"}
-{"type": "1", "instance": "播放《七里香》"}
-{"type": "1", "instance": "播放我感兴趣的视频"}
-{"type": "1", "instance": "请帮我自动回复电子邮件"}
-{"type": "1v1", "example_instance": "帮忙写一下电路原理的实验报告", "feasibility": false, "instance": "想摸小狗了（自动查找附近宠物店）", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我做一个个人简历，要能体现我的牛逼", "feasibility": false, "instance": "请帮我将这段旅行的所有素材剪成一个视频", "dataset": "600"}
-{"type": "1", "instance": "想摸小狗了（自动查找附近宠物店）"}
-{"type": "1", "instance": "把我最近一周听的歌分享给我的朋友"}
-{"type": "1", "instance": "在小红书上找一下上海旅游攻略"}
-{"type": "nv1", "example_instances": ["帮我分析一下这两篇文章的异同", "我想写一篇关于不确定理论的论文，有哪些角度可以展开", "【对着一个论文网页】你是超导领域的专家，请帮我概括一下这篇论文的主旨"], "instance": "如何评价《三体》这本书", "feasibilities": [true, false, true], "dataset": "600"}
-{"type": "1", "instance": "心情不好,放点歌"}
-{"type": "1", "instance": "查询天气预报及穿衣指数"}
-{"type": "1", "instance": "水池里的碗洗干净架起来，地面也清理一下，我到家时帮我煮好米饭，调好空调"}
-{"type": "1", "instance": "帮我总结一下上周的工作内容"}
-{"type": "1", "instance": "打开语音备忘录"}
-{"type": "1", "instance": "如何评价《三体》这本书"}
-{"type": "1", "instance": "请帮我将这段旅行的所有素材剪成一个视频"}
-{"type": "1", "instance": "请帮我看看好友茱莉亚有没有更新朋友圈"}
+{"type": "1", "instance": "请把空调调到24度"}
+{"type": "1", "instance": "【上课时】我想走神一会，帮我记一下"}
+{"type": "1", "instance": "打开微信读书"}
+{"type": "1v1", "example_instance": "打开猫耳fm继续播放", "feasibility": true, "instance": "天猫精灵，请播放最近流行的歌曲", "dataset": "600"}
+{"type": "1", "instance": "请帮我画一幅主题为人工智能的画"}
 {"type": "1", "instance": "梳理一下养老金改革的历史沿革，2000字以上"}
-{"type": "1", "instance": "请判断我的睡眠周期"}
-{"type": "1", "instance": "帮我播一段好听的音乐"}
+{"type": "1v1", "example_instance": "请帮我调研一下有哪些课题组正在做事件验证法相关的内容", "feasibility": true, "instance": "打开微信,给梅老师打电话", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我记录日程，并安排会议时间", "feasibility": true, "instance": "我需要在2023-12-13做进行组会的事情，请记录并整理日程", "dataset": "600"}
+{"type": "1", "instance": "天猫精灵，请播放最近流行的歌曲"}
+{"type": "1v1", "example_instance": "假如你是苏轼，请写一篇议论文来阐述你的人生观", "feasibility": true, "instance": "根据我提供的主要观点和参考文献，写一篇discussion paper", "dataset": "600"}
+{"type": "1", "instance": "【在做高数作业】这道题怎么做"}
+{"type": "1", "instance": "打开微信,给梅老师打电话"}
+{"type": "1", "instance": "查一下今日热门歌曲排行榜前三的歌曲、歌手名"}
+{"type": "1v1", "example_instance": "念一下我感兴趣的消息", "feasibility": true, "instance": "我的身体健康状况", "dataset": "600"}
+{"type": "1v1", "example_instance": "评价今天的身体健康情况", "feasibility": true, "instance": "我的身体健康状况", "dataset": "600"}
+{"type": "1", "instance": "去门口把外卖拿进来"}
+{"type": "1", "instance": "我需要在2023-12-13做进行组会的事情，请记录并整理日程"}
+{"type": "nv1", "example_instances": ["搜集一些法律知识的书籍和视频", "“xxx”法律问题如何解决", "查找创新创业论坛文件"], "instance": "帮我搜索最近法律热点信息并整理", "feasibilities": [true, true, true], "dataset": "150"}
+{"type": "1v1", "example_instance": "打开B站", "feasibility": true, "instance": "打开小红书", "dataset": "600"}
+{"type": "1", "instance": "帮我搜索最近法律热点信息并整理"}
+{"type": "nv1", "example_instances": ["看看附近有哪些好玩的地方", "帮我搭配一下明天的衣服", "搜一搜最近有什么新上的电影，评价如何？"], "instance": "我想买新衣服，有什么推荐（打开淘宝合适的商品界面）", "feasibilities": [true, true, true], "dataset": "150"}
+{"type": "1", "instance": "我的身体健康状况"}
+{"type": "1", "instance": "打开小红书"}
+{"type": "1v1", "example_instance": "在提醒事项里设定明天的办理签证事情", "feasibility": true, "instance": "这个组员太划水了，你发段消息提点一下他", "dataset": "600"}
+{"type": "1v1", "example_instance": "点一杯拿铁", "feasibility": false, "instance": "点一个外卖并备注12点送到，直接放门口就行", "dataset": "600"}
+{"type": "1", "instance": "这个组员太划水了，你发段消息提点一下他"}
+{"type": "1", "instance": "根据我提供的主要观点和参考文献，写一篇discussion paper"}
+{"type": "nv1", "example_instances": ["查一下去深圳市的机票平台比价", "找找附近评分高的甜品店", "查一下附近的酒店价格和距离"], "instance": "看看最近去哪里比较便宜", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我翻译以下这篇文章", "feasibility": true, "instance": "桌面设置一个好吃的甜品照片", "dataset": "600"}
+{"type": "1v1", "example_instance": "打开大众点评，搜索附近5km内评分较高的美食店铺", "feasibility": false, "instance": "想摸小狗了（自动查找附近宠物店）", "dataset": "600"}
+{"type": "nv1", "example_instances": ["明天早上7点提醒我要带身份证", "明天早上我要在八点前起床（定闹钟）", "明天早上7点起床（设定闹钟）", "明天我能否骑行到天津", "明天的天气如何"], "instance": "明天早上7点提醒我要给导师发文件", "feasibilities": [false, false, false, false, true], "dataset": "600"}
+{"type": "1", "instance": "桌面设置一个好吃的甜品照片"}
+{"type": "1", "instance": "我想买新衣服，有什么推荐（打开淘宝合适的商品界面）"}
+{"type": "nv1", "example_instances": ["【在卧室】打开空调，设置空调为26度", "把车内空调打开", "【在开车】累了，不想开车了（开启辅助驾驶）"], "instance": "【在车上】有点热（开空调）", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "1", "instance": "看看最近去哪里比较便宜"}
+{"type": "1", "instance": "想摸小狗了（自动查找附近宠物店）"}
+{"type": "1v1", "example_instance": "送一份冰可乐过来", "feasibility": true, "instance": "将后座的空调调高", "dataset": "150"}
+{"type": "1", "instance": "明天早上7点提醒我要给导师发文件"}
+{"type": "1", "instance": "【在车上】有点热（开空调）"}
+{"type": "1v1", "example_instance": "【在做菜app浏览一个菜谱】帮我根据这个菜谱做菜", "feasibility": false, "instance": "帮我做一道家乡菜", "dataset": "600"}
+{"type": "1", "instance": "帮我做一道家乡菜"}
+{"type": "1v1", "example_instance": "按照重要程度将一些DDL和社工任务排序，并标注颜色，例如最紧迫的是红色，并作出规划和提醒", "feasibility": true, "instance": "列出如何高效制定工作安排", "dataset": "150"}
+{"type": "1", "instance": "点一个外卖并备注12点送到，直接放门口就行"}
+{"type": "1v1", "example_instance": "帮我搜一下光伏相关的文献，核心期刊的", "feasibility": true, "instance": "搜索关键词为神经网络的相关文献", "dataset": "600"}
+{"type": "1", "instance": "搜索关键词为神经网络的相关文献"}
+{"type": "nv1", "example_instances": ["帮我给李小刚回复“稍等我一下，我马上下楼”消息", "请明天务必帮我抢到周杰伦的票", "让我室友帮我取快递", "快递取一下", "把桌子上的充电宝拿给我"], "instance": "告诉我我买的吉他快递到哪了", "feasibilities": [false, true, true, true, false], "dataset": "600"}
+{"type": "1", "instance": "告诉我我买的吉他快递到哪了"}
+{"type": "nv1", "example_instances": ["搜集一些法律知识的书籍和视频", "请列出公共管理领域相关最新文献", "请帮我看看今天的热搜是什么"], "instance": "帮我搜索最近法律热点信息并整理", "feasibilities": [true, true, true], "dataset": "150"}
+{"type": "nv1", "example_instances": ["请帮我决定接下来一个月的食谱，要健康，不能重样", "我想写一篇关于不确定理论的论文，有哪些角度可以展开", "看一下冰箱里有什么食材能做什么菜，找个菜谱"], "instance": "帮我提一些关于烹饪的创新想法", "feasibilities": [false, false, true], "dataset": "600"}
+{"type": "1v1", "example_instance": "给我讲一个节奏慢点的故事", "feasibility": true, "instance": "给我讲个故事", "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我收拾东西", "设置闹钟为12点", "出门后打扫客厅", "把衣服晾干并且明天收起来", "帮我收拾宿舍"], "instance": "帮我把洗完的衣服从烘干机拿出来并在衣柜里挂上", "feasibilities": [false, true, true, false, false], "dataset": "600"}
+{"type": "1", "instance": "帮我把洗完的衣服从烘干机拿出来并在衣柜里挂上"}
+{"type": "1", "instance": "帮我提一些关于烹饪的创新想法"}
+{"type": "nv1", "example_instances": ["规划到学校最近路线及时间", "推荐有关企业创业史的相关文章", "回一下导师的消息说最新版本的项目书今晚发给他"], "instance": "与清华大学的创新项目进展情况", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我叫一下一起打游戏的人上线", "请帮我打开好友王小五的聊天框", "这局我该选什么英雄，采取什么策略，能打赢吗"], "instance": "陪我练一下王昭君英雄", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["解释一下眼动仪的心理学原理", "【自驾游时】这里有什么适合拍照的角度和位置", "【在卧室】关窗帘", "把不需要回复的消息改为已读", "根据抖音上的推荐，规划播放电影的最近电影院的最优路线"], "instance": "拍星轨有哪些技巧", "feasibilities": [true, false, true, true, true], "dataset": "150"}
+{"type": "1v1", "example_instance": "我的身体健康状况", "feasibility": false, "instance": "养老金的计算方式", "dataset": "600"}
+{"type": "1v1", "example_instance": "播放搞笑视频", "feasibility": true, "instance": "播放高效视频", "dataset": "600"}
+{"type": "1", "instance": "帮我搜索最近法律热点信息并整理"}
+{"type": "1v1", "example_instance": "每月15号定一个早上8点的闹钟提醒我交电费", "feasibility": true, "instance": "闹钟定到明天早上7：50，如果我没醒的话，就别管我了，9：30再叫我一次就行", "dataset": "600"}
+{"type": "nv1", "example_instances": ["如何提升摄影技巧", "找几个适合在家进行的锻炼方式", "找一下矫正拖延的方式"], "instance": "如何提升麻将水平", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请根据我的日程表提醒我的每一个计划，并提前告知现状信息，例如我晚上9点睡觉，提示为：现在是晚上8：30，离睡觉还有半小时，请提前记得吃药、打游戏等", "请在15分钟后叫我", "请提醒我该睡觉了，不要熬夜"], "instance": "请每隔一个小时告诉我时间", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "1v1", "example_instance": "搜索如何制作一份好的汇报PPT", "feasibility": true, "instance": "请帮我将不模糊的照片洗出并寄给照片里的人", "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我收拾东西", "请帮我把水木社区任务拆分成5个子任务，并对应分给5位时间合适的员工后，跟踪其完成进度和统计汇报数据", "帮我制定一下做的计划"], "instance": "帮我整理一下工作台", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "1", "instance": "与清华大学的创新项目进展情况"}
+{"type": "1", "instance": "列出如何高效制定工作安排"}
+{"type": "1v1", "example_instance": "如果你是应急管理部门工作人员，应对体育场顶部塌陷事件需要出一份公关稿，写一份要点和大纲", "feasibility": false, "instance": "写一篇脊髓硬膜电刺激恢复运动论文，引用最前沿的文献", "dataset": "150"}
+{"type": "1", "instance": "闹钟定到明天早上7：50，如果我没醒的话，就别管我了，9：30再叫我一次就行"}
+{"type": "nv1", "example_instances": ["【在车上】我要避开收费站（选择非高速路线）", "【在开车】累了，不想开车了（开启辅助驾驶）", "导航至电影院", "【在车上】有点热（开空调）", "导航到中关村"], "instance": "【驾驶时】我要先去看展（改变导航目的地）", "feasibilities": [true, true, true, true, true], "dataset": "600"}
+{"type": "1", "instance": "养老金的计算方式"}
+{"type": "1v1", "example_instance": "请帮我写一篇关于密码学的文献综述，2000-3000字左右，要求涵盖近五年来这一领域的主要进展，并且包括必要的梳理、对比和讨论", "feasibility": true, "instance": "搜集区块链相关的文献", "dataset": "600"}
+{"type": "1", "instance": "播放高效视频"}
+{"type": "1", "instance": "如何提升麻将水平"}
+{"type": "nv1", "example_instances": ["【判生物作业时】帮我检查一下这道题目的正确性", "对于多模态学习的应用的学术问题，是否同意我的看法，你的意见是什么", "【在代码编辑器中】代码是否存在问题"], "instance": "请问这题应该怎么做，这么做有什么问题吗", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "1", "instance": "给我讲个故事"}
+{"type": "1", "instance": "请每隔一个小时告诉我时间"}
+{"type": "1", "instance": "陪我练一下王昭君英雄"}
+{"type": "1", "instance": "请帮我将不模糊的照片洗出并寄给照片里的人"}
+{"type": "1", "instance": "将后座的空调调高"}
+{"type": "1", "instance": "拍星轨有哪些技巧"}
+{"type": "1", "instance": "搜集区块链相关的文献"}
+{"type": "1", "instance": "写一篇脊髓硬膜电刺激恢复运动论文，引用最前沿的文献"}
+{"type": "1", "instance": "帮我整理一下工作台"}
+{"type": "1", "instance": "请问这题应该怎么做，这么做有什么问题吗"}
+{"type": "1", "instance": "【驾驶时】我要先去看展（改变导航目的地）"}
 {"type": "finished"}

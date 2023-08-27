@@ -153,7 +153,7 @@ class QuestionGenerator:
             similarity = float(instance_row.loc[f"similarity_{i}"])
             similarity_dict[i] = similarity
         sorted_similarity_list = sorted(similarity_dict.items(),key=lambda x:x[1],reverse=True)[1:]
-        picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt=10)
+        picked_list = self.priorized_pick_from_sorted_list(sorted_similarity_list,item_cnt=5)
         picked_index_list = [sorted_similarity_list[rank][0] for rank in picked_list]
         expression_list = [self.df.iloc[id].loc["expression"] for id in picked_index_list]
         # score the list according to ability pair frequency and ability pair ref
@@ -182,6 +182,7 @@ class QuestionGenerator:
         probs = [1/score for score in score_list]
         # normalize the probs
         probs = probs/sum(probs)
+        print(probs)
         #print(f"""score_list:{score_list}""")
         cumulative_probs = list(itertools.accumulate(probs))
         random_number = random.random()
