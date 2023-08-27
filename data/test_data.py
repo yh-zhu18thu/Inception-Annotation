@@ -67,6 +67,8 @@ def check_data(command,user_id):
         return
     cnt = 0
     score = 0
+    if_vague = True
+    if_comprehension = True
 
     with open(file_name,'r') as f ,open("log.txt",'w') as log:
         lines = f.readlines()
@@ -75,24 +77,26 @@ def check_data(command,user_id):
             data = json.loads(line)
             if data["type"]=="1":
                 instance = data["instance"]
-                rating = data["belief_rating"]
+                rating = int(data["belief_rating"])
                 single_rating_dict[instance] = rating
         for idx,line in enumerate(lines):
             data = json.loads(line)
             if data["type"]=="1v1":
+                is_misunderstood = False
+                is_vague = False
                 example_instance = data["example_instance"]
                 instance = data["instance"]
-                rating = data["belief_rating"]
+                rating = int(data["belief_rating"])
                 feasiblity = data["example_feasibility"]
                 cnt+=1
                 #print(f"example_instance:{example_instance},instance:{instance},rating:{rating},feasiblity:{feasiblity}")
-                if feasiblity=="能够稳定":
-                    if rating>=single_rating_dict[instance]:
+                if feasiblity=="能够稳定" and instance in single_rating_dict:
+                    if rating>=single_rating_dict[instance]-3:
                         score+=1
                     else:
                         log.write(f"第{idx}个1v1问题，在\"{example_instance}{feasiblity}\"的情况下，{instance}，评分为{rating}，而无前提的评分是{single_rating_dict[instance]} \n")
-                else:
-                    if rating<=single_rating_dict[instance]:
+                elif feasiblity=="不能稳定" and instance in single_rating_dict:
+                    if rating<=single_rating_dict[instance]+3:
                         score+=1
                     else:
                         log.write(f"第{idx}个1v1问题，在\"{example_instance}{feasiblity}\"的情况下，{instance}，评分为{rating}，而无前提的评分是{single_rating_dict[instance]} \n")
@@ -100,38 +104,77 @@ def check_data(command,user_id):
                 for statement in statements:
                     example_related_ability = get_example_related_ability(statement)
                     instance_related_ability = get_instance_related_ability(statement)
-                    #print(f"len(example_related_ability):{len(example_related_ability)},len(instance_related_ability):{len(instance_related_ability)}")
                     if "xxx" in example_related_ability or "xxx" in instance_related_ability:
+                        is_misunderstood = True
+                        # append a new line to df_conflict_tag
                         cnt+=1
-                        log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"或\"{instance}\"的tag中含有\"xxx\"\n")
+                        log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"或当前例子\"{instance}\"，用户标注了\"xxx\"tag\n")
                         continue
+                    if statement["option"]=="default":
+                        cnt+=1
+                        log.write(f"第{idx}个1v1问题中的样例，用户没有选择比较选项\n")
                     # get the annotated abilities of the example instance from df_600
                     example_annotated_abilities = df_600.loc[df_600['expression']==example_instance]['annotation'].values[0].split(',')
                     # get the annotated abilities of the instance from df_600
                     instance_annotated_abilities = df_600.loc[df_600['expression']==instance]['annotation'].values[0].split(',')
-                    for ability in example_related_ability:
+                    same_ability_compare = statement["option"]=="option1" and statement["expression"][1]=="接近"
+                    any_valid = False
+                    if len(example_related_ability)>0:
+                        ability = example_related_ability[0]
                         cnt+=1
                         ability_children_list = get_children_list(ability)
+                        if if_vague and (len(ability_children_list)>=5 or ability=="高级智能理解"):
+                            is_vague = True
+                            log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"，用户标注了\"{ability}\"tag，但是该tag过于笼统，不予计分\n")
+                            continue
+                        if not if_comprehension:
+                            score+=1
+                            continue
                         ability_children_list.append(ability)
                         #print(f"ability:{ability},ability_children_list:{ability_children_list}")
                         #check if any of the children of the ability is in the annotated abilities of the example instance
                         if any([child in example_annotated_abilities for child in ability_children_list]):
-                            score+=1
+                            if not same_ability_compare:
+                                correct+=1
+                            else:
+                                any_valid = True
                         else:
+                            if not same_ability_compare:
+                                is_misunderstood = True
+                                log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"和\"{instance}\"，用户标注了\"{ability}\"tag的同能力比较，但样例本有的tag只有\"{','.join(example_annotated_abilities)}\"\n")
                             #log the ability and all the annotated abilities of the example instance
-                            log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\", 用户标注了和样例相关的\"{ability}\"tag，但样例本有的tag只有\"{','.join(example_annotated_abilities)}\"\n")
-                    for ability in instance_related_ability:
+                            #log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\", 用户标注了和样例相关的\"{ability}\"tag，但样例本有的tag只有\"{','.join(example_annotated_abilities)}\"\n")
+                    if len(instance_related_ability)>0:
+                        ability = instance_related_ability[0]
                         cnt+=1
                         ability_children_list = get_children_list(ability)
                         ability_children_list.append(ability)
+                        if if_vague and (len(ability_children_list)>=5 or ability=="高级智能理解"):
+                            is_vague = True
+                            log.write(f"第{idx}个1v1问题中的样例\"{instance}\"，用户标注了\"{ability}\"tag，但是该tag过于笼统，不予计分\n")
+                            continue
+                        if not if_comprehension:
+                            score+=1
+                            continue
                         #print(f"ability:{ability},ability_children_list:{ability_children_list}")
                         #check if any of the children of the ability is in the annotated abilities of the instance
                         if any([child in instance_annotated_abilities for child in ability_children_list]):
-                            score+=1
+                            if not same_ability_compare:
+                                score+=1
+                            else:
+                                any_valid = True
                         else:
+                            if not same_ability_compare:
+                                is_misunderstood = True
+                                log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"和\"{instance}\"，用户标注了\"{ability}\"tag的同能力比较，但当前例子本有的tag只有\"{','.join(instance_annotated_abilities)}\"\n")
                             #log the ability and all the annotated abilities of the instance
-                            log.write(f"第{idx}个1v1问题中的样例\"{instance}\", 用户标注了和当前例子相关的\"{ability}\"tag，但当前例子本有的tag只有\"{','.join(instance_annotated_abilities)}\"\n")
-        # print the average score
+                            #log.write(f"第{idx}个1v1问题中的样例\"{instance}\", 用户标注了和当前例子相关的\"{ability}\"tag，但当前例子本有的tag只有\"{','.join(instance_annotated_abilities)}\"\n")
+                    if same_ability_compare and any_valid:
+                        score+=2
+                    else:
+                        if same_ability_compare:
+                            is_misunderstood = True
+                            log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"和\"{instance}\"，用户标注了\"{ability}\"tag的同能力比较，但样例本有的tag只有\"{','.join(example_annotated_abilities)}\"，当前例子本有的tag只有\"{','.join(instance_annotated_abilities)}\"\n")
     print(f"user's average score is {score/cnt}")
     
 def main():
