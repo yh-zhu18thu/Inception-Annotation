@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["【选中一个单词】这个单词是什么意思，怎么读", "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "校对这篇会议记录是否有错别字：“xxx”"], "example_feasibilities": [true, true, true], "instance": "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "请帮我回复电子邮件，如果有需要我亲自看的告诉我", "example_feasibility": "不能正确", "instance": "请帮我协调其他人的时间，并安排会议", "belief_rating": "5", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1v1", "example_instance": "今天晚餐吃什么", "example_feasibility": "能够稳定", "instance": "告诉我应该怎么提高我的写作技巧", "belief_rating": "5", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1", "instance": "告诉我应该怎么提高我的写作技巧", "belief_rating": "3"}
+{"type": "1", "instance": "请帮我协调其他人的时间，并安排会议", "belief_rating": "3"}
+{"type": "nv1", "example_instances": ["搜索如何制作一份好的汇报PPT", "请以商务纠纷为关键词做一篇类案检索和案例分析", "请帮我做一个国奖答辩ppt，要酷炫"], "example_feasibilities": [true, true, true], "instance": "看一下我的组会汇报PPT，和我讨论有哪些做的好的、哪些做的不好的，我需要如何改进", "belief_rating": "6"}
+{"type": "1", "instance": "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["请帮我将以下内容以PPT的形式导出", "搜索如何制作一份好的汇报PPT", "音量调大"], "example_feasibilities": [false, true, false], "instance": "请给出优化ppt的方法", "belief_rating": "2"}
+{"type": "1", "instance": "看一下我的组会汇报PPT，和我讨论有哪些做的好的、哪些做的不好的，我需要如何改进", "belief_rating": "2"}
+{"type": "1", "instance": "请给出优化ppt的方法", "belief_rating": "5"}

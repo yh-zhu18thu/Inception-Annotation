@@ -67,11 +67,12 @@ class DataManager:
                         break
             # if the appointed question line is not empty, return the question
             if line:
-                self.user_records[user_id]+=1
                 return json.loads(line)
             else:
                 return {"type":"finished"}
         else:
+            if user_id not in self.user_records:
+                self.user_records[user_id] = 0
             if self.get_user_finished_annotation_cnt(user_id)>=10:
                 return {"type":"finished"}
             return self.question_generater.get_question(user_id)
@@ -81,6 +82,7 @@ class DataManager:
     
     def save_current_selection(self,user_id,data):
         # create a new file with user id if not exist, append a line to the file
+        self.user_records[user_id]+=1
         type = data["type"]
         if len(user_id.split("_")[1])==3:
             file_name = f"data/answers/formal/{user_id}.txt"
