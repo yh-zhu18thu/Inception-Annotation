@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "点一杯拿铁", "example_feasibility": "能够稳定", "instance": "去门口把外卖拿进来", "belief_rating": "5", "statements": [{"option": "option2", "expression": ["特定应用功能", "强于", "特定执行动作"]}, {"option": "option1", "expression": ["信息权限", "强于"]}, {"option": "option1", "expression": ["识别与理解", "强于"]}]}
+{"type": "nv1", "example_instances": ["打开空调，把空调调到26度", "天猫精灵，帮12345678901的手机号码充话费", "打开中央三台"], "example_feasibilities": [false, true, true], "instance": "天猫精灵，请打开空调", "belief_rating": "3"}
+{"type": "nv1", "example_instances": ["我很喜欢吃奶贝，还有哪家有类似商品", "请为我推荐附近的美食", "找找附近评分高的甜品店"], "example_feasibilities": [true, true, true], "instance": "哪家咖啡适合我？", "belief_rating": "3"}
+{"type": "1", "instance": "去门口把外卖拿进来", "belief_rating": "2"}
+{"type": "1", "instance": "天猫精灵，请打开空调", "belief_rating": "4"}
+{"type": "1", "instance": "哪家咖啡适合我？", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "打开微信读书", "example_feasibility": "不能正确", "instance": "想看喜剧片，找个电影投屏吧", "belief_rating": "1", "statements": [{"option": "option1", "expression": ["识别与理解", "弱于"]}, {"option": "option1", "expression": ["设备联通", "弱于"]}, {"option": "option1", "expression": ["信息权限", "弱于"]}, {"option": "option3", "expression": ["当前指令", "自主寻找"]}, {"option": "option3", "expression": ["当前指令", "模糊指代理解"]}, {"option": "option1", "expression": ["信息分析", "弱于"]}]}
+{"type": "1", "instance": "想看喜剧片，找个电影投屏吧", "belief_rating": "1"}
+{"type": "nv1", "example_instances": ["请帮我推荐一首拉丁爵士风格的歌曲", "请帮我播放适合这个party的歌", "帮我放一些轻快舒缓的歌"], "example_feasibilities": [true, true, true], "instance": "帮我推荐一首歌", "belief_rating": "7"}
+{"type": "1", "instance": "帮我推荐一首歌", "belief_rating": "6"}

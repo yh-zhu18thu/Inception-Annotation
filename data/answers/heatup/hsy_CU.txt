@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "我想听八卦", "example_feasibility": "能够稳定", "instance": "定一个下午两点钟的闹钟", "belief_rating": "7", "statements": [{"option": "option2", "expression": ["模糊表达理解", "强于", "口语化表达理解"]}]}
+{"type": "1v1", "example_instance": "播放一个摇滚乐的歌单", "example_feasibility": "能够稳定", "instance": "请播放一首我爱听的类型的歌曲", "belief_rating": "4", "statements": [{"option": "option1", "expression": ["模糊表达理解", "弱于"]}]}
+{"type": "1", "instance": "请播放一首我爱听的类型的歌曲", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "现在的天气情况", "example_feasibility": "能够稳定", "instance": "和妈妈说最近比较忙，不得空回家吃饭", "belief_rating": "2", "statements": [{"option": "option3", "expression": ["当前指令", "隐性步骤提取"]}]}
+{"type": "1", "instance": "定一个下午两点钟的闹钟", "belief_rating": "7"}
+{"type": "1v1", "example_instance": "提示网购平台低价折扣并在授权金额范围内抢单支付", "example_feasibility": "不能正确", "instance": "帮我查查最近这些网购平台有没有优惠活动", "belief_rating": "5", "statements": [{"option": "option2", "expression": ["任务调度", "强于", "操作"]}]}
+{"type": "nv1", "example_instances": ["把车内空调打开", "设置闹钟为12点", "定一个李佳琪美妆产品上架的提示闹钟", "小度，晚上11点关闭所有的电灯", "请帮我设置一天热量摄取不超过2000卡路里，超过后进行提醒"], "example_feasibilities": [true, true, true, false, false], "instance": "设定每天22点提示强制关机", "belief_rating": "6"}
+{"type": "1", "instance": "帮我查查最近这些网购平台有没有优惠活动", "belief_rating": "6"}
+{"type": "1", "instance": "设定每天22点提示强制关机", "belief_rating": "6"}
+{"type": "1", "instance": "和妈妈说最近比较忙，不得空回家吃饭", "belief_rating": "6"}

@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "我想吃便宜好吃的云南菜", "example_feasibility": "能够稳定", "instance": "今天晚餐吃什么", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["语义揣测", "弱于"]}]}
+{"type": "nv1", "example_instances": ["定一个8点的闹钟", "定个明天早上的闹钟", "设置闹钟为12点"], "example_feasibilities": [true, true, true], "instance": "定一个明早9点的闹钟", "belief_rating": "7"}
+{"type": "1", "instance": "今天晚餐吃什么", "belief_rating": "3"}
+{"type": "1", "instance": "定一个明早9点的闹钟", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "打开番茄TODO", "example_feasibility": "不能正确", "instance": "今天中午想吃麻婆豆腐", "belief_rating": "4", "statements": [{"option": "option3", "expression": ["当前指令", "语义揣测"]}]}
+{"type": "1", "instance": "今天中午想吃麻婆豆腐", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "请在15分钟后叫我", "example_feasibility": "能够稳定", "instance": "在刺客信条打折开始1小时后和打折结束1小时前通知我", "belief_rating": "4", "statements": [{"option": "option1", "expression": ["设置条件触发", "弱于"]}]}
+{"type": "1", "instance": "在刺客信条打折开始1小时后和打折结束1小时前通知我", "belief_rating": "3"}
+{"type": "nv1", "example_instances": ["定一个明早9点的闹钟", "我起不来，你把窗帘拉开让我清醒会", "定一个下午两点钟的闹钟"], "example_feasibilities": [true, true, false], "instance": "定一个8点的闹钟", "belief_rating": "5"}
+{"type": "1", "instance": "定一个8点的闹钟", "belief_rating": "6"}

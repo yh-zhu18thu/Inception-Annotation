@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "给我定制一个跑步十公里的歌单", "example_feasibility": "能够稳定", "instance": "导航到学校并放音乐", "belief_rating": "2", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1", "instance": "导航到学校并放音乐", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "帮我美团上点一个“酸菜鱼”的外卖", "example_feasibility": "不能正确", "instance": "今天中午想吃麻婆豆腐", "belief_rating": "1", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "nv1", "example_instances": ["天猫精灵，请播放最近流行的歌曲", "天猫精灵，我要购买新的骨传导耳机", "天猫精灵，帮12345678901的手机号码充话费"], "example_feasibilities": [true, false, true], "instance": "天猫精灵，帮我查询12345678901的手机号本月本地剩余流量", "belief_rating": "1"}
+{"type": "nv1", "example_instances": ["帮我翻译一下这个文章", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话"], "example_feasibilities": [true, false, true], "instance": "请帮我翻译以下这篇文章", "belief_rating": "7"}
+{"type": "1", "instance": "天猫精灵，帮我查询12345678901的手机号本月本地剩余流量", "belief_rating": "1"}
+{"type": "1", "instance": "把空调的风调成适合午睡的模式", "belief_rating": "7"}
+{"type": "1", "instance": "今天中午想吃麻婆豆腐", "belief_rating": "1"}
+{"type": "1", "instance": "请帮我翻译以下这篇文章", "belief_rating": "6"}

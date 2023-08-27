@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["帮我设置7点的闹钟", "设置闹钟为12点", "帮我设置一个明天早上7点的闹钟", "请帮我定个明天早上的闹钟", "帮我设置明天的闹钟"], "example_feasibilities": [true, false, true, true, true], "instance": "请把我设置上午10点的闹钟", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["明天的天气如何", "明天的天气如何，是否适合打羽毛球", "查询天气预报及穿衣指数"], "example_feasibilities": [true, false, true], "instance": "现在的天气情况", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["【对一张图片】帮我P图", "帮我做一个excel表格", "请帮我做一个国奖答辩ppt，要酷炫"], "example_feasibilities": [true, true, true], "instance": "请帮我做一份汇报ppt", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "搜集股份回购相关的外文文献并翻译成中文", "example_feasibility": "不能正确", "instance": "整理一个养老金相关的政策分析报告，5000字以上", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}, {"option": "option3", "expression": ["当前指令", "xxx"]}]}
+{"type": "nv1", "example_instances": ["查一下附近的景点", "目标地点附近车多不多（打开地图搜索地点查看拥堵水平）", "小度小度导航到最近的加油站同时搜索当日油价"], "example_feasibilities": [true, true, true], "instance": "查找附近跑步线路和天气、路况", "belief_rating": "6"}
+{"type": "1", "instance": "现在的天气情况", "belief_rating": "7"}
+{"type": "1", "instance": "查找附近跑步线路和天气、路况", "belief_rating": "6"}
+{"type": "1", "instance": "请帮我做一份汇报ppt", "belief_rating": "3"}
+{"type": "1", "instance": "请把我设置上午10点的闹钟", "belief_rating": "5"}
+{"type": "1", "instance": "整理一个养老金相关的政策分析报告，5000字以上", "belief_rating": "3"}

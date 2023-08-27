@@ -1,0 +1,7 @@
+{"type": "1v1", "example_instance": "明天早上7点提醒我要给导师发文件", "example_feasibility": "不能正确", "instance": "明天早上7点提醒我要带身份证", "belief_rating": "7", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1v1", "example_instance": "打开微信软件中我和王熙凤的对话", "example_feasibility": "不能正确", "instance": "hi Siri，打开微信", "belief_rating": "7", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1", "instance": "hi Siri，打开微信", "belief_rating": "7"}
+{"type": "1", "instance": "请帮我推荐一些讲述创业成功人士的经历的文章", "belief_rating": "4"}
+{"type": "1", "instance": "现在的天气情况", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "请帮我修改论文中的英文部分语法错误及润色", "example_feasibility": "能够稳定", "instance": "帮我查找并朗读一下这本书的书评", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["xxx", "强于", "xxx"]}]}
+{"type": "1", "instance": "帮我查找并朗读一下这本书的书评", "belief_rating": "2"}

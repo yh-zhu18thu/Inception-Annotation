@@ -3,7 +3,7 @@ import random
 import string
 import sys
 
-USER_DB_ABSOLUTE_PATH = '/Users/thuzyh/Documents/hci/Inception/annotation/accounts/user_accounts.db'
+USER_DB_ABSOLUTE_PATH = '/home/zyh/inception/annotation/accounts/user_accounts.db'
 
 # Function to generate a random 8-digit password
 def generate_password():
@@ -73,7 +73,7 @@ def main():
         username = sys.argv[2]
         username,password = create_account(username)
         print("Account created successfully!")
-        print(f"Username:{username},Password: {password}")
+        print(f"Username:{username},Password:{password}")
         print()
 
     elif command == "create_formal":
@@ -84,7 +84,7 @@ def main():
         username = sys.argv[2]
         username,password = create_account(username,3)
         print("Formal account created successfully!")
-        print(f"Username:{username},Password: {password}")
+        print(f"Username:{username},Password:{password}")
 
     elif command == "validate":
         if len(sys.argv) < 4:

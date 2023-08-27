@@ -81,4 +81,4 @@ def hello_world():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port=4820,debug=True)
+    app.run(host="0.0.0.0",port=22258,debug=False)

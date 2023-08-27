@@ -77,28 +77,34 @@ def check_data(command,user_id):
                 instance = data["instance"]
                 rating = data["belief_rating"]
                 single_rating_dict[instance] = rating
-        for line in lines:
+        for idx,line in enumerate(lines):
             data = json.loads(line)
             if data["type"]=="1v1":
                 example_instance = data["example_instance"]
                 instance = data["instance"]
                 rating = data["belief_rating"]
                 feasiblity = data["example_feasibility"]
+                cnt+=1
                 #print(f"example_instance:{example_instance},instance:{instance},rating:{rating},feasiblity:{feasiblity}")
                 if feasiblity=="能够稳定":
                     if rating>=single_rating_dict[instance]:
                         score+=1
                     else:
-                        log.write(f"第{cnt}个1v1问题，在\"{example_instance}{feasiblity}\"的情况下，{instance}，评分为{rating}，而无前提的评分是{single_rating_dict[instance]} \n")
+                        log.write(f"第{idx}个1v1问题，在\"{example_instance}{feasiblity}\"的情况下，{instance}，评分为{rating}，而无前提的评分是{single_rating_dict[instance]} \n")
                 else:
                     if rating<=single_rating_dict[instance]:
                         score+=1
                     else:
-                        log.write(f"第{cnt}个1v1问题，在\"{example_instance}{feasiblity}\"的情况下，{instance}，评分为{rating}，而无前提的评分是{single_rating_dict[instance]} \n")
+                        log.write(f"第{idx}个1v1问题，在\"{example_instance}{feasiblity}\"的情况下，{instance}，评分为{rating}，而无前提的评分是{single_rating_dict[instance]} \n")
                 statements = data["statements"]
                 for statement in statements:
                     example_related_ability = get_example_related_ability(statement)
                     instance_related_ability = get_instance_related_ability(statement)
+                    #print(f"len(example_related_ability):{len(example_related_ability)},len(instance_related_ability):{len(instance_related_ability)}")
+                    if "xxx" in example_related_ability or "xxx" in instance_related_ability:
+                        cnt+=1
+                        log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\"或\"{instance}\"的tag中含有\"xxx\"\n")
+                        continue
                     # get the annotated abilities of the example instance from df_600
                     example_annotated_abilities = df_600.loc[df_600['expression']==example_instance]['annotation'].values[0].split(',')
                     # get the annotated abilities of the instance from df_600
@@ -107,25 +113,24 @@ def check_data(command,user_id):
                         cnt+=1
                         ability_children_list = get_children_list(ability)
                         ability_children_list.append(ability)
-                        print(f"ability:{ability},ability_children_list:{ability_children_list}")
+                        #print(f"ability:{ability},ability_children_list:{ability_children_list}")
                         #check if any of the children of the ability is in the annotated abilities of the example instance
                         if any([child in example_annotated_abilities for child in ability_children_list]):
                             score+=1
                         else:
                             #log the ability and all the annotated abilities of the example instance
-                            log.write(f"第{cnt}个1v1问题中的样例\"{example_instance}\", 用户标注了和样例相关的\"{ability}\"tag，但样例本有的tag只有\"{','.join(example_annotated_abilities)}\"\n")
+                            log.write(f"第{idx}个1v1问题中的样例\"{example_instance}\", 用户标注了和样例相关的\"{ability}\"tag，但样例本有的tag只有\"{','.join(example_annotated_abilities)}\"\n")
                     for ability in instance_related_ability:
                         cnt+=1
                         ability_children_list = get_children_list(ability)
                         ability_children_list.append(ability)
-                        print(f"ability:{ability},ability_children_list:{ability_children_list}")
+                        #print(f"ability:{ability},ability_children_list:{ability_children_list}")
                         #check if any of the children of the ability is in the annotated abilities of the instance
                         if any([child in instance_annotated_abilities for child in ability_children_list]):
                             score+=1
                         else:
                             #log the ability and all the annotated abilities of the instance
-                            log.write(f"第{cnt}个1v1问题中的样例\"{instance}\", 用户标注了和当前例子相关的\"{ability}\"tag，但当前例子本有的tag只有\"{','.join(instance_annotated_abilities)}\"\n")
-                cnt+=1
+                            log.write(f"第{idx}个1v1问题中的样例\"{instance}\", 用户标注了和当前例子相关的\"{ability}\"tag，但当前例子本有的tag只有\"{','.join(instance_annotated_abilities)}\"\n")
         # print the average score
     print(f"user's average score is {score/cnt}")
     

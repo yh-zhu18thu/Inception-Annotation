@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["帮我调整角度和光影拍出ins风格的照片", "【对一张图片】帮我P图", "帮我收拾东西"], "example_feasibilities": [true, true, true], "instance": "请帮我将不模糊的照片洗出并寄给照片里的人", "belief_rating": "1"}
+{"type": "1v1", "example_instance": "帮我回复一下新的微信消息说我稍后回复", "example_feasibility": "能够稳定", "instance": "微信最近10个联系人是工作分组的消息未回复的帮我回个收到", "belief_rating": "4", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "请帮我将不模糊的照片洗出并寄给照片里的人", "belief_rating": "3"}
+{"type": "1", "instance": "微信最近10个联系人是工作分组的消息未回复的帮我回个收到", "belief_rating": "3"}
+{"type": "nv1", "example_instances": ["预计一小时内有雨时提醒我收衣服", "请每隔一个小时告诉我时间", "明天早上7点提醒我要给导师发文件"], "example_feasibilities": [false, true, true], "instance": "ddl前一天提醒我交作业", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["最近有什么娱乐大八卦呢", "hey，siri，最近有什么比较奇葩的社会新闻吗？", "播放一首周深的歌曲"], "example_feasibilities": [false, true, true], "instance": "微博热搜有什么新八卦", "belief_rating": "1"}
+{"type": "1", "instance": "ddl前一天提醒我交作业", "belief_rating": "2"}
+{"type": "1", "instance": "微博热搜有什么新八卦", "belief_rating": "2"}
+{"type": "nv1", "example_instances": ["帮我生成一个适合与我在绘画时倾听的歌单", "帮我推荐一首歌", "小爱同学，播放歌曲"], "example_feasibilities": [true, true, false], "instance": "帮我写一首歌", "belief_rating": "1"}
+{"type": "1", "instance": "帮我写一首歌", "belief_rating": "1"}

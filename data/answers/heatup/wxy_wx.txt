@@ -1,0 +1,9 @@
+{"type": "nv1", "example_instances": ["帮我收拾东西", "帮我收拾宿舍", "我要出门了，5点钟到家，把被套换洗一下烘干，换上新买的那套", "让我室友帮我取快递", "拿些消毒的药帮我处理一下伤口"], "example_feasibilities": [true, true, true, true, true], "instance": "我要出门了，帮我扫一下地，然后再拖一下", "belief_rating": "6"}
+{"type": "1", "instance": "我要出门了，帮我扫一下地，然后再拖一下", "belief_rating": "4"}
+{"type": "nv1", "example_instances": ["请帮我打开窗帘", "打开空调，把空调调到26度", "把空调的风调成适合午睡的模式"], "example_feasibilities": [true, true, true], "instance": "请帮我打开空调，并设置7小时之后关闭", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "播放张杰最新的一首歌", "example_feasibility": "能够稳定", "instance": "小度小度，我心情不好（播放治愈音乐）", "belief_rating": "4", "statements": [{"option": "option3", "expression": ["当前指令", "xxx"]}]}
+{"type": "1", "instance": "小度小度，我心情不好（播放治愈音乐）", "belief_rating": "3"}
+{"type": "1", "instance": "请帮我打开空调，并设置7小时之后关闭", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["小说更新提醒我一下", "天猫精灵，给我讲个故事", "给我讲一个节奏慢点的故事", "hey，siri，我上次小说看到哪了？帮我读一下", "假如你是苏轼，请写一篇议论文来阐述你的人生观"], "example_feasibilities": [false, false, true, true, false], "instance": "给我讲个故事", "belief_rating": "6"}
+{"type": "1", "instance": "请在15分钟后叫我", "belief_rating": "6"}
+{"type": "1", "instance": "给我讲个故事", "belief_rating": "6"}

@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["微信最近10个联系人是工作分组的消息未回复的帮我回个收到", "小元刚刚给我发什么微信消息了", "朗读今天的微博热搜"], "example_feasibilities": [false, true, true], "instance": "回复最新的微信消息：收到", "belief_rating": "7"}
+{"type": "1", "instance": "回复最新的微信消息：收到", "belief_rating": "7"}
+{"type": "nv1", "example_instances": ["帮我查查最近这些网购平台有没有优惠活动", "帮我美团上点一个“酸菜鱼”的外卖", "提示网购平台低价折扣并在授权金额范围内抢单支付"], "example_feasibilities": [true, true, false], "instance": "请帮我购买最新的ipad，到货地址为住家", "belief_rating": "5"}
+{"type": "1", "instance": "请帮我购买最新的ipad，到货地址为住家", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "根据过往情况，判断一下我完成任务清单的可能性", "example_feasibility": "不能正确", "instance": "安排我的日程，按照紧急-重要-紧急不重要-重要不紧急的顺序，告诉我今天需要在什么时间完成哪些工作", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["高级智能理解", "接近"]}]}
+{"type": "1", "instance": "安排我的日程，按照紧急-重要-紧急不重要-重要不紧急的顺序，告诉我今天需要在什么时间完成哪些工作", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "我想知道我的今日运动训练计划是什么", "example_feasibility": "能够稳定", "instance": "这局我该选什么英雄，采取什么策略，能打赢吗", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["隐性步骤提取", "弱于"]}]}
+{"type": "1", "instance": "这局我该选什么英雄，采取什么策略，能打赢吗", "belief_rating": "1"}
+{"type": "1v1", "example_instance": "现在的天气情况", "example_feasibility": "能够稳定", "instance": "明天适合出去玩吗，推荐去哪玩", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["信息", "弱于"]}]}
+{"type": "1", "instance": "明天适合出去玩吗，推荐去哪玩", "belief_rating": "4"}
