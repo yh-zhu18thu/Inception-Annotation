@@ -47,6 +47,33 @@
                 <label class="form-check-label" for="belief7">7(非常乐观)</label>
             </div>
         </div>
+    </br>
+        <div class="statements" id="statements">
+            <!-- Initial statement -->
+            <div class="form-row form-group align-items-center">
+                <!-- Option selection -->
+                <div class="col-md-3">
+                    <select class="form-control option-select">
+                        <option value="custom">自定义描述</option>\
+                        <option value="option1">相同能力</option>\
+                        <option value="option2">不同能力</option>\
+                        <option value="option3">异质能力</option>\
+                    </select>
+                </div>
+                <!-- Expression -->
+                <div class="col-md-8">
+                    <div class="input-group expression-group">
+                        <input type="text" class="form-control custom-expression-input">
+                            <!-- The expression will be constructed here dynamically -->
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-danger remove-statement"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+            <!-- Add Statement Button -->
+            <button type="button" class="btn btn-secondary add-statement mt-3" data-statements="statements"><i class="fas fa-plus"></i></button>
+        </div>
     <!-- Next Button -->
     <button type="button" class="btn btn-primary btn-block" id="next-button">Next</button>
 </div>                                              
@@ -55,7 +82,43 @@
 
 
 <script>
+    // Variable to hold currently selected input field
+    var selectedButton = null;
+    var select_state =false;
+
+    var mouseX = 0, mouseY = 0;
+
+    $(document).mousemove(function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+   
+    // Enable node selection when "Select Node" button is clicked
+    $('body').on('click', '.select-node', function() {
+        // Enter node selection mode
+        selectedButton = $(this);  // Store reference to button
+        selectedButton.addClass('active');  // Highlight button
+        select_state = true;
+    });
+
+
+    // Update input box when node is clicked in node selection mode
+    $('body').on('click', '.selectable', function() {
+        // Update input field with node value
+        var nodeValue = $(this).text();
+        //set the value of the selected button
+        selectedButton.text(nodeValue);
+
+        // Exit node selection mode
+        selectedInputField = null;
+        $('.node-link').removeClass('selectable');
+        selectedButton.removeClass('active');  // Remove highlight from button
+        selectedButton = null;
+    });
+
     var valid_flag = true;
+
+
     // TODO: Add your next button handler here
     $('#next-button').click(function() {
         // Handle next button click here
@@ -91,6 +154,45 @@
             valid_flag = false;
             return;
         }
+
+        // get the current statements
+        var statements = [];
+        $('#statements').children().each(function(){
+            var option = $(this).find('.option-select').val();
+            var expression_group = $(this).find('.expression-group');
+            //get all the selected nodes in the expression group
+            var expression = [];
+            expression_group.children().each(function(){
+                if($(this).hasClass('select-node')){
+                    //get the text and select the text before any space or \n
+                    var text = $(this).text();
+                    var index = text.indexOf(' ');
+                    if(index != -1){
+                        text = text.substring(0,index);
+                    }
+                    index = text.indexOf('\n');
+                    if(index != -1){
+                        text = text.substring(0,index);
+                    }
+                    expression.push(text);
+                }
+                if($(this).hasClass('dropdown')){
+                    expression.push($(this).children('.dropdown-toggle').text());
+                }
+                if($(this).hasClass('custom-expression-input')){
+                    expression.push($(this).val());
+                }
+            });
+            if (expression.length == 0){
+                valid_flag = false;
+                return;
+            }
+            statements.push({'option':option,'expression':expression});
+        });
+        if(statements.length == 0){
+            valid_flag = false;
+            return;
+        }
         // send the data to server
         $.ajax({
             url: '/save_current_selection',
@@ -100,7 +202,8 @@
                 'example_instances': example_instances,
                 'example_feasibilities': example_feasibilities,
                 'instance': current_instance,
-                'belief_rating': belief_rating
+                'belief_rating': belief_rating,
+                'statements': statements
             }),
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
@@ -114,7 +217,118 @@
     function clear_current_input(){
         // clear the current input
         $("input[name='beliefRating']").prop('checked', false);
+        $('#statements').html('\
+        <div class="form-row form-group align-items-center">\
+            <!-- Option selection -->\
+            <div class="col-md-3">\
+                <select class="form-control option-select">\
+                    <option value="custom">自定义描述</option>\
+                    <option value="option1">相同能力</option>\
+                    <option value="option2">不同能力</option>\
+                    <option value="option3">异质能力</option>\
+                </select>\
+            </div>\
+            <!-- Expression -->\
+            <div class="col-md-8">\
+                <div class="input-group expression-group">\
+                    <input type="text" class="form-control custom-expression-input">\
+                </div>\
+            </div>\
+            <div class="col-md-1">\
+                <button type="button" class="btn btn-danger remove-statement"><i class="fas fa-trash-alt"></i></button>\
+            </div>\
+        </div>\
+        ');
     }
+
+    // Add statement button click
+    $('.add-statement').click(function() {
+        var statementsId = $(this).data('statements');
+        $('#' + statementsId).append('\
+        <div class="form-row form-group align-items-center">\
+            <!-- Option selection -->\
+            <div class="col-md-3">\
+                <select class="form-control option-select">\
+                    <option value="custom">自定义描述</option>\
+                    <option value="option1">相同能力</option>\
+                    <option value="option2">不同能力</option>\
+                    <option value="option3">异质能力</option>\
+                </select>\
+            </div>\
+            <!-- Expression -->\
+            <div class="col-md-8">\
+                <div class="input-group expression-group">\
+                    <input type="text" class="form-control custom-expression-input">\
+                </div>\
+            </div>\
+            <div class="col-md-1">\
+                <button type="button" class="btn btn-danger remove-statement"><i class="fas fa-trash-alt"></i></button>\
+            </div>\
+        </div>\
+        ');
+    });
+
+    // On option change
+    $('body').on('change','.option-select',function() {
+        var option = $(this).val();
+        var expressionGroup = $(this).parent().next().find('.expression-group');
+
+        // Clear the previous expression
+        expressionGroup.empty();
+        if(option === "custom"){
+            expressionGroup.append('<input type="text" class="form-control custom-expression-input">');
+        }
+        else if(option === "option1") {
+            // Construct the expression for option 1
+            expressionGroup.append('样例指令要求的');
+            expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+            expressionGroup.append('能力')
+            expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">强于</button><div class="dropdown-menu"><a class="dropdown-item" href="#">强于</a><a class="dropdown-item" href="#">弱于</a><a class="dropdown-item" href="#">接近</a></div></div>');
+            expressionGroup.append('当前指令要求')
+        }
+        else if(option === "option2") {
+            expressionGroup.append('样例指令要求的');
+            expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+            expressionGroup.append('能力')
+            expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">强于</button><div class="dropdown-menu"><a class="dropdown-item" href="#">强于</a><a class="dropdown-item" href="#">弱于</a><a class="dropdown-item" href="#">接近</a></div></div>');
+            expressionGroup.append('当前指令的要求')
+            expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+            expressionGroup.append('能力')
+        }
+        else if(option === "option3") {
+            expressionGroup.append('<div class="dropdown"><button class="styled-button dropdown-toggle" type="button" data-toggle="dropdown">当前指令</button><div class="dropdown-menu"><a class="dropdown-item" href="#">当前指令</a><a class="dropdown-item" href="#">样例指令</a></div></div>');
+            expressionGroup.append('要求的');
+            expressionGroup.append('<span class="select-node styled-button mx-2">xxx</span>');
+            expressionGroup.append('能力在')
+            expressionGroup.append('<p class="ability-change">样例指令<p>')
+            expressionGroup.append('中没有要求')
+        }
+    });
+
+    // On dropdown item click
+    $(document).on('click', '.dropdown-item', function() {
+        // Your logic here
+        //change the drop down text to the selected item
+        var selected_item = $(this).text();
+        $(this).parent().prev().text(selected_item);
+        // alert('Dropdown item clicked!');
+        if(selected_item === "当前指令"){
+            $(this).parent().parent().parent().find('.ability-change').text("样例指令");
+        }
+        else if(selected_item === "样例指令"){
+            $(this).parent().parent().parent().find('.ability-change').text("当前指令");
+        }
+    });
+
+    
+    $('.styled-button').click(function() {
+        // Your logic here
+        //alert('Button clicked!');
+    });
+
+    $(document).on('click', '.remove-statement', function() {
+        $(this).closest('.form-row').remove();
+    });
 
     $(document).on('click','#start-btn',function(){
         $('#question-intro').addClass('hide');

@@ -3,7 +3,7 @@ import random
 import string
 import sys
 
-USER_DB_ABSOLUTE_PATH = '/home/zyh/inception/annotation/accounts/user_accounts.db'
+USER_DB_ABSOLUTE_PATH = '/Users/thuzyh/Documents/hci/Inception/annotation/accounts/user_accounts.db'
 
 # Function to generate a random 8-digit password
 def generate_password():
