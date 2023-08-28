@@ -80,7 +80,7 @@
 {"type": "1v1", "example_instance": "帮我提一些关于烹饪的创新想法", "feasibility": true, "instance": "你看一下我网络学堂的各门课作业，帮我计划一下写作业的日程，写完了帮我交一下", "dataset": "600"}
 {"type": "1", "instance": "天猫精灵，给我讲个故事"}
 {"type": "nv1", "example_instances": ["请帮我做好日程规划", "请帮我把我的日程安排导出来并在相应时间提醒我", "帮我计划一下这周的日程"], "instance": "我需要在2023-12-13做进行组会的事情，请记录并整理日程", "feasibilities": [false, true, false], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译以下文章：“xxx”", "帮我翻译一下这个文章"], "instance": "请帮我翻译学术名词\"xxx\"", "feasibilities": [true, false, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译以下文章：“xxx”", "帮我翻译一下这个文章"], "instance": "请帮我翻译学术名词xxx", "feasibilities": [true, false, true], "dataset": "600"}
 {"type": "1", "instance": "告诉我我买的吉他快递到哪了"}
 {"type": "1", "instance": "请帮我打开歌曲《想去海边》"}
 {"type": "1", "instance": "我要睡觉了（拉窗帘、关灯）"}
@@ -88,7 +88,7 @@
 {"type": "1", "instance": "请帮我选择我应该吃什么"}
 {"type": "1", "instance": "我想知道我的今日运动训练计划是什么"}
 {"type": "nv1", "example_instances": ["把微信所有消息设置为已读", "查找创新创业论坛文件", "如果我需要做一份关于社会实践的报告，请给出报告的大纲"], "instance": "打开创新创业论坛文件", "feasibilities": [false, false, false], "dataset": "150"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\""}
+{"type": "1", "instance": "请帮我翻译学术名词xxx"}
 {"type": "1v1", "example_instance": "请为我推荐最近新上的优质电影", "feasibility": false, "instance": "最近有什么推荐的剧", "dataset": "600"}
 {"type": "1v1", "example_instance": "【拍照后】将拍到的照片发到社交媒体上", "feasibility": true, "instance": "总结以下文章的主要内容，并改写成一段新文章的引言", "dataset": "150"}
 {"type": "1v1", "example_instance": "查询天气预报及穿衣指数", "feasibility": false, "instance": "帮我挂一个今天医院放射科的号", "dataset": "600"}

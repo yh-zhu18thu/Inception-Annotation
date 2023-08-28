@@ -131,7 +131,7 @@
 {"type": "1", "instance": "请帮我打开美颜相机", "belief_rating": "2"}
 {"type": "1v1", "example_instance": "连一下校园网后更新游戏", "example_feasibility": "不能正确", "instance": "十一点之前不玩手机（开启Forest种树）", "belief_rating": "3", "statements": [{"option": "option3", "expression": ["当前指令", "复杂指令理解"]}]}
 {"type": "nv1", "example_instances": ["根据过往情况，判断一下我完成任务清单的可能性", "【对着待办事项】这些任务我应该先做哪个比较好", "整理一下我在3月15日~4月15日期间出错的题目", "【对着当前的文档】整理信息", "请以强化学习为关键词搜索并按照重要程度顺序排序"], "example_feasibilities": [false, false, true, true, true], "instance": "完成数据标注工作最快的方法是什么", "belief_rating": "4"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\"", "belief_rating": "5"}
+{"type": "1", "instance": "请帮我翻译学术名词xxx", "belief_rating": "5"}
 {"type": "1", "instance": "打开腾讯会议并关闭摄像头", "belief_rating": "3"}
 {"type": "1", "instance": "十一点之前不玩手机（开启Forest种树）", "belief_rating": "2"}
 {"type": "1", "instance": "完成数据标注工作最快的方法是什么", "belief_rating": "1"}

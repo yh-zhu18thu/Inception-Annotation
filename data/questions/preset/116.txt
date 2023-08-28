@@ -104,10 +104,10 @@
 {"type": "nv1", "example_instances": ["开启有声书功能", "打开适合看书的轻音乐歌单", "打开腾讯会议并关闭摄像头"], "instance": "打开语音备忘录", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "寻找比较文学方面的文献"}
 {"type": "nv1", "example_instances": ["请帮我决定接下来一个月的食谱，要健康，不能重样", "帮我做一个生日蛋糕", "我想吃川菜（给出推荐餐馆）"], "instance": "请帮我安排一顿好吃且能减肥的食谱", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "1v1", "example_instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibility": false, "instance": "请帮我翻译学术名词\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibility": false, "instance": "请帮我翻译学术名词xxx", "dataset": "600"}
 {"type": "1", "instance": "请帮我安排一顿好吃且能减肥的食谱"}
 {"type": "nv1", "example_instances": ["打开bilibili", "打开王者荣耀", "天猫精灵，请打开休息模式（对应的灯光、音响、投影、空调等相应开启）"], "instance": "打开勿扰模式", "feasibilities": [false, true, true], "dataset": "150"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\""}
+{"type": "1", "instance": "请帮我翻译学术名词xxx"}
 {"type": "1", "instance": "打开语音备忘录"}
 {"type": "nv1", "example_instances": ["帮我把这些衣服叠一下", "我想买新衣服，有什么推荐（打开淘宝合适的商品界面）", "在明天早上7点打开窗帘", "规划一下明天的行程安排", "请问明天的天气怎么样"], "instance": "帮我搭配一下明天的衣服", "feasibilities": [true, true, true, false, true], "dataset": "150"}
 {"type": "1", "instance": "我要睡觉（关灯）"}

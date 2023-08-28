@@ -5,7 +5,7 @@
 {"type": "1", "instance": "念一下我感兴趣的消息"}
 {"type": "nv1", "example_instances": ["生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复", "帮我分析一下这两篇文章的异同", "请帮我写一段代码，主要功能是：构建平衡二叉树，代码语言是：c++"], "instance": "这是一段python代码，请帮我介绍每一句的具体功能，并对应转换成matlab", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "明天上午十点进入腾讯会议123-456-7890"}
-{"type": "1v1", "example_instance": "请帮我翻译以下文章：“xxx”", "feasibility": true, "instance": "请帮我翻译学术名词\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我翻译以下文章：“xxx”", "feasibility": true, "instance": "请帮我翻译学术名词xxx", "dataset": "600"}
 {"type": "nv1", "example_instances": ["打开B站", "打开王者", "打开支付宝扫码", "打开车内空调", "点一杯拿铁"], "instance": "打开中央三台", "feasibilities": [false, true, true, false, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["对于多模态学习的应用的学术问题，是否同意我的看法，你的意见是什么", "我想写一篇关于不确定理论的论文，有哪些角度可以展开", "你了解新能源领域吗？我想写一篇关于这个的文献综述，你能给点建议吗？"], "instance": "【在一篇公众号文章界面】针对这个话题，你有哪些学术创意？", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "【选中一个单词】这个单词是什么意思，怎么读"}
@@ -20,7 +20,7 @@
 {"type": "1", "instance": "这是一段python代码，请帮我介绍每一句的具体功能，并对应转换成matlab"}
 {"type": "1", "instance": "打开中央三台"}
 {"type": "nv1", "example_instances": ["帮我检查文章", "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "帮我润色一下这段小说的语言"], "instance": "【在材料页面】阅读我写好的辩诉材料，帮我修改", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\""}
+{"type": "1", "instance": "请帮我翻译学术名词xxx"}
 {"type": "1", "instance": "【在材料页面】阅读我写好的辩诉材料，帮我修改"}
 {"type": "nv1", "example_instances": ["【选中一个单词】这个单词是什么意思，怎么读", "帮我润色一下这段小说的语言", "校对这篇会议记录是否有错别字：“xxx”"], "instance": "卡利斯马表现怎么翻译", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "1", "instance": "在明天早上7点打开窗帘"}

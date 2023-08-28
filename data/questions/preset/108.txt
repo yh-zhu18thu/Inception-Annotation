@@ -71,7 +71,7 @@
 {"type": "1", "instance": "你是我的秘书，帮我安排我的日程，并每天提醒我在什么时候需要处理什么工作，我不想拖延，也不想迟到"}
 {"type": "1v1", "example_instance": "帮我联系下小红书上六道口附近的中介，你去看一下房，视频传我", "feasibility": true, "instance": "【在车上】有点热（开空调）", "dataset": "600"}
 {"type": "1v1", "example_instance": "请推荐评分超过9的惊悚电影", "feasibility": false, "instance": "我要三千块预算以内性价比最高的上海旅游攻略", "dataset": "600"}
-{"type": "nv1", "example_instances": ["【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译学术名词\"xxx\"", "【在车上】有点热（开空调）"], "instance": "校对这篇会议记录是否有错别字：“xxx”", "feasibilities": [true, false, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译学术名词xxx", "【在车上】有点热（开空调）"], "instance": "校对这篇会议记录是否有错别字：“xxx”", "feasibilities": [true, false, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "我最近想看情感类戏剧，找一个符合我审美的并定周四晚的票", "feasibility": false, "instance": "我想吃菠萝包（下单菠萝包外卖）", "dataset": "600"}
 {"type": "1", "instance": "【在车上】有点热（开空调）"}
 {"type": "nv1", "example_instances": ["提醒我早点入睡", "当我开始出现工作疲劳时提醒我休息一下", "请每隔一个小时告诉我时间", "请判断我的睡眠周期", "让我一个小时之内不要碰手机"], "instance": "请提醒我该睡觉了，不要熬夜", "feasibilities": [false, true, true, true, true], "dataset": "600"}

@@ -114,7 +114,7 @@
 {"type": "1", "instance": "请帮我推荐一些讲述创业成功人士的经历的文章"}
 {"type": "1v1", "example_instance": "打开中央三台", "feasibility": false, "instance": "请帮我将需要完成的事情进行记录，并进行提醒", "dataset": "600"}
 {"type": "1v1", "example_instance": "我的身体健康状况", "feasibility": true, "instance": "我想知道我的今日运动训练计划是什么", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我查询“社会心理学”的最新专业术语", "请帮我翻译学术名词\"xxx\"", "给我讲清楚这篇文献在说什么", "对于多模态学习的应用的学术问题，是否同意我的看法，你的意见是什么", "如何评价《三体》这本书"], "instance": "请帮我查询PTSD名词是什么意思", "feasibilities": [false, false, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我查询“社会心理学”的最新专业术语", "请帮我翻译学术名词xxx", "给我讲清楚这篇文献在说什么", "对于多模态学习的应用的学术问题，是否同意我的看法，你的意见是什么", "如何评价《三体》这本书"], "instance": "请帮我查询PTSD名词是什么意思", "feasibilities": [false, false, true, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["我想用一千块穷游大理（规划行程及预算）", "这周末我想去杭州或者重庆玩，帮我分别拟一份行程并比较两地的特点", "帮我规划一下去秦皇岛该玩哪些，定个计划"], "instance": "我要去广西旅行（规划行程）", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "根据抖音上的推荐，规划播放电影的最近电影院的最优路线", "feasibility": true, "instance": "搜一搜最近有什么新上的电影，评价如何？", "dataset": "150"}
 {"type": "1", "instance": "整理最近的一些外交新闻"}

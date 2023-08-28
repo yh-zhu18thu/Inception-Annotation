@@ -98,7 +98,7 @@
 {"type": "1", "instance": "请总结以下文章的主要内容，不得超过200字：“xxx”"}
 {"type": "1", "instance": "打开中央三台"}
 {"type": "1v1", "example_instance": "今晚有EDG的游戏实况直播吗", "feasibility": false, "instance": "打开摄像头看一下家里的狗狗在干吗，帮他开个罐头吧", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我翻译以下这篇文章", "feasibility": false, "instance": "请帮我翻译学术名词\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我翻译以下这篇文章", "feasibility": false, "instance": "请帮我翻译学术名词xxx", "dataset": "600"}
 {"type": "1", "instance": "推荐好用的网球运动装备"}
 {"type": "1", "instance": "打开摄像头看一下家里的狗狗在干吗，帮他开个罐头吧"}
 {"type": "nv1", "example_instances": ["导航到清华大学（导航）", "导航至电影院", "规划到学校最近路线及时间", "查找附近的加油站", "我要去广西旅行（规划行程）"], "instance": "导航到中关村", "feasibilities": [false, false, false, true, true], "dataset": "600"}
@@ -112,7 +112,7 @@
 {"type": "1", "instance": "查一下今日热门歌曲排行榜前三的歌曲、歌手名"}
 {"type": "nv1", "example_instances": ["DSA课程的ddl是6月29日（表达后自动加入日程）", "帮我询问一下王小芳今晚什么时候有空打王者荣耀", "明天我能否骑行到天津", "请在日历中7月31日18点-22点设定赶飞机日程", "在日程中标记2023-9-24为ddl"], "instance": "故宫明天的门票预约满了吗", "feasibilities": [true, false, true, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "播放一首周深的歌曲", "feasibility": true, "instance": "播放追娘娘视频", "dataset": "600"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\""}
+{"type": "1", "instance": "请帮我翻译学术名词xxx"}
 {"type": "1", "instance": "请帮我将这段旅行的所有素材剪成一个视频"}
 {"type": "1v1", "example_instance": "导航至附近的美食店", "feasibility": true, "instance": "今天适不适合出门", "dataset": "150"}
 {"type": "1v1", "example_instance": "帮我设定一个10点的闹钟，提醒我去锻炼", "feasibility": true, "instance": "在明天早上7点打开窗帘", "dataset": "150"}

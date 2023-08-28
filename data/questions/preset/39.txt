@@ -3,7 +3,7 @@
 {"type": "1v1", "example_instance": "请列出公共管理领域相关最新文献", "feasibility": false, "instance": "小度小度，请搜索离家最近的餐厅", "dataset": "150"}
 {"type": "1v1", "example_instance": "把不需要回复的消息改为已读", "feasibility": true, "instance": "打开微信给导师发送收到", "dataset": "150"}
 {"type": "nv1", "example_instances": ["整理一个养老金相关的政策分析报告，5000字以上", "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲", "推荐有关企业创业史的相关文章"], "instance": "举一个市场型环境政策， 并举例，500字以上", "feasibilities": [false, false, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "请帮我翻译学术名词\"xxx\""], "instance": "请帮我翻译以下文章：“xxx”", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "请帮我翻译学术名词xxx"], "instance": "请帮我翻译以下文章：“xxx”", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "nv1", "example_instances": ["请为我推荐最近新上的优质电影", "请推荐评分超过9的惊悚电影", "播放豆瓣评分最高的电影"], "instance": "打开豆瓣，告诉我最近风评最好的电影是哪部，主要内容是什么", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "打开豆瓣，告诉我最近风评最好的电影是哪部，主要内容是什么"}
 {"type": "1", "instance": "请帮我翻译以下文章：“xxx”"}

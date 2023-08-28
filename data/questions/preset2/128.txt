@@ -21,7 +21,7 @@
 {"type": "1v1", "example_instance": "明天需要带伞吗", "feasibility": true, "instance": "今天适不适合出门", "dataset": "150"}
 {"type": "1v1", "example_instance": "小度小度，请调到舒适模式", "feasibility": false, "instance": "我起不来，你把窗帘拉开让我清醒会", "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我看看有哪些任务的紧急程度最高", "feasibility": true, "instance": "告诉我现在我需要完成的最紧急的工作是什么，最重要的工作是什么", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我查询“社会心理学”的最新专业术语", "我想吃川菜（给出推荐餐馆）", "给我讲清楚这篇文献在说什么", "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译学术名词\"xxx\""], "instance": "请帮我查询PTSD名词是什么意思", "feasibilities": [true, false, true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我查询“社会心理学”的最新专业术语", "我想吃川菜（给出推荐餐馆）", "给我讲清楚这篇文献在说什么", "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译学术名词xxx"], "instance": "请帮我查询PTSD名词是什么意思", "feasibilities": [true, false, true, true, false], "dataset": "600"}
 {"type": "1", "instance": "告诉我现在我需要完成的最紧急的工作是什么，最重要的工作是什么"}
 {"type": "nv1", "example_instances": ["帮我和闺蜜说今晚累了不出门", "给妈妈打电话", "让我一个小时之内不要碰手机"], "instance": "和妈妈说最近比较忙，不得空回家吃饭", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "请明天务必帮我抢到周杰伦的票", "feasibility": true, "instance": "根据我的愿望清单，帮我在steam购买打折超过50%的游戏", "dataset": "600"}

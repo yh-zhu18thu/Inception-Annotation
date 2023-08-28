@@ -2,7 +2,7 @@
 {"type": "nv1", "example_instances": ["搜集区块链相关的文献", "搜索关键词为神经网络的相关文献", "根据我提供的主要观点和参考文献，写一篇discussion paper"], "instance": "寻找比较文学方面的文献", "feasibilities": [false, false, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["播放歌曲<想你的365天>", "帮我播一段好听的音乐", "音量调大一点", "查一下今日热门歌曲排行榜前三的歌曲、歌手名", "送一份冰可乐过来"], "instance": "心情不好,放点歌", "feasibilities": [true, true, false, true, false], "dataset": "150"}
 {"type": "1", "instance": "寻找比较文学方面的文献"}
-{"type": "1v1", "example_instance": "请帮我翻译学术名词\"xxx\"", "feasibility": true, "instance": "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我翻译学术名词xxx", "feasibility": true, "instance": "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "dataset": "600"}
 {"type": "1", "instance": "心情不好,放点歌"}
 {"type": "1v1", "example_instance": "请明天务必帮我抢到周杰伦的票", "feasibility": true, "instance": "【在车上】我要避开收费站（选择非高速路线）", "dataset": "600"}
 {"type": "1", "instance": "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？"}
@@ -119,7 +119,7 @@
 {"type": "1", "instance": "帮我询问一下王小芳今晚什么时候有空打王者荣耀"}
 {"type": "1v1", "example_instance": "请帮我查询PTSD名词是什么意思", "feasibility": true, "instance": "把这段话翻译成英文并且润色", "dataset": "600"}
 {"type": "1v1", "example_instance": "请帮我修改论文中的英文部分语法错误及润色", "feasibility": true, "instance": "帮我推荐一首歌", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我翻译学术名词\"xxx\"", "feasibility": true, "instance": "你是四大律所的实习律师，请你根据这位客户的资料，收集相关法条", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我翻译学术名词xxx", "feasibility": true, "instance": "你是四大律所的实习律师，请你根据这位客户的资料，收集相关法条", "dataset": "600"}
 {"type": "nv1", "example_instances": ["播放追娘娘视频", "半小时后自动关闭B站", "播放高效视频"], "instance": "老番茄更新的视频在我休息时自动跳出播放", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "请帮我将需要完成的事情进行记录，并进行提醒", "feasibility": true, "instance": "请帮我把我的日程安排导出来并在相应时间提醒我", "dataset": "600"}
 {"type": "1", "instance": "打开微信或者支付宝的付款码"}

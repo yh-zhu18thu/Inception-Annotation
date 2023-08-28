@@ -50,10 +50,10 @@
 {"type": "1v1", "example_instance": "如果你是一名研究员，请提供最近5年关于股份回购的相关文献及典型案例", "example_feasibility": "能够稳定", "instance": "请帮我把水木社区任务拆分成5个子任务，并对应分给5位时间合适的员工后，跟踪其完成进度和统计汇报数据", "belief_rating": "4", "statements": [{"option": "option2", "expression": ["执行", "接近", "理解"]}, {"option": "option1", "expression": ["理解", "接近"]}]}
 {"type": "nv1", "example_instances": ["请问我这个月花了多少钱", "请帮我看看今天的热搜是什么", "看一下jump，告诉我哪些我想要的游戏在打折"], "example_feasibilities": [true, false, true], "instance": "打开小红书，告诉我哪个发色今夏最火", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["理解", "强于"]}, {"option": "custom", "expression": [""]}]}
 {"type": "1", "instance": "【使用Excel时】请帮我将表格中的语文成绩数据以从大到小的顺序排在第一列", "belief_rating": "2"}
-{"type": "1v1", "example_instance": "请帮我翻译以下文章：“xxx”", "example_feasibility": "能够稳定", "instance": "请帮我翻译学术名词\"xxx\"", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["执行", "强于"]}]}
+{"type": "1v1", "example_instance": "请帮我翻译以下文章：“xxx”", "example_feasibility": "能够稳定", "instance": "请帮我翻译学术名词xxx", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["执行", "强于"]}]}
 {"type": "1", "instance": "请帮我把水木社区任务拆分成5个子任务，并对应分给5位时间合适的员工后，跟踪其完成进度和统计汇报数据", "belief_rating": "2"}
 {"type": "1", "instance": "小度小度，请搜索离家最近的餐厅", "belief_rating": "6"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\"", "belief_rating": "5"}
+{"type": "1", "instance": "请帮我翻译学术名词xxx", "belief_rating": "5"}
 {"type": "nv1", "example_instances": ["请打开空调", "将后座的空调调高", "空调开到27度", "20分钟后起床（设闹钟）", "天猫精灵，请打开休息模式（对应的灯光、音响、投影、空调等相应开启）"], "example_feasibilities": [true, false, true, true, false], "instance": "请把空调调到24度", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["执行", "接近"]}, {"option": "option2", "expression": ["规划", "强于", "理解"]}]}
 {"type": "1v1", "example_instance": "最近的行程提醒我一下", "example_feasibility": "能够稳定", "instance": "添加我的生日到日历", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["执行", "接近"]}]}
 {"type": "nv1", "example_instances": ["帮我叫一下一起打游戏的人上线", "这局我该选什么英雄，采取什么策略，能打赢吗", "分析一下版本各分路强势英雄", "帮我询问一下王小芳今晚什么时候有空打王者荣耀", "如何提升麻将水平"], "example_feasibilities": [true, true, true, true, true], "instance": "陪我练一下王昭君英雄", "belief_rating": "1", "statements": [{"option": "option2", "expression": ["理解", "弱于", "规划"]}]}

@@ -14,9 +14,9 @@
 {"type": "1v1", "example_instance": "我想要写一个科幻故事，给我一些独特的想法", "feasibility": true, "instance": "请把我设置上午10点的闹钟", "dataset": "600"}
 {"type": "1", "instance": "请把我设置上午10点的闹钟"}
 {"type": "nv1", "example_instances": ["打开微信或者支付宝的付款码", "打开微信给导师发送收到", "请帮我将电子邮件的优先级进行排序"], "instance": "打开QQ浏览器，根据数码产品官网信息，将好用的数码产品功能及价格以邮件的方式发给自己，并附上官网网址", "feasibilities": [true, true, true], "dataset": "150"}
-{"type": "1v1", "example_instance": "帮我翻译一下这个文章", "feasibility": true, "instance": "请帮我翻译学术名词\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我翻译一下这个文章", "feasibility": true, "instance": "请帮我翻译学术名词xxx", "dataset": "600"}
 {"type": "nv1", "example_instances": ["我想继续在b站看昨天晚上没看完的综艺", "帮我看看b站关注的up主有没有更新，有更新的话请播放最新视频", "打开Thenyoung十月up主的最新视频", "打开B站，继续播放昨天没看完的番", "最近有什么娱乐大八卦呢"], "instance": "帮我看看B站影视飓风更新了没有", "feasibilities": [false, true, true, false, true], "dataset": "600"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\""}
+{"type": "1", "instance": "请帮我翻译学术名词xxx"}
 {"type": "1", "instance": "打开QQ浏览器，根据数码产品官网信息，将好用的数码产品功能及价格以邮件的方式发给自己，并附上官网网址"}
 {"type": "1", "instance": "帮我看看B站影视飓风更新了没有"}
 {"type": "1", "instance": "找一张无语的表情包发给室友王"}

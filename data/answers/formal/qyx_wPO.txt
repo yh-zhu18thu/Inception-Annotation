@@ -25,3 +25,37 @@
 {"type": "1", "instance": "请帮我读所有未读消息并进行回复，重要的进行标记", "belief_rating": "2"}
 {"type": "1v1", "example_instance": "请打开空调", "example_feasibility": "能够稳定", "instance": "【在卧室】关窗帘", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["省略信息理解", "强于", "设置条件触发"]}]}
 {"type": "1", "instance": "帮我检查文章", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "【写论文时】你现在是一名计算机专业的学生，你需要完成一篇以NLP语言理解为主题的论文，请写出该论文的大纲框架", "example_feasibility": "能够稳定", "instance": "你看看我这学期哪几门课有论文，帮我想几个选题，收集对应素材", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["模糊范围程度理解", "强于", "大信息量理解"]}]}
+{"type": "nv1", "example_instances": ["请帮我做好日程规划", "帮我记录日程，并安排会议时间", "帮我规划一下去秦皇岛该玩哪些，定个计划"], "example_feasibilities": [false, false, false], "instance": "帮我制定一下做的计划", "belief_rating": "5", "statements": [{"option": "option2", "expression": ["特定语义功能", "接近", "生成"]}]}
+{"type": "1", "instance": "你看看我这学期哪几门课有论文，帮我想几个选题，收集对应素材", "belief_rating": "2"}
+{"type": "1", "instance": "帮我制定一下做的计划", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "根据所关注的有关上市创业公司微信公众号，规划最优路线", "example_feasibility": "能够稳定", "instance": "提供项目联系人信息并帮忙约对方开会时间后，自动订腾讯会议，会后自动出一份会议记录", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["复杂逻辑理解", "强于", "生成"]}]}
+{"type": "1v1", "example_instance": "请帮我播放跑步音乐", "example_feasibility": "不能正确", "instance": "请帮我打开歌曲《想去海边》", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["特定应用", "接近"]}]}
+{"type": "nv1", "example_instances": ["打开网易云音乐播放爱人错过", "打开猫耳fm继续播放", "播放放松的歌单"], "example_feasibilities": [false, true, true], "instance": "打开音乐，播放如愿", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["特定语义功能", "接近"]}]}
+{"type": "1v1", "example_instance": "查找附近跑步线路和天气、路况", "example_feasibility": "能够稳定", "instance": "查询附近的美食", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["特定语义功能", "接近"]}]}
+{"type": "1v1", "example_instance": "打开王者", "example_feasibility": "能够稳定", "instance": "打开猫耳fm继续播放", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["特定应用", "接近"]}]}
+{"type": "nv1", "example_instances": ["帮我计划一下这周的日程", "在提醒事项里设定明天的办理签证事情", "请帮我把我的日程安排导出来并在相应时间提醒我"], "example_feasibilities": [true, false, true], "instance": "下周二有个中期汇报，帮我设定一下行程安排规划，并且提醒我", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["复杂逻辑理解", "强于", "大信息量理解"]}]}
+{"type": "1", "instance": "查询附近的美食", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["如何提升摄影技巧", "查找电路原理第一章学习资料", "搜索如何制作一份好的汇报PPT"], "example_feasibilities": [true, true, true], "instance": "查一下有关提升沟通技巧的方法", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["信息获取", "接近"]}]}
+{"type": "1", "instance": "查一下有关提升沟通技巧的方法", "belief_rating": "5"}
+{"type": "1", "instance": "打开音乐，播放如愿", "belief_rating": "6"}
+{"type": "1", "instance": "打开猫耳fm继续播放", "belief_rating": "6"}
+{"type": "1", "instance": "请帮我打开歌曲《想去海边》", "belief_rating": "6"}
+{"type": "1", "instance": "【在卧室】关窗帘", "belief_rating": "3"}
+{"type": "1", "instance": "提供项目联系人信息并帮忙约对方开会时间后，自动订腾讯会议，会后自动出一份会议记录", "belief_rating": "2"}
+{"type": "1", "instance": "下周二有个中期汇报，帮我设定一下行程安排规划，并且提醒我", "belief_rating": "3"}
+{"type": "1", "instance": "我很喜欢漫长的季节，还有类似的电视剧或者电影吗", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "请帮我记录生活中有趣美好的小事，并在每天晚上回放给我", "example_feasibility": "能够稳定", "instance": "【使用Excel时】请帮我将表格中的语文成绩数据以从大到小的顺序排在第一列", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["可靠执行", "强于", "可靠执行"]}]}
+{"type": "1", "instance": "明天需要带伞吗", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "【在使用闲鱼浏览某商品时】对比市场价格", "example_feasibility": "能够稳定", "instance": "小度小度导航到最近的加油站同时搜索当日油价", "belief_rating": "5", "statements": [{"option": "option2", "expression": ["特定语义功能", "接近", "特定语义功能"]}]}
+{"type": "nv1", "example_instances": ["导航到清华大学（导航）", "导航到中关村", "开启去世一大的步行导航", "导航至电影院", "查找清华大学到北京大学的路线"], "example_feasibilities": [true, false, true, true, true], "instance": "导航到学校并放音乐", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["情境感知", "接近"]}]}
+{"type": "nv1", "example_instances": ["把最近工作进展做成ppt", "帮我润色一下这段话：“xxx”", "总结以下文章的主要内容，并改写成一段新文章的引言"], "example_feasibilities": [false, false, false], "instance": "我想把这段文字变成简洁好看的ppt", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["任务调度", "强于", "隐性步骤提取"]}]}
+{"type": "1", "instance": "我想把这段文字变成简洁好看的ppt", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "今天有没有娱乐方面的热搜，给我读一下", "example_feasibility": "能够稳定", "instance": "微博热搜有什么新八卦", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["语义揣测", "接近"]}]}
+{"type": "nv1", "example_instances": ["搜索最新一期管理世界", "微博热搜有什么新八卦", "今天有没有娱乐方面的热搜，给我读一下"], "example_feasibilities": [true, true, true], "instance": "朗读今天的微博热搜", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["特定执行器件", "强于", "可靠执行"]}]}
+{"type": "1", "instance": "【使用Excel时】请帮我将表格中的语文成绩数据以从大到小的顺序排在第一列", "belief_rating": "2"}
+{"type": "1", "instance": "导航到学校并放音乐", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "把最近工作进展做成ppt", "example_feasibility": "能够稳定", "instance": "列出如何高效制定工作安排", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["可靠执行", "接近"]}]}
+{"type": "1", "instance": "小度小度导航到最近的加油站同时搜索当日油价", "belief_rating": "5"}
+{"type": "1", "instance": "微博热搜有什么新八卦", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "在微信群里问大家今晚有没有空一起打麻将", "example_feasibility": "能够稳定", "instance": "打开微信和王小明说我出发了", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["复杂逻辑理解", "强于", "特定应用"]}]}

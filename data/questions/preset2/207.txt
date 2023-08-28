@@ -76,7 +76,7 @@
 {"type": "1", "instance": "请明天务必帮我抢到周杰伦的票"}
 {"type": "nv1", "example_instances": ["在群聊里回复“好的”", "文明用语骂一下只会送头的队友", "在微信群里问大家今晚有没有空一起打麻将"], "instance": "在相亲相爱一家人群聊中说祝大家元旦快乐", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "搜索去潭柘寺的路线", "feasibility": true, "instance": "搜集股份回购相关的外文文献并翻译成中文", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译学术名词\"xxx\"", "请帮我翻译以下这篇文章", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [false, true, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译学术名词xxx", "请帮我翻译以下这篇文章", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [false, true, true, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["帮我安排一个时长为1小时强度中等的健身计划", "自动洗烘衣服并整理", "陪伴式运动激励并互动"], "instance": "一个月减肥十斤的运动和饮食建议", "feasibilities": [true, true, true], "dataset": "150"}
 {"type": "1", "instance": "在日程中标记2023-9-24为ddl"}
 {"type": "nv1", "example_instances": ["请帮我安排一顿好吃且能减肥的食谱", "【在做菜app浏览一个菜谱】帮我根据这个菜谱做菜", "在我运动完后帮我做好今天的晚饭"], "instance": "请帮我决定接下来一个月的食谱，要健康，不能重样", "feasibilities": [false, false, true], "dataset": "600"}

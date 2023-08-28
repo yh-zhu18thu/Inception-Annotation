@@ -39,10 +39,10 @@
 {"type": "nv1", "example_instances": ["【在卧室】关窗帘", "上午十点帮我打开洗衣机，十一点确认关闭洗衣机并关闭水龙头", "去门口帮我拿外卖", "自动洗烘衣服并整理", "帮我缝合一下这个伤口"], "example_feasibilities": [true, true, true, false, false], "instance": "把家里厨房门关上，别夹到狗狗的脚了", "belief_rating": "3"}
 {"type": "1v1", "example_instance": "告诉我我买的吉他快递到哪了", "example_feasibility": "能够稳定", "instance": "我要听抒情歌", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["理解", "强于"]}]}
 {"type": "nv1", "example_instances": ["请在15分钟后叫我", "提示网购平台低价折扣并在授权金额范围内抢单支付", "明天早上7点提醒我要带身份证"], "example_feasibilities": [true, false, false], "instance": "在刺客信条打折开始1小时后和打折结束1小时前通知我", "belief_rating": "4"}
-{"type": "1v1", "example_instance": "播放最近热门歌曲", "example_feasibility": "不能正确", "instance": "请帮我翻译学术名词\"xxx\"", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["信息获取", "强于"]}]}
+{"type": "1v1", "example_instance": "播放最近热门歌曲", "example_feasibility": "不能正确", "instance": "请帮我翻译学术名词xxx", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["信息获取", "强于"]}]}
 {"type": "1v1", "example_instance": "当我开始出现工作疲劳时提醒我休息一下", "example_feasibility": "能够稳定", "instance": "请在15分钟后叫我", "belief_rating": "1", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}]}
 {"type": "1v1", "example_instance": "查看附近咖啡馆", "example_feasibility": "不能正确", "instance": "打开大众点评，搜索附近5km内评分较高的美食店铺", "belief_rating": "4", "statements": [{"option": "option1", "expression": ["模糊表达理解", "弱于"]}]}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\"", "belief_rating": "5"}
+{"type": "1", "instance": "请帮我翻译学术名词xxx", "belief_rating": "5"}
 {"type": "1", "instance": "播放一首周深的歌曲", "belief_rating": "6"}
 {"type": "1", "instance": "把家里厨房门关上，别夹到狗狗的脚了", "belief_rating": "4"}
 {"type": "1v1", "example_instance": "再赢一把或者连输三把就睡（自动关机）", "example_feasibility": "能够稳定", "instance": "小度，晚上11点关闭所有的电灯", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["执行", "强于"]}, {"option": "option1", "expression": ["设置条件触发", "强于"]}]}

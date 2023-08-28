@@ -14,13 +14,13 @@
 {"type": "nv1", "example_instances": ["快递取一下", "请在15分钟后叫我", "点一个外卖并备注12点送到，直接放门口就行"], "instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["在刺客信条打折开始1小时后和打折结束1小时前通知我", "【在使用闲鱼浏览某商品时】对比市场价格", "【在闲鱼发布页】帮我决定转让物品的价格并发布链接"], "instance": "提示网购平台低价折扣并在授权金额范围内抢单支付", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我总结一下上周的工作内容", "feasibility": true, "instance": "列出如何高效制定工作安排", "dataset": "150"}
-{"type": "nv1", "example_instances": ["用学术的语言润色这段话：“xxx”", "请帮我翻译以下文章：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”"], "instance": "请帮我翻译学术名词\"xxx\"", "feasibilities": [true, false, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["用学术的语言润色这段话：“xxx”", "请帮我翻译以下文章：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”"], "instance": "请帮我翻译学术名词xxx", "feasibilities": [true, false, false], "dataset": "600"}
 {"type": "nv1", "example_instances": ["请问我这个月花了多少钱", "请问导师刚刚发了什么消息", "告诉小元，我现在有点事不方便接电话", "请帮我打开Gale的消息，并告诉我消息内容", "请帮我写一封邮件，问问教务老师这学期什么时候评教，注意礼貌"], "instance": "请告诉我有没有新的消息", "feasibilities": [true, true, true, false, true], "dataset": "150"}
 {"type": "1", "instance": "【工作时】我想听歌"}
 {"type": "nv1", "example_instances": ["请帮我推荐一些讲述创业成功人士的经历的文章", "你了解新能源领域吗？我想写一篇关于这个的文献综述，你能给点建议吗？", "我想知道关于国际关系问题目前的前沿研究"], "instance": "推荐有关企业创业史的相关文章", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "请告诉我有没有新的消息"}
 {"type": "1v1", "example_instance": "甄嬛传电视剧上次看到哪了，接着播放", "feasibility": true, "instance": "播放《极乐净土》", "dataset": "600"}
-{"type": "1", "instance": "请帮我翻译学术名词\"xxx\""}
+{"type": "1", "instance": "请帮我翻译学术名词xxx"}
 {"type": "1v1", "example_instance": "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "feasibility": true, "instance": "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "dataset": "600"}
 {"type": "1", "instance": "列出如何高效制定工作安排"}
 {"type": "1v1", "example_instance": "【自驾游时】这里有什么适合拍照的角度和位置", "feasibility": true, "instance": "天猫精灵，请打开休息模式（对应的灯光、音响、投影、空调等相应开启）", "dataset": "150"}

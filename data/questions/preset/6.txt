@@ -2,7 +2,7 @@
 {"type": "1v1", "example_instance": "如果你是一名研究员，请提供最近5年关于股份回购的相关文献及典型案例", "feasibility": true, "instance": "请帮我查询“社会心理学”的最新专业术语", "dataset": "600"}
 {"type": "1", "instance": "请帮我查询“社会心理学”的最新专业术语"}
 {"type": "nv1", "example_instances": ["帮我看看b站关注的up主有没有更新，有更新的话请播放最新视频", "请播放我关注的up主的最新视频", "微博热搜有什么新八卦"], "instance": "帮我看看B站影视飓风更新了没有", "feasibilities": [false, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译学术名词\"xxx\"", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "用学术的语言润色这段话：“xxx”", "把这段话翻译成英文并且润色"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译学术名词xxx", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "用学术的语言润色这段话：“xxx”", "把这段话翻译成英文并且润色"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, true, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "最近有什么推荐的剧", "feasibility": false, "instance": "发信息给钱小敏，告诉他我马上就到", "dataset": "600"}
 {"type": "1v1", "example_instance": "请帮我调研生物冷冻电镜领域，告诉我诺奖级别的新idea，并且帮我设计实验", "feasibility": false, "instance": "帮我选择一本与犯罪心理学相关的书籍供我阅读", "dataset": "600"}
 {"type": "1", "instance": "如果你是应急管理部门工作人员，应对体育场顶部塌陷事件需要出一份公关稿，写一份要点和大纲"}

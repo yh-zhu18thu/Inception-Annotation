@@ -13,7 +13,7 @@
 {"type": "nv1", "example_instances": ["hi Siri，打开微信", "请帮我打电话给张三", "打开微信，找到小马宝莉"], "instance": "打开微信软件中我和王熙凤的对话", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我安排未来一周的日程，每天提醒我需要为这一周的日程做哪些工作，在日程开始前提醒我参加，你要达到的标准是我能提前1天完成所有任务的准备，并提前5分钟到达日程现场", "feasibility": true, "instance": "上午九点开始，每隔二十分钟提醒我要喝水", "dataset": "150"}
 {"type": "1v1", "example_instance": "【在和老师的聊天界面，老师刚布置了一个写稿任务】帮我完成老师给我的这个任务，不需要太认真但是不要让人觉得是AI写的", "feasibility": false, "instance": "我明天要跟导师汇报xx主题的文献综述，按照这个格式，帮我把现在找到的文献内容整理进模板里", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译学术名词\"xxx\"", "请帮我翻译以下文章：“xxx”", "你看看我这学期哪几门课有论文，帮我想几个选题，收集对应素材"], "instance": "请帮我翻译并润色这段学术性文字：“xxx”", "feasibilities": [true, false, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译学术名词xxx", "请帮我翻译以下文章：“xxx”", "你看看我这学期哪几门课有论文，帮我想几个选题，收集对应素材"], "instance": "请帮我翻译并润色这段学术性文字：“xxx”", "feasibilities": [true, false, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "查一下明天的课表和上课地点", "feasibility": true, "instance": "你看看我这学期哪几门课有小组作业，提前分一下工，排好时间线和每个阶段的日程", "dataset": "600"}
 {"type": "1v1", "example_instance": "现在的天气情况", "feasibility": false, "instance": "帮我查一下未来一周上海的天气", "dataset": "600"}
 {"type": "nv1", "example_instances": ["把以下这段话翻译为英文：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "用学术的语言润色这段话：“xxx”"], "instance": "请以更学术的方式表达下面这段话的意思：“xxx”", "feasibilities": [false, false, true], "dataset": "600"}

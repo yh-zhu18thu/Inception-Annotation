@@ -108,7 +108,7 @@
 {"type": "nv1", "example_instances": ["【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "查一下附近的酒店价格和距离", "帮我根据现有财产制订投资计划"], "instance": "帮我整理公司附近5公里以内，预算每月4000及以下的一居室的房屋信息，以表格形式呈现", "feasibilities": [true, false, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "请在今天下午三点钟提醒我要参加学长毕业欢送会", "feasibility": true, "instance": "下午一点要去经管学院开会", "dataset": "150"}
 {"type": "1v1", "example_instance": "帮我给我妈打个电话", "feasibility": true, "instance": "请帮我打开淘宝app，并帮我点GUCCI旗舰店商家的男士香水", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我翻译学术名词\"xxx\"", "feasibility": true, "instance": "甄嬛传电视剧上次看到哪了，接着播放", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我翻译学术名词xxx", "feasibility": true, "instance": "甄嬛传电视剧上次看到哪了，接着播放", "dataset": "600"}
 {"type": "1", "instance": "梳理一下养老金改革的历史沿革，2000字以上"}
 {"type": "1", "instance": "帮我做一道家乡菜"}
 {"type": "1", "instance": "“这个调研怎么做”，微信回复文先生"}

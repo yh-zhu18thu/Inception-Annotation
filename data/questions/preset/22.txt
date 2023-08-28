@@ -11,7 +11,7 @@
 {"type": "1", "instance": "请问导师刚刚发了什么消息"}
 {"type": "1v1", "example_instance": "天猫精灵，给我讲个故事", "feasibility": false, "instance": "请帮我自动回npy的消息，不能让ta生气", "dataset": "600"}
 {"type": "1v1", "example_instance": "我不想听这个，下一个", "feasibility": true, "instance": "我要听抒情歌", "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译学术名词\"xxx\"", "如果你是一名码农，请检查这个代码是否存在错误"], "instance": "请帮我翻译并润色这段学术性文字：“xxx”", "feasibilities": [false, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译学术名词xxx", "如果你是一名码农，请检查这个代码是否存在错误"], "instance": "请帮我翻译并润色这段学术性文字：“xxx”", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1", "instance": "请帮我翻译并润色这段学术性文字：“xxx”"}
 {"type": "1", "instance": "你是一个美食家，请给我推荐一些理想的川菜馆"}
 {"type": "1v1", "example_instance": "打开bilibili", "feasibility": true, "instance": "打开小红书，告诉我哪个发色今夏最火", "dataset": "150"}
@@ -31,7 +31,7 @@
 {"type": "nv1", "example_instances": ["今晚想吃一荤一素配牛油锅酸奶，做一下吧", "明天需要带伞吗", "下午一点要去经管学院开会", "请问明天的天气怎么样", "我想这周打羽毛球，帮我定个场，最好是吃饭前去打，如果能挨着订两个场就最好了，不行的话一个大场也行，要是没有就帮我买晚上八点后的电影票吧"], "instance": "今天适不适合出门", "feasibilities": [false, false, true, true, true], "dataset": "150"}
 {"type": "1v1", "example_instance": "最近有什么推荐的剧", "feasibility": true, "instance": "播放豆瓣评分最高的电影", "dataset": "600"}
 {"type": "1", "instance": "帮我对《未来简史》写一篇读书整理"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译学术名词\"xxx\"", "请帮我翻译以下文章：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "把这段话翻译成英文并且润色"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译学术名词xxx", "请帮我翻译以下文章：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "把这段话翻译成英文并且润色"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, false, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "在互联网上查找并收集关于游泳世锦赛的信息", "feasibility": false, "instance": "请帮我调研一下有哪些课题组正在做事件验证法相关的内容", "dataset": "600"}
 {"type": "1v1", "example_instance": "找找附近评分高的甜品店", "feasibility": true, "instance": "搜索如何制作一份好的汇报PPT", "dataset": "600"}
 {"type": "nv1", "example_instances": ["导航去天坛", "导航到五道口购物中心充电站", "根据大众点评上的美食店推荐，规划最优路线"], "instance": "选择最优选的去八大处的路线", "feasibilities": [true, true, false], "dataset": "600"}
@@ -50,7 +50,7 @@
 {"type": "1v1", "example_instance": "导航到中关村", "feasibility": true, "instance": "我目前正准备一个团建活动，帮我做出一份完整的团建方案", "dataset": "600"}
 {"type": "1", "instance": "请帮我看看门口是谁"}
 {"type": "nv1", "example_instances": ["卡利斯马表现怎么翻译", "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "给我讲清楚这篇文献在说什么", "校对这篇会议记录是否有错别字：“xxx”", "下载《唐吉坷德》电子书导入微信读书"], "instance": "【选中一个单词】这个单词是什么意思，怎么读", "feasibilities": [false, false, true, false, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["卡利斯马表现怎么翻译", "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译学术名词\"xxx\""], "instance": "【选中一个单词】这个单词是什么意思，怎么读", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["卡利斯马表现怎么翻译", "【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译学术名词xxx"], "instance": "【选中一个单词】这个单词是什么意思，怎么读", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "帮我搜索好看的ppt模板"}
 {"type": "1v1", "example_instance": "帮我收集一下网上蔡徐坤的信息", "feasibility": false, "instance": "我想听八卦", "dataset": "600"}
 {"type": "1", "instance": "【在做高数作业】这道题怎么做"}

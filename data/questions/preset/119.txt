@@ -9,7 +9,7 @@
 {"type": "1v1", "example_instance": "给我按摩一下肩膀", "feasibility": false, "instance": "解释一下蔡徐坤是什么情况", "dataset": "150"}
 {"type": "1v1", "example_instance": "梳理一下养老金改革的历史沿革，2000字以上", "feasibility": true, "instance": "美国法和中国法关于未成年人刑事责任问题的看法有什么不同", "dataset": "600"}
 {"type": "nv1", "example_instances": ["总结以下文章的主要内容，并改写成一段新文章的引言", "帮我写一篇1000字以内的关于魏晋哲学主题的proposal", "帮我润色一下这段话：“xxx”"], "instance": "请总结以下文章的主要内容，不得超过200字：“xxx”", "feasibilities": [false, true, true], "dataset": "150"}
-{"type": "nv1", "example_instances": ["请帮我翻译以下文章：“xxx”", "把以下这段话翻译为英文：“xxx”", "请帮我翻译学术名词\"xxx\""], "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译以下文章：“xxx”", "把以下这段话翻译为英文：“xxx”", "请帮我翻译学术名词xxx"], "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1", "instance": "请在15分钟后叫我"}
 {"type": "1v1", "example_instance": "【使用Excel时】请帮我将表格中的语文成绩数据以从大到小的顺序排在第一列", "feasibility": false, "instance": "请帮我按照重要程序排序整理这个文件夹的文献", "dataset": "600"}
 {"type": "1", "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”"}
@@ -97,7 +97,7 @@
 {"type": "nv1", "example_instances": ["请帮我播放适合这个party的歌", "运动的时候适合听什么音乐", "帮我生成一个适合与我在绘画时倾听的歌单"], "instance": "请帮我播放跑步音乐", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "上午十点帮我打开洗衣机，十一点确认关闭洗衣机并关闭水龙头"}
 {"type": "nv1", "example_instances": ["播放豆瓣评分最高的电影", "播放张杰最新的一首歌", "播放《七里香》"], "instance": "播放《极乐净土》", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我翻译一下这个文章", "请帮我翻译以下文章：“xxx”", "请帮我翻译学术名词\"xxx\"", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”"], "instance": "请帮我翻译以下这篇文章", "feasibilities": [true, false, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我翻译一下这个文章", "请帮我翻译以下文章：“xxx”", "请帮我翻译学术名词xxx", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”"], "instance": "请帮我翻译以下这篇文章", "feasibilities": [true, false, true, true, true], "dataset": "600"}
 {"type": "1", "instance": "定一个下午两点钟的闹钟"}
 {"type": "1v1", "example_instance": "帮我安排未来一周的日程，每天提醒我需要为这一周的日程做哪些工作，在日程开始前提醒我参加，你要达到的标准是我能提前1天完成所有任务的准备，并提前5分钟到达日程现场", "feasibility": true, "instance": "请帮我在日程中标记事件并设置闹铃", "dataset": "150"}
 {"type": "1", "instance": "请帮我翻译以下这篇文章"}
