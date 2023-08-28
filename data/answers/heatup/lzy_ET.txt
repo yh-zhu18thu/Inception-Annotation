@@ -1,0 +1,2 @@
+{"type": "nv1", "example_instances": ["帮我把往年题文档里的高数问题按照知识点进行分类整理", "【判生物作业时】帮我检查一下这道题目的正确性", "DSA课程的ddl是6月29日（表达后自动加入日程）", "帮我校对一下这些材料，整理一份校对结果", "帮我找一下之前备课的文件"], "example_feasibilities": [true, true, false, true, false], "instance": "整理一下我在3月15日~4月15日期间出错的题目", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}, {"option": "option2", "expression": ["xxx", "强于", "xxx"]}, {"option": "option3", "expression": ["当前指令", "xxx"]}]}
+{"type": "1", "instance": "整理一下我在3月15日~4月15日期间出错的题目", "belief_rating": "6"}

@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "导航到学校并放音乐", "example_feasibility": "能够稳定", "instance": "导航至电影院", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["特定语义功能", "强于"]}]}
+{"type": "1", "instance": "导航至电影院", "belief_rating": "7"}
+{"type": "1v1", "example_instance": "导航至电影院", "example_feasibility": "能够稳定", "instance": "导航至那家上市的创业公司", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["不确定目标理解", "强于"]}, {"option": "option2", "expression": ["定冠词指代理解", "强于", "定冠词指代理解"]}]}
+{"type": "1v1", "example_instance": "今天有没有娱乐方面的热搜，给我读一下", "example_feasibility": "能够稳定", "instance": "明天适合出去玩吗，推荐去哪玩", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["模糊范围程度理解", "强于"]}, {"option": "option2", "expression": ["识别与理解", "强于", "识别与理解"]}]}
+{"type": "1v1", "example_instance": "你是四大律所的实习律师，请你根据这位客户的资料，收集相关法条", "example_feasibility": "不能正确", "instance": "搜集股份回购相关的外文文献并翻译成中文", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["复杂逻辑理解", "弱于"]}, {"option": "option1", "expression": ["不确定目标理解", "弱于"]}]}
+{"type": "1", "instance": "导航至那家上市的创业公司", "belief_rating": "1"}
+{"type": "1", "instance": "搜集股份回购相关的外文文献并翻译成中文", "belief_rating": "3"}
+{"type": "1", "instance": "明天适合出去玩吗，推荐去哪玩", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "我想吃便宜好吃的云南菜", "example_feasibility": "不能正确", "instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧", "belief_rating": "2", "statements": [{"option": "option3", "expression": ["当前指令", "别名理解"]}, {"option": "option1", "expression": ["复杂逻辑理解", "强于"]}, {"option": "option2", "expression": ["复杂任务", "弱于", "复杂任务"]}]}
+{"type": "1", "instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧", "belief_rating": "4"}

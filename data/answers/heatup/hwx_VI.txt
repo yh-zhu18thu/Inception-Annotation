@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "请播放歌曲日不落", "example_feasibility": "能够稳定", "instance": "切歌", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["复杂逻辑理解", "强于"]}]}
+{"type": "1v1", "example_instance": "打开抖音，刷到末日文视频，我要睡觉啦", "example_feasibility": "能够稳定", "instance": "打开Thenyoung十月up主的最新视频", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["模糊范围程度理解", "强于"]}]}
+{"type": "1v1", "example_instance": "请帮我读所有未读消息并进行回复，重要的进行标记", "example_feasibility": "能够稳定", "instance": "打开微信读书", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["大信息量理解", "强于"]}]}
+{"type": "1", "instance": "打开Thenyoung十月up主的最新视频", "belief_rating": "4"}
+{"type": "1", "instance": "切歌", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["给我讲个故事", "天猫精灵，帮12345678901的手机号码充话费", "给猫咪加一根猫条"], "example_feasibilities": [true, false, false], "instance": "天猫精灵，给我讲个故事", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["个性化知识理解", "接近"]}]}
+{"type": "nv1", "example_instances": ["帮我做一道家乡菜", "看一下冰箱里有什么食材能做什么菜，找个菜谱", "请帮我决定接下来一个月的食谱，要健康，不能重样"], "example_feasibilities": [true, true, false], "instance": "【在做菜app浏览一个菜谱】帮我根据这个菜谱做菜", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["语义揣测", "接近"]}]}
+{"type": "1", "instance": "【在做菜app浏览一个菜谱】帮我根据这个菜谱做菜", "belief_rating": "5"}
+{"type": "1", "instance": "打开微信读书", "belief_rating": "5"}
+{"type": "1", "instance": "天猫精灵，给我讲个故事", "belief_rating": "4"}

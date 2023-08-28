@@ -1,0 +1,9 @@
+{"type": "nv1", "example_instances": ["“这个调研怎么做”，微信回复文先生", "帮我画一个关于123app的低保真页面", "我目前正准备一个团建活动，帮我做出一份完整的团建方案"], "example_feasibilities": [true, true, true], "instance": "发一条微博，内容如下，这个项目谁想做谁做我不干了，配图一张鲁迅我不干了表情包", "belief_rating": "3", "statements": [{"option": "custom", "expression": ["现在我很烦躁，发条微博，文案是这项目我不干了谁想做就做，表情包为鲁迅我不干了的表情"]}]}
+{"type": "1", "instance": "发一条微博，内容如下，这个项目谁想做谁做我不干了，配图一张鲁迅我不干了表情包", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "帮我定7月24日18点的闹钟并备注该吃饭啦", "example_feasibility": "能够稳定", "instance": "定一个明早9点的闹钟", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1v1", "example_instance": "【浏览照片时】帮我P一下这张图", "example_feasibility": "不能正确", "instance": "【对一张图片】帮我P图", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["xxx", "弱于"]}]}
+{"type": "1", "instance": "定一个明早9点的闹钟", "belief_rating": "6"}
+{"type": "1", "instance": "【对一张图片】帮我P图", "belief_rating": "3"}
+{"type": "1", "instance": "播放张杰最新的一首歌", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["帮我把这个文档做成好看的ppt", "帮我做一个excel表格", "请帮我将以下内容以PPT的形式导出", "请帮我修改论文中的英文部分语法错误及润色", "推荐汇报PPT模板"], "example_feasibilities": [true, true, true, false, true], "instance": "请帮我做一份汇报ppt", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "弱于"]}]}
+{"type": "1", "instance": "请帮我做一份汇报ppt", "belief_rating": "5"}

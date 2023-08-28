@@ -135,7 +135,7 @@ def check_data(command,user_id):
                         #check if any of the children of the ability is in the annotated abilities of the example instance
                         if any([child in example_annotated_abilities for child in ability_children_list]):
                             if not same_ability_compare:
-                                correct+=1
+                                score+=1
                             else:
                                 any_valid = True
                         else:

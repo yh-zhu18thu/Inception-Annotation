@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "请把我设置上午10点的闹钟", "example_feasibility": "能够稳定", "instance": "接下来两个小时的安排", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["执行", "接近"]}]}
+{"type": "1v1", "example_instance": "给妈妈打电话", "example_feasibility": "能够稳定", "instance": "【在线上参会】我去上厕所，帮我记一下，有人叫我就震动手环", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["执行", "强于", "理解"]}]}
+{"type": "nv1", "example_instances": ["【在照片编辑页面】曝光和饱和度调高一点", "我想吃菠萝包（下单菠萝包外卖）", "今天中午想吃麻婆豆腐"], "example_feasibilities": [true, true, true], "instance": "桌面设置一个好吃的甜品照片", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["执行", "接近"]}]}
+{"type": "1", "instance": "【在线上参会】我去上厕所，帮我记一下，有人叫我就震动手环", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["请帮我做一个个人简历，要能体现我的牛逼", "帮我查一下乐高的新品并按价格排序", "【在使用闲鱼浏览某商品时】对比市场价格"], "example_feasibilities": [false, true, true], "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["执行", "接近"]}]}
+{"type": "1v1", "example_instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "example_feasibility": "能够稳定", "instance": "帮我做一个excel表格", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["执行", "接近"]}]}
+{"type": "1", "instance": "帮我做一个excel表格", "belief_rating": "5"}
+{"type": "1", "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "belief_rating": "5"}
+{"type": "1", "instance": "桌面设置一个好吃的甜品照片", "belief_rating": "6"}
+{"type": "1", "instance": "接下来两个小时的安排", "belief_rating": "6"}

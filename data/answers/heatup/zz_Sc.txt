@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "导航至那家上市的创业公司", "example_feasibility": "不能正确", "instance": "查看附近咖啡馆", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["xxx", "弱于"]}]}
+{"type": "1", "instance": "我想吃便宜好吃的云南菜", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "帮我检测一下是否感冒发烧了", "example_feasibility": "能够稳定", "instance": "我今天有点不舒服，请评价我是否生病，是否需要看医生", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1v1", "example_instance": "我要出门了，帮我扫一下地，然后再拖一下", "example_feasibility": "能够稳定", "instance": "帮我整理一下工作台", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1v1", "example_instance": "天猫精灵，帮我查询12345678901的手机号本月本地剩余流量", "example_feasibility": "能够稳定", "instance": "提醒我回复张小红微信消息", "belief_rating": "6", "statements": [{"option": "option2", "expression": ["xxx", "强于", "xxx"]}]}
+{"type": "1", "instance": "我今天有点不舒服，请评价我是否生病，是否需要看医生", "belief_rating": "6"}
+{"type": "1", "instance": "提醒我回复张小红微信消息", "belief_rating": "5"}
+{"type": "1", "instance": "查看附近咖啡馆", "belief_rating": "2"}
+{"type": "1", "instance": "帮我整理一下工作台", "belief_rating": "2"}

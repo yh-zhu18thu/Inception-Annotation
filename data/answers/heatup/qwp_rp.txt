@@ -1,0 +1,8 @@
+{"type": "nv1", "example_instances": ["小元刚刚给我发什么微信消息了", "请帮我给微信好友车车回复以下信息“好的收到”", "帮我回复一下新的微信消息说我稍后回复", "帮我礼貌地回复未接到的电话", "帮我给李小刚回复“稍等我一下，我马上下楼”消息"], "example_feasibilities": [true, false, false, false, true], "instance": "我现在有事，用我的口吻回一下微信消息", "belief_rating": "1", "statements": [{"option": "option1", "expression": ["口语化表达理解", "弱于"]}, {"option": "option1", "expression": ["模糊表达理解", "弱于"]}, {"option": "option2", "expression": ["高级智能理解", "弱于", "高级智能理解"]}]}
+{"type": "1v1", "example_instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "example_feasibility": "能够稳定", "instance": "请帮我翻译以下文章：“xxx”", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["口语化表达理解", "接近"]}, {"option": "option2", "expression": ["智能", "接近", "智能"]}]}
+{"type": "nv1", "example_instances": ["最近LV店有什么新品推出吗", "美国法和中国法关于未成年人刑事责任问题的看法有什么不同", "念一下我感兴趣的消息"], "example_feasibilities": [false, false, true], "instance": "hey，siri，最近有什么比较奇葩的社会新闻吗？", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["模糊范围程度理解", "弱于"]}, {"option": "option2", "expression": ["不确定目标理解", "接近", "不确定目标理解"]}]}
+{"type": "1", "instance": "请帮我翻译以下文章：“xxx”", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "请判断我的睡眠周期", "example_feasibility": "能够稳定", "instance": "请帮我把我的日程安排导出来并在相应时间提醒我", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["模糊范围程度理解", "强于"]}, {"option": "option1", "expression": ["复杂指令理解", "强于"]}]}
+{"type": "1", "instance": "hey，siri，最近有什么比较奇葩的社会新闻吗？", "belief_rating": "2"}
+{"type": "1", "instance": "请帮我把我的日程安排导出来并在相应时间提醒我", "belief_rating": "5"}
+{"type": "1", "instance": "我现在有事，用我的口吻回一下微信消息", "belief_rating": "1"}

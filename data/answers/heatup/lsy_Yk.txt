@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["播放《Halo》歌曲", "换一首歌", "播放一首周深的歌曲"], "example_feasibilities": [false, false, true], "instance": "放首歌", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["xxx", "接近", "xxx"]}]}
+{"type": "1", "instance": "放首歌", "belief_rating": "2"}
+{"type": "nv1", "example_instances": ["请帮我把我的日程安排导出来并在相应时间提醒我", "你是我的秘书，帮我安排我的日程，并每天提醒我在什么时候需要处理什么工作，我不想拖延，也不想迟到", "提醒我回复张小红微信消息"], "example_feasibilities": [true, true, true], "instance": "帮我在微信中向张神发送日程信息并计入我的日程提醒", "belief_rating": "5", "statements": [{"option": "option2", "expression": ["xxx", "强于", "xxx"]}]}
+{"type": "1", "instance": "帮我在微信中向张神发送日程信息并计入我的日程提醒", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "帮我查一下乐高的新品并按价格排序", "example_feasibility": "能够稳定", "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "belief_rating": "5", "statements": [{"option": "option3", "expression": ["样例指令", "xxx"]}]}
+{"type": "1v1", "example_instance": "打开微信，找到小马宝莉", "example_feasibility": "能够稳定", "instance": "根据所关注的有关上市创业公司微信公众号，规划最优路线", "belief_rating": "6", "statements": [{"option": "option3", "expression": ["当前指令", "xxx"]}]}
+{"type": "1v1", "example_instance": "在滴答清单帮我安排一个任务，主题是学术会议，时间是下周一下午3点，提前一小时提醒我", "example_feasibility": "能够稳定", "instance": "下周二有个中期汇报，帮我设定一下行程安排规划，并且提醒我", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "根据所关注的有关上市创业公司微信公众号，规划最优路线", "belief_rating": "5"}
+{"type": "1", "instance": "下周二有个中期汇报，帮我设定一下行程安排规划，并且提醒我", "belief_rating": "6"}
+{"type": "1", "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "belief_rating": "4"}

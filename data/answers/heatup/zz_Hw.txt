@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "请帮我设置明天早上10点的闹钟", "example_feasibility": "能够稳定", "instance": "帮我设置一个明天早上7点的闹钟", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option2", "expression": ["理解", "弱于", "理解"]}, {"option": "option3", "expression": ["当前指令", "理解"]}]}
+{"type": "1v1", "example_instance": "帮我记录日程，并安排会议时间", "example_feasibility": "不能正确", "instance": "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option2", "expression": ["口语化表达理解", "弱于", "复杂逻辑理解"]}, {"option": "option1", "expression": ["语序语气理解", "弱于"]}]}
+{"type": "1", "instance": "帮我设置一个明天早上7点的闹钟", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "我要这篇文章的主要内容：“xxx”", "example_feasibility": "不能正确", "instance": "请帮我把我的日程安排导出来并在相应时间提醒我", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["模糊范围程度理解", "强于"]}, {"option": "option2", "expression": ["设置条件触发", "弱于", "模糊指代理解"]}]}
+{"type": "nv1", "example_instances": ["查看附近咖啡馆", "查找附近的宠物商店", "查一下附近的酒店价格和距离", "告诉我附近有哪些好玩的景点", "看看最近去哪里比较便宜"], "example_feasibilities": [false, true, false, true, true], "instance": "查一下附近的景点", "belief_rating": "1", "statements": [{"option": "option1", "expression": ["省略信息理解", "接近"]}, {"option": "option2", "expression": ["模糊指代理解", "强于", "模糊指代理解"]}]}
+{"type": "1v1", "example_instance": "请每隔一个小时告诉我时间", "example_feasibility": "能够稳定", "instance": "请提醒我该睡觉了，不要熬夜", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["模糊指代理解", "强于"]}, {"option": "option2", "expression": ["不确定目标理解", "强于", "不确定目标理解"]}]}
+{"type": "1", "instance": "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "belief_rating": "2"}
+{"type": "1", "instance": "请帮我把我的日程安排导出来并在相应时间提醒我", "belief_rating": "2"}
+{"type": "1", "instance": "请提醒我该睡觉了，不要熬夜", "belief_rating": "1"}
+{"type": "1", "instance": "查一下附近的景点", "belief_rating": "1"}

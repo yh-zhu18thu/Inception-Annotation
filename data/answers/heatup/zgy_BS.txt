@@ -1,0 +1,1 @@
+{"type": "nv1", "example_instances": ["根据过往情况，判断一下我完成任务清单的可能性", "下一周安排以下任务：“xxx”，处理你自己可以处理的部分", "请帮我处理班干部管理事务，收集返校情况"], "example_feasibilities": [true, true, true], "instance": "请帮我把水木社区任务拆分成5个子任务，并对应分给5位时间合适的员工后，跟踪其完成进度和统计汇报数据", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}

@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["请帮我把我的日程安排导出来并在相应时间提醒我", "在滴答清单帮我安排一个任务，主题是学术会议，时间是下周一下午3点，提前一小时提醒我", "请帮我协调其他人的时间，并安排会议"], "example_feasibilities": [false, true, true], "instance": "帮我记录日程，并安排会议时间", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["信息存储与提取", "强于"]}]}
+{"type": "nv1", "example_instances": ["帮我收拾东西", "帮我收拾宿舍", "我要出门了，5点钟到家，把被套换洗一下烘干，换上新买的那套"], "example_feasibilities": [true, true, false], "instance": "我要出门了，帮我扫一下地，然后再拖一下", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["识别与理解", "强于"]}, {"option": "option2", "expression": ["特定执行动作", "强于", "复杂任务"]}]}
+{"type": "1", "instance": "我要出门了，帮我扫一下地，然后再拖一下", "belief_rating": "5"}
+{"type": "1", "instance": "帮我记录日程，并安排会议时间", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "打开微博查找关注的人的动态", "example_feasibility": "能够稳定", "instance": "要买单了（打开付款码）", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["特定执行动作", "弱于"]}, {"option": "option2", "expression": ["设置条件触发", "强于", "识别与理解"]}]}
+{"type": "1v1", "example_instance": "打开Thenyoung十月up主的最新视频", "example_feasibility": "能够稳定", "instance": "我想继续在b站看昨天晚上没看完的综艺", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["识别与理解", "强于"]}, {"option": "option1", "expression": ["模糊范围程度理解", "强于"]}]}
+{"type": "nv1", "example_instances": ["请播放我关注的up主的最新视频", "帮我看看b站关注的up主有没有更新，有更新的话请播放最新视频", "播放《七里香》"], "example_feasibilities": [true, true, false], "instance": "甄嬛传电视剧上次看到哪了，接着播放", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["信息存储与提取", "强于"]}, {"option": "option1", "expression": ["不确定目标理解", "强于"]}]}
+{"type": "1", "instance": "我想继续在b站看昨天晚上没看完的综艺", "belief_rating": "3"}
+{"type": "1", "instance": "要买单了（打开付款码）", "belief_rating": "5"}
+{"type": "1", "instance": "甄嬛传电视剧上次看到哪了，接着播放", "belief_rating": "2"}

@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "请判断我的睡眠周期", "example_feasibility": "能够稳定", "instance": "老番茄更新的视频在我休息时自动跳出播放", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["个性化知识理解", "弱于", "设置条件触发"]}]}
+{"type": "1", "instance": "老番茄更新的视频在我休息时自动跳出播放", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "我想知道我的今日运动训练计划是什么", "example_feasibility": "能够稳定", "instance": "最近我的睡眠情况怎么样", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["个性化知识理解", "接近"]}]}
+{"type": "1", "instance": "最近我的睡眠情况怎么样", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "假如你是苏轼，请写一篇议论文来阐述你的人生观", "example_feasibility": "能够稳定", "instance": "半小时后自动关闭B站", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["自主寻找", "弱于", "设置条件触发"]}]}
+{"type": "1", "instance": "半小时后自动关闭B站", "belief_rating": "5"}
+{"type": "nv1", "example_instances": ["请推荐一些好玩的单机小游戏", "最近有什么推荐的剧", "请为我推荐最近新上的热播电视剧"], "example_feasibilities": [true, true, true], "instance": "推荐5位有趣的博主", "belief_rating": "4", "statements": [{"option": "option1", "expression": ["自主寻找", "接近"]}]}
+{"type": "1v1", "example_instance": "我想学Pr软件，有没有什么好的教程", "example_feasibility": "不能正确", "instance": "查一下有关提升沟通技巧的方法", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["自主寻找", "接近"]}]}
+{"type": "1", "instance": "推荐5位有趣的博主", "belief_rating": "3"}
+{"type": "1", "instance": "查一下有关提升沟通技巧的方法", "belief_rating": "3"}

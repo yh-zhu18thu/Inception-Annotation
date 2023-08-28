@@ -1,0 +1,3 @@
+{"type": "1v1", "example_instance": "帮我翻译一下这个文章", "example_feasibility": "能够稳定", "instance": "给我讲清楚这篇文献在说什么", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["三十", "弱于"]}]}
+{"type": "1", "instance": "给我讲清楚这篇文献在说什么", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "请帮我回复电子邮件，如果有需要我亲自看的告诉我", "example_feasibility": "能够稳定", "instance": "请帮我看看门口是谁", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["三十", "强于"]}]}

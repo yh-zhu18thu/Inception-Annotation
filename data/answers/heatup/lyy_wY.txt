@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["打开抖音，刷到末日文视频，我要睡觉啦", "打开B站，继续播放昨天没看完的番", "我想听八卦"], "example_feasibilities": [true, true, true], "instance": "我要看戏了（手机调静音）", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["情境感知", "接近"]}, {"option": "option2", "expression": ["任务调度", "弱于", "任务调度"]}, {"option": "option3", "expression": ["当前指令", "复杂逻辑理解"]}]}
+{"type": "1v1", "example_instance": "发信息给钱小敏，告诉他我马上就到", "example_feasibility": "能够稳定", "instance": "请帮我自动回npy的消息，不能让ta生气", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["复杂逻辑理解", "接近"]}, {"option": "option2", "expression": ["情感", "弱于", "情感"]}, {"option": "option3", "expression": ["当前指令", "复杂逻辑理解"]}]}
+{"type": "1v1", "example_instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧", "example_feasibility": "能够稳定", "instance": "帮我美团上点一个“酸菜鱼”的外卖", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["识别与理解", "接近"]}, {"option": "option2", "expression": ["设置条件触发", "强于", "设置条件触发"]}, {"option": "option3", "expression": ["当前指令", "偏好分析"]}]}
+{"type": "1", "instance": "帮我美团上点一个“酸菜鱼”的外卖", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "定一个李佳琪美妆产品上架的提示闹钟", "example_feasibility": "能够稳定", "instance": "帮我重要的日程设置闹铃", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["复杂逻辑理解", "接近"]}, {"option": "option2", "expression": ["隐性步骤提取", "弱于", "隐性步骤提取"]}, {"option": "option3", "expression": ["样例指令", "语义揣测"]}]}
+{"type": "nv1", "example_instances": ["请帮我回复I'm Busy的默认信息", "帮我回复一下新的微信消息说我稍后回复", "提醒我回复张小红微信消息", "帮我给李小刚回复“稍等我一下，我马上下楼”消息", "替我回复拒绝A的短信"], "example_feasibilities": [true, true, true, false, true], "instance": "请帮我给微信好友车车回复以下信息“好的收到”", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}, {"option": "option2", "expression": ["xxx", "强于", "xxx"]}, {"option": "custom", "expression": [""]}]}
+{"type": "1", "instance": "请帮我给微信好友车车回复以下信息“好的收到”", "belief_rating": "5"}
+{"type": "1", "instance": "请帮我自动回npy的消息，不能让ta生气", "belief_rating": "1"}
+{"type": "1", "instance": "我要看戏了（手机调静音）", "belief_rating": "6"}
+{"type": "1", "instance": "帮我重要的日程设置闹铃", "belief_rating": "7"}

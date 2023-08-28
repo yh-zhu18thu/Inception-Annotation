@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "在群聊里回复“好的”", "example_feasibility": "能够稳定", "instance": "在微信群里问大家今晚有没有空一起打麻将", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["操作", "接近"]}]}
+{"type": "1", "instance": "在微信群里问大家今晚有没有空一起打麻将", "belief_rating": "5"}
+{"type": "1", "instance": "请帮我打开歌曲《想去海边》", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "整理一下我在3月15日~4月15日期间出错的题目", "example_feasibility": "能够稳定", "instance": "DSA课程的ddl是6月29日（表达后自动加入日程）", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["复杂指令理解", "强于"]}, {"option": "option1", "expression": ["操作", "强于"]}]}
+{"type": "1", "instance": "DSA课程的ddl是6月29日（表达后自动加入日程）", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "请帮我读出最新的消息", "example_feasibility": "能够稳定", "instance": "我有什么重要的消息该回复", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["模糊表达理解", "弱于"]}]}
+{"type": "nv1", "example_instances": ["天猫精灵，给我讲个故事", "把桌子上的充电宝拿给我", "天猫精灵，帮12345678901的手机号码充话费"], "example_feasibilities": [false, true, true], "instance": "给猫咪加一根猫条", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["操作", "接近"]}]}
+{"type": "1", "instance": "我有什么重要的消息该回复", "belief_rating": "4"}
+{"type": "1", "instance": "给猫咪加一根猫条", "belief_rating": "6"}

@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "搜索去潭柘寺的路线", "example_feasibility": "不能正确", "instance": "查找附近跑步线路和天气、路况", "belief_rating": "4", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1", "instance": "查找附近跑步线路和天气、路况", "belief_rating": "7"}
+{"type": "nv1", "example_instances": ["帮我记录日程，并安排会议时间", "请帮我把我的日程安排导出来并在相应时间提醒我", "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "在滴答清单帮我安排一个任务，主题是学术会议，时间是下周一下午3点，提前一小时提醒我", "请帮我设置15天后去夏威夷开学术会议日程"], "example_feasibilities": [true, true, true, true, false], "instance": "请帮我协调其他人的时间，并安排会议", "belief_rating": "6", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "nv1", "example_instances": ["请帮我设置15天后去夏威夷开学术会议日程", "设置组会日程", "定一个19点的闹钟，并备注抢票", "帮我预定一下从北京市前往天津市的耗时最短的高铁二等座，如果在其他票务平台有优惠券可以使用的话请一并使用", "定个明天早上的闹钟"], "example_feasibilities": [false, true, true, false, false], "instance": "请在日历中7月31日18点-22点设定赶飞机日程", "belief_rating": "7", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "nv1", "example_instances": ["明天我能否骑行到天津", "明天的天气如何", "明天适合出去玩吗，推荐去哪玩"], "example_feasibilities": [false, true, true], "instance": "明天的天气如何，是否适合打羽毛球", "belief_rating": "1", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "nv1", "example_instances": ["请帮我推荐一些讲述创业成功人士的经历的文章", "整理一个养老金相关的政策分析报告，5000字以上", "请列出国内适合穷游的地方", "你了解新能源领域吗？我想写一篇关于这个的文献综述，你能给点建议吗？", "举一个市场型环境政策， 并举例，500字以上"], "example_feasibilities": [true, true, true, false, true], "instance": "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲", "belief_rating": "5", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1", "instance": "明天的天气如何，是否适合打羽毛球", "belief_rating": "1"}
+{"type": "1", "instance": "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲", "belief_rating": "6"}
+{"type": "1", "instance": "请在日历中7月31日18点-22点设定赶飞机日程", "belief_rating": "7"}
+{"type": "1", "instance": "请帮我协调其他人的时间，并安排会议", "belief_rating": "5"}

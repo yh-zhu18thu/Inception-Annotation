@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["打开微信和王小明说我出发了", "打电话给李小云", "打开微信，找到小马宝莉"], "example_feasibilities": [true, false, true], "instance": "打开微信,给梅老师打电话", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["理解", "接近"]}]}
+{"type": "1", "instance": "打开微信,给梅老师打电话", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "最近的行程提醒我一下", "example_feasibility": "能够稳定", "instance": "小说更新提醒我一下", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option3", "expression": ["当前指令", "规划"]}]}
+{"type": "1v1", "example_instance": "设置下午一点的事项，需要去清华大学经管学院开会", "example_feasibility": "能够稳定", "instance": "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option3", "expression": ["当前指令", "规划"]}]}
+{"type": "1", "instance": "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "belief_rating": "1"}
+{"type": "nv1", "example_instances": ["定一个下午两点钟的闹钟", "定一个李佳琪美妆产品上架的提示闹钟", "定一个明早9点的闹钟"], "example_feasibilities": [true, true, true], "instance": "设置闹钟为12点", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["理解", "强于"]}, {"option": "option1", "expression": ["规划", "接近"]}, {"option": "option1", "expression": ["执行", "接近"]}]}
+{"type": "1", "instance": "设置闹钟为12点", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["【使用Excel时】请帮我将表格中的语文成绩数据以从大到小的顺序排在第一列", "帮我把往年题文档里的高数问题按照知识点进行分类整理", "请帮我对信息内容进行优先级排序"], "example_feasibilities": [true, false, false], "instance": "请帮我按照重要程序排序整理这个文件夹的文献", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option3", "expression": ["当前指令", "规划"]}]}
+{"type": "1", "instance": "请帮我按照重要程序排序整理这个文件夹的文献", "belief_rating": "2"}
+{"type": "1", "instance": "小说更新提醒我一下", "belief_rating": "2"}

@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["请打电话给塞缪尔", "请帮我打电话给张三", "给妈妈打电话", "请帮我拨通电话给刘小昂", "请在15分钟后叫我"], "example_feasibilities": [false, true, false, false, false], "instance": "打电话给李小云", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["理解", "强于"]}, {"option": "option2", "expression": ["执行", "强于", "规划"]}]}
+{"type": "1v1", "example_instance": "我想听法国香颂风格的歌曲", "example_feasibility": "不能正确", "instance": "请播放我关注的up主的最新视频", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option2", "expression": ["执行", "弱于", "规划"]}]}
+{"type": "1", "instance": "请播放我关注的up主的最新视频", "belief_rating": "1"}
+{"type": "1", "instance": "打电话给李小云", "belief_rating": "1"}
+{"type": "nv1", "example_instances": ["查找去大理的旅游攻略", "你是一个美食家，请给我推荐一些理想的川菜馆", "我想用一千块穷游大理（规划行程及预算）", "根据大众点评上的美食店推荐，规划最优路线", "请列出国内适合穷游的地方"], "example_feasibilities": [true, true, true, false, false], "instance": "去大理玩三天，推荐美食路线", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["规划", "强于"]}, {"option": "option2", "expression": ["理解", "强于", "执行"]}]}
+{"type": "1", "instance": "去大理玩三天，推荐美食路线", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "帮我做一道家乡菜", "example_feasibility": "能够稳定", "instance": "我很喜欢吃奶贝，还有哪家有类似商品", "belief_rating": "2", "statements": [{"option": "option1", "expression": ["理解", "弱于"]}, {"option": "option2", "expression": ["规划", "弱于", "理解"]}]}
+{"type": "1", "instance": "我很喜欢吃奶贝，还有哪家有类似商品", "belief_rating": "1"}
+{"type": "1v1", "example_instance": "在小红书上找一下上海旅游攻略", "example_feasibility": "能够稳定", "instance": "查找去大理的旅游攻略", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["规划", "强于"]}, {"option": "option2", "expression": ["执行", "强于", "规划"]}]}
+{"type": "1", "instance": "查找去大理的旅游攻略", "belief_rating": "5"}

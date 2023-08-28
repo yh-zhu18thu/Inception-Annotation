@@ -1,0 +1,10 @@
+{"type": "1v1", "example_instance": "寻找比较文学方面的文献", "example_feasibility": "不能正确", "instance": "请帮我搜集整理与深度学习相关的英文文献并进行整理", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "请帮我搜集整理与深度学习相关的英文文献并进行整理", "belief_rating": "4"}
+{"type": "1v1", "example_instance": "打开王者", "example_feasibility": "能够稳定", "instance": "(麻将）下一张牌打八万", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "(麻将）下一张牌打八万", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "打开音乐，播放如愿", "example_feasibility": "不能正确", "instance": "放首歌", "belief_rating": "4", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1v1", "example_instance": "请帮我查一下费马小定理", "example_feasibility": "能够稳定", "instance": "天猫精灵，帮我查询12345678901的手机号本月本地剩余流量", "belief_rating": "1", "statements": [{"option": "option2", "expression": ["xxx", "强于", "xxx"]}]}
+{"type": "1", "instance": "放首歌", "belief_rating": "7"}
+{"type": "1", "instance": "天猫精灵，帮我查询12345678901的手机号本月本地剩余流量", "belief_rating": "2"}
+{"type": "nv1", "example_instances": ["帮我推荐一首歌", "播放一首周深的歌曲", "请帮我推荐一首拉丁爵士风格的歌曲", "播放最近热门歌曲", "单曲循环我这一周最爱听的歌"], "example_feasibilities": [true, true, false, true, false], "instance": "请播放一首我爱听的类型的歌曲", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "请播放一首我爱听的类型的歌曲", "belief_rating": "4"}

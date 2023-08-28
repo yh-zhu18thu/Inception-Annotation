@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "帮我礼貌地回复未接到的电话", "example_feasibility": "能够稳定", "instance": "开启去世一大的步行导航", "belief_rating": "6", "statements": [{"option": "custom", "expression": [""]}]}
+{"type": "1v1", "example_instance": "查一下有关提升沟通技巧的方法", "example_feasibility": "能够稳定", "instance": "最近有什么娱乐大八卦呢", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1", "instance": "最近有什么娱乐大八卦呢", "belief_rating": "5"}
+{"type": "1", "instance": "开启去世一大的步行导航", "belief_rating": "1"}
+{"type": "1", "instance": "查找电路原理第一章学习资料", "belief_rating": "2"}
+{"type": "1v1", "example_instance": "请问这题应该怎么做，这么做有什么问题吗", "example_feasibility": "能够稳定", "instance": "压力太大了能不能帮我放松一下心情", "belief_rating": "5", "statements": [{"option": "custom", "expression": ["能够更好的加快响应，经过前面的锻炼"]}]}
+{"type": "1", "instance": "压力太大了能不能帮我放松一下心情", "belief_rating": "5"}
+{"type": "1v1", "example_instance": "换一首歌", "example_feasibility": "能够稳定", "instance": "我要听抒情歌", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "我要听抒情歌", "belief_rating": "5"}

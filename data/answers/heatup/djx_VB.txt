@@ -1,0 +1,9 @@
+{"type": "1v1", "example_instance": "评价今天的身体健康情况", "example_feasibility": "不能正确", "instance": "我的身体健康状况", "belief_rating": "1", "statements": [{"option": "option2", "expression": ["xxx", "强于", "xxx"]}]}
+{"type": "1", "instance": "我的身体健康状况", "belief_rating": "1"}
+{"type": "1v1", "example_instance": "请帮我打开录音机和文字转录，开始记录", "example_feasibility": "能够稳定", "instance": "打开微信和王小明说我出发了", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1", "instance": "打开微信和王小明说我出发了", "belief_rating": "4"}
+{"type": "nv1", "example_instances": ["【在线上参会】我去上厕所，帮我记一下，有人叫我就震动手环", "请提醒我该睡觉了，不要熬夜", "闹钟定到明天早上7：50，如果我没醒的话，就别管我了，9：30再叫我一次就行", "我起不来，你把窗帘拉开让我清醒会", "我要看戏了（手机调静音）"], "example_feasibilities": [true, true, true, true, true], "instance": "线上会议你听一下哈，感觉要cue我了就提醒我哈，我先睡了", "belief_rating": "1", "statements": [{"option": "option2", "expression": ["xxx", "弱于", "xxx"]}]}
+{"type": "1", "instance": "线上会议你听一下哈，感觉要cue我了就提醒我哈，我先睡了", "belief_rating": "1"}
+{"type": "1v1", "example_instance": "【在照片编辑页面】曝光和饱和度调高一点", "example_feasibility": "能够稳定", "instance": "开启同声传译", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["xxx", "弱于", "xxx"]}]}
+{"type": "nv1", "example_instances": ["音量调大", "打开网易云音乐播放爱人错过", "开启有声书功能"], "example_feasibilities": [true, true, false], "instance": "开启同声传译", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1", "instance": "开启同声传译", "belief_rating": "2"}

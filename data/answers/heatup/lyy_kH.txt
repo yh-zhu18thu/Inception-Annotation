@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复", "请生成一段python代码，需要满足以下需求：ui界面排布16个按钮，点击一个按钮后，按钮变色，然后上述按钮按照4*4分布，请修复", "请帮我写一篇关于密码学的文献综述，2000-3000字左右，要求涵盖近五年来这一领域的主要进展，并且包括必要的梳理、对比和讨论"], "example_feasibilities": [true, true, true], "instance": "请帮我写一段代码，主要功能是：构建平衡二叉树，代码语言是：c++", "belief_rating": "3", "statements": [{"option": "option2", "expression": ["复杂指令理解", "弱于", "操作"]}]}
+{"type": "1", "instance": "请帮我写一段代码，主要功能是：构建平衡二叉树，代码语言是：c++", "belief_rating": "3"}
+{"type": "nv1", "example_instances": ["hey，siri，外卖打电话过来就自动回复外卖就放门口吧", "【预约完一个咸鱼送货订单】定一个明早九点的闹钟", "去门口把外卖拿进来"], "example_feasibilities": [true, true, true], "instance": "点一个外卖并备注12点送到，直接放门口就行", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["口语化表达理解", "强于"]}]}
+{"type": "nv1", "example_instances": ["帮我记录日程，并安排会议时间", "请帮我把我的日程安排导出来并在相应时间提醒我", "在滴答清单帮我安排一个任务，主题是学术会议，时间是下周一下午3点，提前一小时提醒我"], "example_feasibilities": [true, true, true], "instance": "请帮我协调其他人的时间，并安排会议", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["任务调度", "强于"]}]}
+{"type": "nv1", "example_instances": ["帮我在室友群问一下他们晚上的安排", "帮我计划一下这周的日程", "告诉我现在我需要完成的最紧急的工作是什么，最重要的工作是什么", "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）", "接下来两个小时的安排"], "example_feasibilities": [false, false, false, false, false], "instance": "请问我今天有什么安排？", "belief_rating": "1", "statements": [{"option": "option2", "expression": ["任务调度", "弱于", "任务调度"]}]}
+{"type": "1v1", "example_instance": "帮我选择一本与犯罪心理学相关的书籍供我阅读", "example_feasibility": "能够稳定", "instance": "帮我查找近两年在社会心理学领域的高被引文章", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["信息获取", "强于"]}]}
+{"type": "1", "instance": "点一个外卖并备注12点送到，直接放门口就行", "belief_rating": "5"}
+{"type": "1", "instance": "请问我今天有什么安排？", "belief_rating": "1"}
+{"type": "1", "instance": "帮我查找近两年在社会心理学领域的高被引文章", "belief_rating": "6"}
+{"type": "1", "instance": "请帮我协调其他人的时间，并安排会议", "belief_rating": "5"}
