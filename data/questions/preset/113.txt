@@ -16,7 +16,7 @@
 {"type": "nv1", "example_instances": ["打开摄像头并开启美颜功能", "打开最近文档里的ppt模板", "锁屏并释放白噪音帮我专注"], "instance": "打开keep软件记录运动时长", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "定一个明早9点的闹钟", "feasibility": true, "instance": "定个明天早上的闹钟", "dataset": "600"}
 {"type": "1", "instance": "【正在输入消息页面时】帮我想想怎么更好的表达我想请假的意图"}
-{"type": "nv1", "example_instances": ["请以更学术的方式表达下面这段话的意思：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译以下文章：“xxx”"], "instance": "把以下这段话翻译为英文：“xxx”", "feasibilities": [false, true, false, false, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请以更学术的方式表达下面这段话的意思：“xxx”", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "请帮我翻译以下文章：“xxx”"], "instance": "把以下这段话翻译为英文：“xxx”", "feasibilities": [false, true, false, false, true], "dataset": "600"}
 {"type": "1", "instance": "定个明天早上的闹钟"}
 {"type": "1v1", "example_instance": "请在日历中7月31日18点-22点设定赶飞机日程", "feasibility": true, "instance": "想一个生日庆祝计划", "dataset": "600"}
 {"type": "1v1", "example_instance": "将刚才浏览时间较长的文献下载到作业文件夹", "feasibility": true, "instance": "帮我搜索清华大学人机交互实验室关键词相关文献及公众号文章信息，并整理到人机交互文件夹", "dataset": "600"}

@@ -138,7 +138,7 @@
 {"type": "nv1", "example_instances": ["请推荐一些成功创业的经管学长学姐公司的公众号并自动关注", "根据大众点评上的美食店推荐，规划最优路线", "帮我根据现有财产制订投资计划"], "instance": "根据所关注的有关上市创业公司微信公众号，规划最优路线", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我做一下旅游规划，尽量避开杭州市人流很多和经常堵车导致旅游体验感下降的地方", "feasibility": false, "instance": "请列出国内适合穷游的地方", "dataset": "600"}
 {"type": "1", "instance": "根据所关注的有关上市创业公司微信公众号，规划最优路线"}
-{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibility": true, "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibility": true, "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "dataset": "600"}
 {"type": "1", "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”"}
 {"type": "1", "instance": "请列出国内适合穷游的地方"}
 {"type": "1", "instance": "【打开一个pdf】请帮我看这篇论文，并做一页总结ppt"}

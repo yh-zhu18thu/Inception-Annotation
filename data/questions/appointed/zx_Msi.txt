@@ -128,7 +128,7 @@
 {"type": "nv1", "example_instances": ["帮我搜集一下三维重建领域的学术文章", "请帮我整理与大语言模型相关的文献", "搜索监督学习为关键词的相关文献"], "instance": "帮我查找近两年在社会心理学领域的高被引文章", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["hey，siri，外卖打电话过来就自动回复外卖就放门口吧", "【驾驶时】我要先去看展（改变导航目的地）", "【开车】快没油了，找个加油站"], "instance": "【在车上】我要避开收费站（选择非高速路线）", "feasibilities": [false, false, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "找个不去开组会的恰当理由发给导师", "feasibility": true, "instance": "帮我拒绝不必要的社交", "dataset": "600"}
-{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibility": true, "instance": "用学术的语言润色这段话：“xxx”", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibility": true, "instance": "用学术的语言润色这段话：“xxx”", "dataset": "600"}
 {"type": "1v1", "example_instance": "我想继续在b站看昨天晚上没看完的综艺", "feasibility": false, "instance": "用鲁迅的风格改写这段小说：“xxx”", "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我安排一个时长为1小时强度中等的健身计划", "feasibility": true, "instance": "帮我安排未来一周的日程，每天提醒我需要为这一周的日程做哪些工作，在日程开始前提醒我参加，你要达到的标准是我能提前1天完成所有任务的准备，并提前5分钟到达日程现场", "dataset": "150"}
 {"type": "1", "instance": "帮我安排未来一周的日程，每天提醒我需要为这一周的日程做哪些工作，在日程开始前提醒我参加，你要达到的标准是我能提前1天完成所有任务的准备，并提前5分钟到达日程现场"}

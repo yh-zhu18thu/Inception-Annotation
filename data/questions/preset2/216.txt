@@ -134,7 +134,7 @@
 {"type": "1", "instance": "请帮我写一段情真意切且不落俗套的生日祝福"}
 {"type": "1v1", "example_instance": "打开豆瓣，告诉我最近风评最好的电影是哪部，主要内容是什么", "feasibility": false, "instance": "请为我推荐最近新上的优质电影", "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我做一个生日蛋糕", "feasibility": true, "instance": "桌面设置一个好吃的甜品照片", "dataset": "600"}
-{"type": "nv1", "example_instances": ["【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译以下文章：“xxx”"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["【选中pdf中的一段文字】这些语句啥意思，为什么写在这里，还有别的同样功能的语句吗？", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我翻译以下文章：“xxx”"], "instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "1", "instance": "Hey，siri，检查下微信王哥今晚约几点吃饭？回复他先不等我了"}
 {"type": "nv1", "example_instances": ["附近哪里有可爱小狗（查找宠物店）", "查找附近的宠物商店", "查询附近的美食", "附近有啥好玩的地方", "查找附近的加油站"], "instance": "想摸小狗了（自动查找附近宠物店）", "feasibilities": [false, true, false, false, true], "dataset": "600"}
 {"type": "1", "instance": "想摸小狗了（自动查找附近宠物店）"}
@@ -145,6 +145,6 @@
 {"type": "1", "instance": "我饿了（自动打开外卖软件）"}
 {"type": "1", "instance": "请为我推荐最近新上的优质电影"}
 {"type": "1", "instance": "设置明天的闹钟并告知当时的天气情况"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "桌面设置一个好吃的甜品照片"}
 {"type": "finished"}

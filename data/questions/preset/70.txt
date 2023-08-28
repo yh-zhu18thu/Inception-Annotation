@@ -1,6 +1,6 @@
 {"type": "1v1", "example_instance": "打开微信，找到小马宝莉", "feasibility": false, "instance": "查询附近的美食", "dataset": "600"}
 {"type": "1", "instance": "查询附近的美食"}
-{"type": "nv1", "example_instances": ["用学术的语言润色这段话：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "把这段话翻译成英文并且润色"], "instance": "用鲁迅的风格改写这段小说：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["用学术的语言润色这段话：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "把这段话翻译成英文并且润色"], "instance": "用鲁迅的风格改写这段小说：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1", "instance": "用鲁迅的风格改写这段小说：“xxx”"}
 {"type": "1v1", "example_instance": "帮我收藏一下今天看过的小说", "feasibility": true, "instance": "推荐评分超过9的惊悚电影，并附上网址", "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我查找并朗读一下这本书的书评", "feasibility": false, "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "dataset": "600"}

@@ -92,7 +92,7 @@
 {"type": "1", "instance": "请帮我写一个朋友圈的caption，内容要和我去成都的旅游相关"}
 {"type": "1", "instance": "上午九点开始，每隔二十分钟提醒我要喝水"}
 {"type": "nv1", "example_instances": ["【对着当前的文档】整理信息", "把文字变成图片进行表达", "帮我做一个excel表格"], "instance": "【对着当前的文档】制作成表格", "feasibilities": [true, true, false], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "把以下这段话翻译为英文：“xxx”", "请以更学术的方式表达下面这段话的意思：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "把这段话翻译成英文并且润色"], "instance": "用学术的语言润色这段话：“xxx”", "feasibilities": [false, true, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "把以下这段话翻译为英文：“xxx”", "请以更学术的方式表达下面这段话的意思：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "把这段话翻译成英文并且润色"], "instance": "用学术的语言润色这段话：“xxx”", "feasibilities": [false, true, true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "我想知道关于国际关系问题目前的前沿研究", "feasibility": true, "instance": "请帮我读出最新的消息", "dataset": "600"}
 {"type": "1v1", "example_instance": "开启同声传译", "feasibility": true, "instance": "开启有声书功能", "dataset": "600"}
 {"type": "1", "instance": "请帮我读出最新的消息"}

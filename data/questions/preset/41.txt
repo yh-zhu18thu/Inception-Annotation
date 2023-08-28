@@ -93,8 +93,8 @@
 {"type": "1", "instance": "请帮我推荐一首拉丁爵士风格的歌曲"}
 {"type": "1v1", "example_instance": "请帮我回复电子邮件，如果有需要我亲自看的告诉我", "feasibility": true, "instance": "请帮我读所有未读消息并进行回复，重要的进行标记", "dataset": "600"}
 {"type": "1", "instance": "【在车上】我要避开收费站（选择非高速路线）"}
-{"type": "1v1", "example_instance": "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1v1", "example_instance": "你是一个访谈者，需要就中国新能源汽车发展主题开展访谈，请制定一份访谈提纲", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1v1", "example_instance": "排一下近期的ddl并预估完成时间", "feasibility": true, "instance": "帮我定一个5点的闹铃并计入日程", "dataset": "150"}
 {"type": "1v1", "example_instance": "请帮我看看好友茱莉亚有没有更新朋友圈", "feasibility": false, "instance": "导航至附近的美食店", "dataset": "150"}
 {"type": "1v1", "example_instance": "请帮我对信息内容进行优先级排序", "feasibility": true, "instance": "请帮我读所有未读消息并进行回复，重要的进行标记", "dataset": "600"}

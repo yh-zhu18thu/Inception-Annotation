@@ -53,7 +53,7 @@
 {"type": "1v1", "example_instance": "请在今天下午三点钟提醒我要参加学长毕业欢送会", "feasibility": false, "instance": "下午一点要去经管学院开会", "dataset": "150"}
 {"type": "1", "instance": "帮我校对一下这些材料，整理一份校对结果"}
 {"type": "1", "instance": "帮我挂一个今天医院放射科的号"}
-{"type": "nv1", "example_instances": ["给妈妈打电话", "请打电话给塞缪尔", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "打电话给李小云", "feasibilities": [false, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["给妈妈打电话", "请打电话给塞缪尔", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "打电话给李小云", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "【在某一个界面】请找到社区工作列表中对应的文化服务部分", "feasibility": true, "instance": "什么是股份回购知识", "dataset": "150"}
 {"type": "1", "instance": "20分钟后叫我（设闹钟）"}
 {"type": "1", "instance": "打电话给李小云"}

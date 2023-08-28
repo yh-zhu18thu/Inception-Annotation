@@ -8,14 +8,14 @@
 {"type": "1", "instance": "【打算做饭时】小度小度，帮我找到经典淮扬菜的菜谱"}
 {"type": "1", "instance": "请帮我决定中午点什么外卖，要养生一点，并送到我的工位"}
 {"type": "1v1", "example_instance": "请帮我找我今晚想看的电影，要求是公路旅行电影，帮我下好4k的片源", "feasibility": true, "instance": "告诉我附近有哪些好玩的景点", "dataset": "600"}
-{"type": "1v1", "example_instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
 {"type": "1v1", "example_instance": "我想听法国香颂风格的歌曲", "feasibility": false, "instance": "帮我推荐一首歌", "dataset": "600"}
 {"type": "1", "instance": "告诉我附近有哪些好玩的景点"}
 {"type": "nv1", "example_instances": ["请帮我打开soul的信息", "我起不来，你把窗帘拉开让我清醒会", "请帮我打开空调，并设置7小时之后关闭"], "instance": "请帮我打开窗帘", "feasibilities": [true, false, false], "dataset": "600"}
 {"type": "1", "instance": "请帮我打开窗帘"}
 {"type": "nv1", "example_instances": ["导航到五道口购物中心充电站", "导航到清华大学（导航）", "导航到中关村", "小度小度导航到最近的加油站同时搜索当日油价", "开启去世一大的步行导航"], "instance": "导航至那家上市的创业公司", "feasibilities": [true, false, false, true, false], "dataset": "600"}
 {"type": "1", "instance": "我想知道伴性遗传主题方面的前沿文献主要在讲什么"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "帮我推荐一首歌"}
 {"type": "nv1", "example_instances": ["把桌子上的充电宝拿给我", "拿快递并且拆了", "告诉我我买的吉他快递到哪了", "去门口把外卖拿进来", "让我室友帮我取快递"], "instance": "快递取一下", "feasibilities": [true, true, false, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "把衣服晾干并且明天收起来", "feasibility": false, "instance": "帮我把洗完的衣服从烘干机拿出来并在衣柜里挂上", "dataset": "600"}

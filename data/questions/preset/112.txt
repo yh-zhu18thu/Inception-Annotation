@@ -129,7 +129,7 @@
 {"type": "1", "instance": "明天的天气如何"}
 {"type": "1", "instance": "帮我做一道家乡菜"}
 {"type": "1", "instance": "请帮我做一份汇报ppt"}
-{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "用学术的语言润色这段话：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [false, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:xxx", "用学术的语言润色这段话：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1", "instance": "按照重要程度将一些DDL和社工任务排序，并标注颜色，例如最紧迫的是红色，并作出规划和提醒"}
 {"type": "1", "instance": "【开车】快没油了，找个加油站"}
 {"type": "1", "instance": "你是公共管理领域的硕士一年级学生，请写一份2000字左右的学年总结"}

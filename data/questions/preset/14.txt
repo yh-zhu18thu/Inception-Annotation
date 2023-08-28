@@ -135,7 +135,7 @@
 {"type": "1", "instance": "【在车上】有点热（开空调）"}
 {"type": "1", "instance": "帮我检查文章"}
 {"type": "1", "instance": "你是四大律所的实习律师，请你根据这位客户的资料，收集相关法条"}
-{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "把以下这段话翻译为英文：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”", "请以更学术的方式表达下面这段话的意思：“xxx”", "校对这篇会议记录是否有错别字：“xxx”"], "instance": "用学术的语言润色这段话：“xxx”", "feasibilities": [true, false, false, false, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:xxx", "把以下这段话翻译为英文：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”", "请以更学术的方式表达下面这段话的意思：“xxx”", "校对这篇会议记录是否有错别字：“xxx”"], "instance": "用学术的语言润色这段话：“xxx”", "feasibilities": [true, false, false, false, false], "dataset": "600"}
 {"type": "1", "instance": "请在今天下午三点钟提醒我要参加学长毕业欢送会"}
 {"type": "1", "instance": "我明晚要开部门会，帮我安排一下（定时间地点、联系开会人、写会议流程）"}
 {"type": "1", "instance": "打开微信,给梅老师打电话"}

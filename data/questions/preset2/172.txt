@@ -22,12 +22,12 @@
 {"type": "1", "instance": "规划到学校最近路线及时间"}
 {"type": "1v1", "example_instance": "请帮我看看好友茱莉亚有没有更新朋友圈", "feasibility": true, "instance": "请帮我检查邮箱", "dataset": "150"}
 {"type": "1", "instance": "帮我收藏一下今天看过的小说"}
-{"type": "nv1", "example_instances": ["【在照片编辑页面】曝光和饱和度调高一点", "请帮我翻译并润色这段学术性文字：“xxx”", "把这段话翻译成英文并且润色"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["【在照片编辑页面】曝光和饱和度调高一点", "请帮我翻译并润色这段学术性文字：“xxx”", "把这段话翻译成英文并且润色"], "instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "再赢一把或者连输三把就睡（自动关机）", "feasibility": true, "instance": "锁屏并释放白噪音帮我专注", "dataset": "600"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "锁屏并释放白噪音帮我专注"}
 {"type": "nv1", "example_instances": ["导航到清华大学（导航）", "打开QQ音乐，播放《稻香》，并单曲循环", "开启去世一大的步行导航"], "instance": "导航到学校并放音乐", "feasibilities": [true, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我修改论文中的英文部分语法错误及润色", "用学术的语言润色这段话：“xxx”", "把这段话翻译成英文并且润色"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [true, false, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:xxx", "请帮我翻译并润色这段学术性文字：“xxx”", "请帮我修改论文中的英文部分语法错误及润色", "用学术的语言润色这段话：“xxx”", "把这段话翻译成英文并且润色"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [true, false, true, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["和我玩成语接龙", "陪我聊天", "20分钟后叫我（设闹钟）", "Hey，siri，检查下微信王哥今晚约几点吃饭？回复他先不等我了", "告诉小元，我现在有点事不方便接电话"], "instance": "跟马小东说我马上就到", "feasibilities": [true, false, false, true, true], "dataset": "150"}
 {"type": "1", "instance": "导航到学校并放音乐"}
 {"type": "1", "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”"}

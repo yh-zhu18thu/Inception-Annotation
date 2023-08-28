@@ -1,4 +1,4 @@
-{"type": "1v1", "example_instance": "打开小红书", "feasibility": false, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "打开小红书", "feasibility": false, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
 {"type": "1v1", "example_instance": "请帮我联系我的室友，求求他帮我把寝室清洁的事情干了", "feasibility": true, "instance": "请问我这个月花了多少钱", "dataset": "150"}
 {"type": "1", "instance": "请问我这个月花了多少钱"}
 {"type": "nv1", "example_instances": ["帮我润色一下这段话：“xxx”", "请帮我写一封邮件，问问教务老师这学期什么时候评教，注意礼貌", "请帮我修改并润色这段文字，要求具有学术风格", "请帮我写一篇能发表在cvpr上的论文", "帮我写一篇1000字以内的关于魏晋哲学主题的proposal"], "instance": "请帮我写一段情真意切且不落俗套的生日祝福", "feasibilities": [true, true, true, false, false], "dataset": "150"}
@@ -9,7 +9,7 @@
 {"type": "1", "instance": "打开抖音，刷到末日文视频，我要睡觉啦"}
 {"type": "1v1", "example_instance": "帮我调整角度和光影拍出ins风格的照片", "feasibility": true, "instance": "我要三千块预算以内性价比最高的上海旅游攻略", "dataset": "600"}
 {"type": "1", "instance": "我要三千块预算以内性价比最高的上海旅游攻略"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "请根据我的日程表提醒我的每一个计划，并提前告知现状信息，例如我晚上9点睡觉，提示为：现在是晚上8：30，离睡觉还有半小时，请提前记得吃药、打游戏等"}
 {"type": "1v1", "example_instance": "帮我推荐一首歌", "feasibility": true, "instance": "请帮我推荐一首拉丁爵士风格的歌曲", "dataset": "600"}
 {"type": "1v1", "example_instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibility": true, "instance": "把以下这段话翻译为英文：“xxx”", "dataset": "600"}

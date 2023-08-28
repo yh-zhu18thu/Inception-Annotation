@@ -129,7 +129,7 @@
 {"type": "nv1", "example_instances": ["播放搞笑视频", "请播放我关注的up主的最新视频", "播放我感兴趣的视频"], "instance": "播放追娘娘视频", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "小度小度，我心情不好（播放治愈音乐）", "feasibility": true, "instance": "请帮我播放跑步音乐", "dataset": "600"}
 {"type": "1v1", "example_instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "feasibility": false, "instance": "帮我画一个关于123app的低保真页面", "dataset": "600"}
-{"type": "nv1", "example_instances": ["用鲁迅的风格改写这段小说：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "把这段话翻译成英文并且润色"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [false, false, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["用鲁迅的风格改写这段小说：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "把这段话翻译成英文并且润色"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [false, false, true], "dataset": "600"}
 {"type": "1", "instance": "写一篇脊髓硬膜电刺激恢复运动论文，引用最前沿的文献"}
 {"type": "1v1", "example_instance": "最近我的睡眠情况怎么样", "feasibility": true, "instance": "我现在有事，用我的口吻回一下微信消息", "dataset": "600"}
 {"type": "1", "instance": "帮我礼貌地回复未接到的电话"}

@@ -36,7 +36,7 @@
 {"type": "1", "instance": "换一首歌"}
 {"type": "1v1", "example_instance": "帮我检查文章", "feasibility": true, "instance": "放首歌", "dataset": "600"}
 {"type": "1v1", "example_instance": "送一份冰可乐过来", "feasibility": false, "instance": "给我按摩一下肩膀", "dataset": "150"}
-{"type": "1v1", "example_instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibility": false, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibility": false, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
 {"type": "1v1", "example_instance": "请在接下来2小时内帮我自动回复导师的信息，帮我掩饰我在外面玩的事情", "feasibility": true, "instance": "20分钟后叫我（设闹钟）", "dataset": "150"}
 {"type": "1v1", "example_instance": "我正在学习量子力学，请根据我的学习进度和理解情况，制定一个个性化的学习计划", "feasibility": true, "instance": "请根据我的期末考日程，帮我安排复习计划", "dataset": "600"}
 {"type": "1", "instance": "告诉我现在我需要完成的最紧急的工作是什么，最重要的工作是什么"}
@@ -58,7 +58,7 @@
 {"type": "1", "instance": "请帮我打开淘宝app，并帮我点GUCCI旗舰店商家的男士香水"}
 {"type": "nv1", "example_instances": ["请帮我做好日程规划", "帮我记录日程，并安排会议时间", "帮我计划一下这周的日程"], "instance": "请帮我把我的日程安排导出来并在相应时间提醒我", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "请帮我把我的日程安排导出来并在相应时间提醒我"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1v1", "example_instance": "打开微信,给梅老师打电话", "feasibility": true, "instance": "打开B站，继续播放昨天没看完的番", "dataset": "600"}
 {"type": "1", "instance": "天猫精灵，帮我查询12345678901的手机号本月本地剩余流量"}
 {"type": "1v1", "example_instance": "【戴脸基尼】帮我解锁", "feasibility": true, "instance": "给我按摩一下肩膀", "dataset": "150"}

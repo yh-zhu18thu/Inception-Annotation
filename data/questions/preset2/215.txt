@@ -142,7 +142,7 @@
 {"type": "1", "instance": "帮我定去广西的高铁票"}
 {"type": "1", "instance": "养老金的计算方式"}
 {"type": "1", "instance": "请在15分钟后叫我"}
-{"type": "nv1", "example_instances": ["把这段话翻译成英文并且润色", "请帮我修改论文中的英文部分语法错误及润色", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译以下文章：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”"], "instance": "帮我润色一下这段小说的语言", "feasibilities": [false, true, false, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["把这段话翻译成英文并且润色", "请帮我修改论文中的英文部分语法错误及润色", "帮我润色一下这段对于实验结果的描述:xxx", "请帮我翻译以下文章：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”"], "instance": "帮我润色一下这段小说的语言", "feasibilities": [false, true, false, true, false], "dataset": "600"}
 {"type": "1", "instance": "我想吃川菜（给出推荐餐馆）"}
 {"type": "1", "instance": "帮我设置明天的闹钟"}
 {"type": "1", "instance": "“xxx”法律问题如何解决"}

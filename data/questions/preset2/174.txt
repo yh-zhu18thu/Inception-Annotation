@@ -136,7 +136,7 @@
 {"type": "1", "instance": "请打开抖音"}
 {"type": "nv1", "example_instances": ["我要千与千寻的钢琴谱", "小爱同学，播放歌曲", "帮我修一下吉他的弦"], "instance": "我要周杰伦的吉他谱", "feasibilities": [true, false, false], "dataset": "600"}
 {"type": "1", "instance": "我要周杰伦的吉他谱"}
-{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibility": true, "instance": "请帮我将不模糊的照片洗出并寄给照片里的人", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibility": true, "instance": "请帮我将不模糊的照片洗出并寄给照片里的人", "dataset": "600"}
 {"type": "1", "instance": "请帮我将不模糊的照片洗出并寄给照片里的人"}
 {"type": "nv1", "example_instances": ["提示网购平台低价折扣并在授权金额范围内抢单支付", "提醒我下午四点我要抢票", "每月15号定一个早上8点的闹钟提醒我交电费"], "instance": "在刺客信条打折开始1小时后和打折结束1小时前通知我", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "最近有什么推荐的剧", "feasibility": true, "instance": "最近摩托车有出什么新款吗？", "dataset": "600"}

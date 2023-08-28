@@ -50,7 +50,7 @@
 {"type": "1", "instance": "请帮我处理班干部管理事务，收集返校情况"}
 {"type": "1", "instance": "锁屏并释放白噪音帮我专注"}
 {"type": "nv1", "example_instances": ["帮我查找近两年在社会心理学领域的高被引文章", "你是一个公共管理硕士生，请帮我列出最新的文献", "寻找比较文学方面的文献"], "instance": "帮我选择一本与犯罪心理学相关的书籍供我阅读", "feasibilities": [true, true, false], "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "请帮我翻译学术名词xxx", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "请帮我翻译并润色这段学术性文字：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "请帮我翻译学术名词xxx", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "请帮我翻译并润色这段学术性文字：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "请帮我翻译并润色这段学术性文字：“xxx”"}
 {"type": "nv1", "example_instances": ["我要睡觉了（拉窗帘、关灯）", "请提醒我该睡觉了，不要熬夜", "帮我设置取快递的提醒"], "instance": "提醒我早点入睡", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1", "instance": "帮我选择一本与犯罪心理学相关的书籍供我阅读"}

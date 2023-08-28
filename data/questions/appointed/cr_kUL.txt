@@ -117,10 +117,10 @@
 {"type": "1", "instance": "请帮我查询可颂食物的卡路里"}
 {"type": "1v1", "example_instance": "整理一个养老金相关的政策分析报告，5000字以上", "feasibility": true, "instance": "出门后清洁房间", "dataset": "600"}
 {"type": "1v1", "example_instance": "查询天气预报及穿衣指数", "feasibility": true, "instance": "现在的天气情况", "dataset": "600"}
-{"type": "1v1", "example_instance": "天猫精灵，请播放最近流行的歌曲", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "天猫精灵，请播放最近流行的歌曲", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
 {"type": "1", "instance": "出门后清洁房间"}
 {"type": "1v1", "example_instance": "请帮我写一篇关于密码学的文献综述，2000-3000字左右，要求涵盖近五年来这一领域的主要进展，并且包括必要的梳理、对比和讨论", "feasibility": true, "instance": "帮我选择一本与犯罪心理学相关的书籍供我阅读", "dataset": "600"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "请帮我打开录音机和文字转录，开始记录"}
 {"type": "nv1", "example_instances": ["目标地点附近车多不多（打开地图搜索地点查看拥堵水平）", "查找附近的宠物商店", "小度小度导航到最近的加油站同时搜索当日油价", "打开大众点评，搜索附近5km内评分较高的美食店铺", "查看附近咖啡馆"], "instance": "查找附近跑步线路和天气、路况", "feasibilities": [true, true, false, true, true], "dataset": "600"}
 {"type": "1", "instance": "请在日历中7月31日18点-22点设定赶飞机日程"}

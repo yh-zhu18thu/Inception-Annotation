@@ -75,7 +75,7 @@
 {"type": "1", "instance": "请在接下来2小时内帮我自动回复导师的信息，帮我掩饰我在外面玩的事情"}
 {"type": "1", "instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧"}
 {"type": "1v1", "example_instance": "定一个8点的闹钟", "feasibility": true, "instance": "【打开一个pdf】请帮我看这篇论文，并做一页总结ppt", "dataset": "600"}
-{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibility": true, "instance": "用学术的语言润色这段话：“xxx”", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibility": true, "instance": "用学术的语言润色这段话：“xxx”", "dataset": "600"}
 {"type": "1", "instance": "【打开一个pdf】请帮我看这篇论文，并做一页总结ppt"}
 {"type": "1", "instance": "用学术的语言润色这段话：“xxx”"}
 {"type": "1v1", "example_instance": "帮忙写一下电路原理的实验报告", "feasibility": false, "instance": "把这张照片的亮度调高，细节p一下", "dataset": "600"}
@@ -123,10 +123,10 @@
 {"type": "1", "instance": "帮我拒绝不必要的社交"}
 {"type": "1", "instance": "帮我调整角度和光影拍出ins风格的照片"}
 {"type": "1v1", "example_instance": "小度小度导航到最近的加油站同时搜索当日油价", "feasibility": true, "instance": "【在车上】我要避开收费站（选择非高速路线）", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我回复I'm Busy的默认信息", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "“这个调研怎么做”，微信回复文先生", "用学术的语言润色这段话：“xxx”"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, false, false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "请帮我回复I'm Busy的默认信息", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "“这个调研怎么做”，微信回复文先生", "用学术的语言润色这段话：“xxx”"], "instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibilities": [true, false, false, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["请帮我写一篇关于密码学的文献综述，2000-3000字左右，要求涵盖近五年来这一领域的主要进展，并且包括必要的梳理、对比和讨论", "我明天要跟导师汇报xx主题的文献综述，按照这个格式，帮我把现在找到的文献内容整理进模板里", "我想知道关于国际关系问题目前的前沿研究"], "instance": "我明天要汇报AIGC主题的文献，告诉我需要从哪些方面进行汇报", "feasibilities": [true, false, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "规划一下明天的行程安排", "feasibility": true, "instance": "明天需要带伞吗", "dataset": "150"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "明天需要带伞吗"}
 {"type": "1v1", "example_instance": "请查找有关于商务纠纷的法律条文", "feasibility": false, "instance": "帮我分析一下这两篇文章的异同", "dataset": "600"}
 {"type": "1v1", "example_instance": "告诉我应该怎么提高我的写作技巧", "feasibility": false, "instance": "假如你是苏轼，请写一篇议论文来阐述你的人生观", "dataset": "600"}

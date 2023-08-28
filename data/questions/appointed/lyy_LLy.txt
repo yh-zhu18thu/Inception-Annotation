@@ -38,7 +38,7 @@
 {"type": "1v1", "example_instance": "帮我查询一下北京市7月21日的天气预报以及紫外线指数和穿衣指数", "feasibility": false, "instance": "明天适合出去玩吗，推荐去哪玩", "dataset": "600"}
 {"type": "1v1", "example_instance": "【在照片编辑页面】曝光和饱和度调高一点", "feasibility": false, "instance": "【产品相关资料上传后】生成某产品的文案，要求简洁明了。", "dataset": "600"}
 {"type": "1", "instance": "明天适合出去玩吗，推荐去哪玩"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译学术名词xxx"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "请帮我翻译学术名词xxx"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "打开抖音，刷到末日文视频，我要睡觉啦"}
 {"type": "1", "instance": "打开勿扰模式"}
 {"type": "1", "instance": "打开bilibili"}

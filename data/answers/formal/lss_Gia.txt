@@ -32,8 +32,8 @@
 {"type": "1", "instance": "帮忙规划旅行路线", "belief_rating": "3"}
 {"type": "1", "instance": "帮我根据自己以往画的画生成新的指定内容的画", "belief_rating": "5"}
 {"type": "1", "instance": "帮我检查被实验小鼠咬伤的伤口", "belief_rating": "2"}
-{"type": "1v1", "example_instance": "最近有什么推荐的剧", "example_feasibility": "能够稳定", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["自主寻找", "弱于", "特定语义功能"]}]}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "最近有什么推荐的剧", "example_feasibility": "能够稳定", "instance": "帮我润色一下这段对于实验结果的描述:xxx", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["自主寻找", "弱于", "特定语义功能"]}]}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx", "belief_rating": "3"}
 {"type": "1", "instance": "搜索如何制作一份好的汇报PPT", "belief_rating": "2"}
 {"type": "1v1", "example_instance": "推荐好用的网球运动装备", "example_feasibility": "能够稳定", "instance": "接下来两个小时的安排", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["隐性步骤提取", "弱于", "情境感知"]}]}
 {"type": "nv1", "example_instances": ["拿快递并且拆了", "快递取一下", "请帮我拨通电话给刘小昂"], "example_feasibilities": [true, true, true], "instance": "把桌子上的充电宝拿给我", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["特定执行动作", "强于"]}]}

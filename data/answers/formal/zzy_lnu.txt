@@ -138,7 +138,7 @@
 {"type": "1", "instance": "帮我泰勒斯威夫特29日vip区座位的票", "belief_rating": "3"}
 {"type": "1", "instance": "在微信群里问大家今晚有没有空一起打麻将", "belief_rating": "5"}
 {"type": "1", "instance": "【在车上】有点热（开空调）", "belief_rating": "6"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "belief_rating": "5"}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx", "belief_rating": "5"}
 {"type": "1", "instance": "提示网购平台低价折扣并在授权金额范围内抢单支付", "belief_rating": "2"}
 {"type": "1", "instance": "“这个调研怎么做”，微信回复文先生", "belief_rating": "5"}
 {"type": "1", "instance": "导航至附近的美食店", "belief_rating": "6"}

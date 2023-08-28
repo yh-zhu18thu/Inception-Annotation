@@ -16,7 +16,7 @@
 {"type": "nv1", "example_instances": ["20分钟后起床（设闹钟）", "请帮我写一段情真意切且不落俗套的生日祝福", "跟马小东说我马上就到"], "instance": "20分钟后叫我（设闹钟）", "feasibilities": [true, false, true], "dataset": "150"}
 {"type": "1", "instance": "【在开车】累了，不想开车了（开启辅助驾驶）"}
 {"type": "1", "instance": "帮我画一个关于123app的低保真页面"}
-{"type": "nv1", "example_instances": ["请帮我查一下下面这个报错如何解决", "如果你是一名码农，请检查这个代码是否存在错误", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我查一下下面这个报错如何解决", "如果你是一名码农，请检查这个代码是否存在错误", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "1v1", "example_instance": "请问我今天有什么安排？", "feasibility": true, "instance": "帮我查一下未来一周上海的天气", "dataset": "600"}
 {"type": "1v1", "example_instance": "【戴脸基尼】帮我解锁", "feasibility": true, "instance": "帮我把这些衣服叠一下", "dataset": "150"}
 {"type": "nv1", "example_instances": ["念一下我感兴趣的消息", "最近我的睡眠情况怎么样", "附近有啥好玩的地方"], "instance": "最近的行程提醒我一下", "feasibilities": [true, false, false], "dataset": "600"}
@@ -124,9 +124,9 @@
 {"type": "1v1", "example_instance": "帮我找一下之前备课的文件", "feasibility": true, "instance": "帮我搜一下光伏相关的文献，核心期刊的", "dataset": "600"}
 {"type": "1", "instance": "请帮我对信息内容进行优先级排序"}
 {"type": "1", "instance": "要买单了（打开付款码）"}
-{"type": "1v1", "example_instance": "请列出国内适合穷游的地方", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "请列出国内适合穷游的地方", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
 {"type": "nv1", "example_instances": ["把空调温度调到22度", "打开空调，把空调调到26度", "打开车内空调"], "instance": "把车内空调打开", "feasibilities": [false, true, true], "dataset": "600"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1v1", "example_instance": "帮我在微信中向张神发送日程信息并计入我的日程提醒", "feasibility": false, "instance": "请帮我读出最新的消息", "dataset": "600"}
 {"type": "1v1", "example_instance": "他这样说什么意思，我不想干活但也不想让他觉得我很消极，怎么回复", "feasibility": true, "instance": "发一条微博，内容如下，这个项目谁想做谁做我不干了，配图一张鲁迅我不干了表情包", "dataset": "600"}
 {"type": "1", "instance": "帮我搜一下光伏相关的文献，核心期刊的"}

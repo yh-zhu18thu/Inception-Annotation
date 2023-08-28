@@ -61,7 +61,7 @@
 {"type": "1", "instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧"}
 {"type": "nv1", "example_instances": ["推荐5位有趣的博主", "请帮我推荐一些讲述创业成功人士的经历的文章", "推荐有关企业创业史的相关文章"], "instance": "请推荐一些成功创业的经管学长学姐公司的公众号并自动关注", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "将刚才浏览时间较长的文献下载到作业文件夹", "feasibility": true, "instance": "【对着当前的文档】整理信息", "dataset": "600"}
-{"type": "nv1", "example_instances": ["请帮我翻译以下文章：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”", "帮我翻译一下这个文章", "用学术的语言润色这段话：“xxx”"], "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibilities": [true, true, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译以下文章：“xxx”", "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "请帮我翻译并润色这段学术性文字：“xxx”", "帮我翻译一下这个文章", "用学术的语言润色这段话：“xxx”"], "instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibilities": [true, true, true, true, true], "dataset": "600"}
 {"type": "1", "instance": "【对着当前的文档】整理信息"}
 {"type": "nv1", "example_instances": ["【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "根据我提供的主要观点和参考文献，写一篇discussion paper", "你是公共管理领域的硕士一年级学生，请写一份2000字左右的学年总结"], "instance": "你是一位社会科学国际关系的博士生导师，阅读这篇文献，帮我总结主要内容", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "nv1", "example_instances": ["请帮我设置明天早上10点的闹钟", "预约明天的门诊号", "帮我设置明天的闹钟"], "instance": "帮我设定早上9点的行程，前往实验室", "feasibilities": [true, true, true], "dataset": "600"}
@@ -80,7 +80,7 @@
 {"type": "nv1", "example_instances": ["帮我搜一下光伏相关的文献，核心期刊的", "请帮我搜集整理与深度学习相关的英文文献并进行整理", "帮我查找近两年在社会心理学领域的高被引文章"], "instance": "帮我搜集一下三维重建领域的学术文章", "feasibilities": [false, false, false], "dataset": "600"}
 {"type": "1", "instance": "帮我搜集一下三维重建领域的学术文章"}
 {"type": "1", "instance": "打开创新创业论坛文件"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1", "instance": "ddl前一天提醒我交作业"}
 {"type": "1v1", "example_instance": "请帮我打开窗帘", "feasibility": true, "instance": "快递取一下", "dataset": "600"}
 {"type": "nv1", "example_instances": ["我要听抒情歌", "我今天有点不舒服，请评价我是否生病，是否需要看医生", "我不想听这个，下一个"], "instance": "【工作时】我想听歌", "feasibilities": [true, true, false], "dataset": "600"}

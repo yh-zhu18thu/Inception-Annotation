@@ -56,8 +56,8 @@
 {"type": "1", "instance": "定个明天早上的闹钟", "belief_rating": "5"}
 {"type": "1", "instance": "我正在学习量子力学，请根据我的学习进度和理解情况，制定一个个性化的学习计划", "belief_rating": "2"}
 {"type": "1", "instance": "请帮我将以下内容翻译成英语，注意信达雅：“xxx”", "belief_rating": "2"}
-{"type": "1v1", "example_instance": "我要三千块预算以内性价比最高的上海旅游攻略", "example_feasibility": "能够稳定", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["个性化知识理解", "弱于"]}, {"option": "option3", "expression": ["当前指令", "专业"]}]}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "belief_rating": "3"}
+{"type": "1v1", "example_instance": "我要三千块预算以内性价比最高的上海旅游攻略", "example_feasibility": "能够稳定", "instance": "帮我润色一下这段对于实验结果的描述:xxx", "belief_rating": "3", "statements": [{"option": "option1", "expression": ["个性化知识理解", "弱于"]}, {"option": "option3", "expression": ["当前指令", "专业"]}]}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx", "belief_rating": "3"}
 {"type": "nv1", "example_instances": ["打开B站", "请打开小红书", "打开王者", "打开微信读书", "请打开抖音"], "example_feasibilities": [true, true, false, true, true], "instance": "打开小红书", "belief_rating": "6"}
 {"type": "1", "instance": "五道口附近评分高的餐厅", "belief_rating": "5"}
 {"type": "nv1", "example_instances": ["【在做菜app浏览一个菜谱】帮我根据这个菜谱做菜", "帮我做一道家乡菜", "我想吃川菜（给出推荐餐馆）"], "example_feasibilities": [false, true, false], "instance": "【打算做饭时】小度小度，帮我找到经典淮扬菜的菜谱", "belief_rating": "4"}

@@ -22,7 +22,7 @@
 {"type": "1", "instance": "整理最近的一些外交新闻"}
 {"type": "1", "instance": "请把空调调到24度"}
 {"type": "1", "instance": "如何提升麻将水平"}
-{"type": "nv1", "example_instances": ["把这张照片的亮度调高，细节p一下", "帮我调整角度和光影拍出ins风格的照片", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "【在照片编辑页面】曝光和饱和度调高一点", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["把这张照片的亮度调高，细节p一下", "帮我调整角度和光影拍出ins风格的照片", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "【在照片编辑页面】曝光和饱和度调高一点", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "帮我订下午四点的闹钟抢戏票"}
 {"type": "1v1", "example_instance": "【工作时】我想听歌", "feasibility": true, "instance": "帮我搜集一下三维重建领域的学术文章", "dataset": "600"}
 {"type": "1", "instance": "帮我搜集一下三维重建领域的学术文章"}

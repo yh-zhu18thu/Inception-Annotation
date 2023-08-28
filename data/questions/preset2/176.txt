@@ -105,7 +105,7 @@
 {"type": "nv1", "example_instances": ["我要看戏了（手机调静音）", "我想继续在b站看昨天晚上没看完的综艺", "小元刚刚给我发什么微信消息了"], "instance": "打开抖音，刷到末日文视频，我要睡觉啦", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1", "instance": "帮我生成一个适合与我在绘画时倾听的歌单"}
 {"type": "1", "instance": "明天早上7点起床（设定闹钟）"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译学术名词xxx"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "请帮我翻译学术名词xxx"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1", "instance": "微信最近10个联系人是工作分组的消息未回复的帮我回个收到"}
 {"type": "1v1", "example_instance": "打开微博查找关注的人的动态", "feasibility": true, "instance": "打开微信，找到小马宝莉", "dataset": "600"}
 {"type": "nv1", "example_instances": ["你是一位社会科学国际关系的博士生导师，阅读这篇文献，帮我总结主要内容", "给我讲清楚这篇文献在说什么", "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话"], "instance": "帮我分析一下这两篇文章的异同", "feasibilities": [true, true, true], "dataset": "600"}

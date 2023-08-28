@@ -31,7 +31,7 @@
 {"type": "1", "instance": "把衣服晾干并且明天收起来"}
 {"type": "nv1", "example_instances": ["帮我搜一下光伏相关的文献，核心期刊的", "搜索关键词为神经网络的相关文献", "寻找比较文学方面的文献", "在互联网上查找并收集关于游泳世锦赛的信息", "请帮我整理与大语言模型相关的文献"], "instance": "搜集区块链相关的文献", "feasibilities": [true, true, true, true, true], "dataset": "600"}
 {"type": "1", "instance": "帮我整理一下工作台"}
-{"type": "1v1", "example_instance": "把以下这段话翻译为英文：“xxx”", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "dataset": "600"}
+{"type": "1v1", "example_instance": "把以下这段话翻译为英文：“xxx”", "feasibility": true, "instance": "帮我润色一下这段对于实验结果的描述:xxx", "dataset": "600"}
 {"type": "nv1", "example_instances": ["帮我搜一下光伏相关的文献，核心期刊的", "请帮我查询“社会心理学”的最新专业术语", "请帮我搜集整理与深度学习相关的英文文献并进行整理"], "instance": "帮我搜集一下三维重建领域的学术文章", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "nv1", "example_instances": ["请帮我寄件", "请帮我打开美颜相机", "告诉小元，我现在有点事不方便接电话"], "instance": "请帮我把手机拿过来", "feasibilities": [true, false, false], "dataset": "150"}
 {"type": "1v1", "example_instance": "我要三千块预算以内性价比最高的上海旅游攻略", "feasibility": false, "instance": "我目前正准备一个团建活动，帮我做出一份完整的团建方案", "dataset": "600"}
@@ -42,7 +42,7 @@
 {"type": "nv1", "example_instances": ["请帮我回复I'm Busy的默认信息", "请帮我调研生物冷冻电镜领域，告诉我诺奖级别的新idea，并且帮我设计实验", "帮我回复一下新的微信消息说我稍后回复"], "instance": "请帮我回复电子邮件，如果有需要我亲自看的告诉我", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "去群里约一下20点飞盘局"}
 {"type": "1", "instance": "选择最优选的去八大处的路线"}
-{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:\"xxx\""}
+{"type": "1", "instance": "帮我润色一下这段对于实验结果的描述:xxx"}
 {"type": "1v1", "example_instance": "根据大众点评上的美食店推荐，规划最优路线", "feasibility": true, "instance": "目标地点附近车多不多（打开地图搜索地点查看拥堵水平）", "dataset": "600"}
 {"type": "1v1", "example_instance": "“xxx”法律问题如何解决", "feasibility": true, "instance": "解释一下蔡徐坤是什么情况", "dataset": "150"}
 {"type": "1", "instance": "帮我搜集一下三维重建领域的学术文章"}

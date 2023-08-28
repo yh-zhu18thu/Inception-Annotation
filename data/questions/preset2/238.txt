@@ -58,7 +58,7 @@
 {"type": "1v1", "example_instance": "下午一点要去经管学院开会", "feasibility": true, "instance": "提醒我明天七点到清华大学（导航）", "dataset": "150"}
 {"type": "1v1", "example_instance": "【对着一个论文网页】你是超导领域的专家，请帮我概括一下这篇论文的主旨", "feasibility": true, "instance": "举一个市场型环境政策， 并举例，500字以上", "dataset": "600"}
 {"type": "1", "instance": "举一个市场型环境政策， 并举例，500字以上"}
-{"type": "nv1", "example_instances": ["请帮我翻译以下文章：“xxx”", "【判生物作业时】帮我检查一下这道题目的正确性", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译以下文章：“xxx”", "【判生物作业时】帮我检查一下这道题目的正确性", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [false, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "帮我在室友群问一下他们晚上的安排", "feasibility": true, "instance": "拿快递并且拆了", "dataset": "600"}
 {"type": "1", "instance": "规划到学校最近路线及时间"}
 {"type": "1v1", "example_instance": "请帮我把水木社区任务拆分成5个子任务，并对应分给5位时间合适的员工后，跟踪其完成进度和统计汇报数据", "feasibility": true, "instance": "告诉我现在我需要完成的最紧急的工作是什么，最重要的工作是什么", "dataset": "600"}

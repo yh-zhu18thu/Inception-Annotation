@@ -113,7 +113,7 @@
 {"type": "1", "instance": "请帮我打电话给张三"}
 {"type": "1", "instance": "请帮我打开小红书搜索最近的娱乐八卦"}
 {"type": "nv1", "example_instances": ["帮我做个去东南亚的旅行规划，顺便刷一下南航的会员等级", "帮我规划一下去秦皇岛该玩哪些，定个计划", "帮我做一下旅游规划，尽量避开杭州市人流很多和经常堵车导致旅游体验感下降的地方"], "instance": "帮忙规划旅行路线", "feasibilities": [false, true, true], "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我查一下下面这个报错如何解决", "【判生物作业时】帮我检查一下这道题目的正确性"], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:xxx", "请帮我查一下下面这个报错如何解决", "【判生物作业时】帮我检查一下这道题目的正确性"], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "你是四大律所的实习律师，请你根据这位客户的资料，收集相关法条", "feasibility": false, "instance": "请以商务纠纷为关键词做一篇类案检索和案例分析", "dataset": "600"}
 {"type": "nv1", "example_instances": ["到清华大学（导航）", "导航至那家上市的创业公司", "导航至电影院", "查找清华大学到北京大学的路线", "导航去天坛"], "instance": "导航到清华大学（导航）", "feasibilities": [false, true, false, true, false], "dataset": "600"}
 {"type": "1", "instance": "打开微信，找到小马宝莉"}

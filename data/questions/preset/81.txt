@@ -45,7 +45,7 @@
 {"type": "nv1", "example_instances": ["请帮我联系我的室友，求求他帮我把寝室清洁的事情干了", "请帮我自动回复电子邮件", "请帮我寄件", "请帮我将电子邮件的优先级进行排序", "请帮我写一封邮件，问问教务老师这学期什么时候评教，注意礼貌"], "instance": "请帮我检查邮箱", "feasibilities": [true, true, false, true, true], "dataset": "150"}
 {"type": "1v1", "example_instance": "【对一张图片】帮我P图", "feasibility": true, "instance": "请帮我播放跑步音乐", "dataset": "600"}
 {"type": "1", "instance": "请帮我播放跑步音乐"}
-{"type": "nv1", "example_instances": ["把这段话翻译成英文并且润色", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "用学术的语言润色这段话：“xxx”", "【选中一个单词】这个单词是什么意思，怎么读", "帮我润色一下这段小说的语言"], "instance": "用鲁迅的风格改写这段小说：“xxx”", "feasibilities": [true, true, false, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["把这段话翻译成英文并且润色", "帮我润色一下这段对于实验结果的描述:xxx", "用学术的语言润色这段话：“xxx”", "【选中一个单词】这个单词是什么意思，怎么读", "帮我润色一下这段小说的语言"], "instance": "用鲁迅的风格改写这段小说：“xxx”", "feasibilities": [true, true, false, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["请帮我推荐一首拉丁爵士风格的歌曲", "换一首歌", "小度小度，请调到舒适模式", "把我最近一周听的歌分享给我的朋友", "帮我放一些轻快舒缓的歌"], "instance": "帮我推荐一首歌", "feasibilities": [true, true, true, true, true], "dataset": "600"}
 {"type": "1", "instance": "打开B站，继续播放昨天没看完的番"}
 {"type": "nv1", "example_instances": ["定一个19点的闹钟，并备注抢票", "定一个明早9点的闹钟", "打开空调，把空调调到26度"], "instance": "【预约完一个咸鱼送货订单】定一个明早九点的闹钟", "feasibilities": [true, false, true], "dataset": "600"}

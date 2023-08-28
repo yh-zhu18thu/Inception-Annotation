@@ -100,7 +100,7 @@
 {"type": "1", "instance": "搜集股份回购相关的外文文献并翻译成中文"}
 {"type": "nv1", "example_instances": ["我想知道关于国际关系问题目前的前沿研究", "请帮我查询“社会心理学”的最新专业术语", "帮我搜集一下三维重建领域的学术文章"], "instance": "请帮我调研一下有哪些课题组正在做事件验证法相关的内容", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1", "instance": "请问我今天有什么安排？"}
-{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "请以更学术的方式表达下面这段话的意思：“xxx”"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [false, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译并润色这段学术性文字：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx", "请以更学术的方式表达下面这段话的意思：“xxx”"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1", "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”"}
 {"type": "1", "instance": "如果你是一个智能家居的设计师，你需要考虑到哪些用户体验因素，请尽可能全面而详细地回答"}
 {"type": "1", "instance": "我要去广西旅行（规划行程）"}

@@ -54,7 +54,7 @@
 {"type": "nv1", "example_instances": ["心情不好,放点歌", "帮我播一段好听的音乐", "音量调大一点"], "instance": "播放歌曲<想你的365天>", "feasibilities": [true, true, true], "dataset": "150"}
 {"type": "1v1", "example_instance": "空调开到27度", "feasibility": true, "instance": "请打开空调", "dataset": "150"}
 {"type": "nv1", "example_instances": ["分析一下版本各分路强势英雄", "找一下es战队本月的赛程并列出来", "分析一下王者荣耀当前版本", "如何提升麻将水平", "这是一段python代码，请帮我介绍每一句的具体功能，并对应转换成matlab"], "instance": "算一下es本赛季能进决赛的概率", "feasibilities": [true, true, true, false, false], "dataset": "600"}
-{"type": "nv1", "example_instances": ["把这段话翻译成英文并且润色", "用学术的语言润色这段话：“xxx”", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "用鲁迅的风格改写这段小说：“xxx”", "feasibilities": [true, true, false], "dataset": "600"}
+{"type": "nv1", "example_instances": ["把这段话翻译成英文并且润色", "用学术的语言润色这段话：“xxx”", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "用鲁迅的风格改写这段小说：“xxx”", "feasibilities": [true, true, false], "dataset": "600"}
 {"type": "nv1", "example_instances": ["最近LV店有什么新品推出吗", "帮我查查最近这些网购平台有没有优惠活动", "【在使用闲鱼浏览某商品时】对比市场价格"], "instance": "帮我查一下乐高的新品并按价格排序", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1", "instance": "帮我预定一下从北京市前往天津市的耗时最短的高铁二等座，如果在其他票务平台有优惠券可以使用的话请一并使用"}
 {"type": "nv1", "example_instances": ["陪我聊天", "帮我缝合一下这个伤口", "帮我把这些衣服叠一下"], "instance": "给我按摩一下肩膀", "feasibilities": [true, true, true], "dataset": "150"}

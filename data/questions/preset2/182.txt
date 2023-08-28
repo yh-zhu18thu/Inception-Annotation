@@ -19,7 +19,7 @@
 {"type": "1", "instance": "打开音乐，播放如愿"}
 {"type": "1", "instance": "想摸小狗了（自动查找附近宠物店）"}
 {"type": "1", "instance": "整理一下我在3月15日~4月15日期间出错的题目"}
-{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibility": true, "instance": "请帮我自动回npy的消息，不能让ta生气", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibility": true, "instance": "请帮我自动回npy的消息，不能让ta生气", "dataset": "600"}
 {"type": "nv1", "example_instances": ["天猫精灵，帮12345678901的手机号码充话费", "找找附近评分高的甜品店", "天猫精灵，我要购买新的骨传导耳机"], "instance": "天猫精灵，帮我推荐今日好物", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1", "instance": "打开网易云音乐播放爱人错过"}
 {"type": "1v1", "example_instance": "推荐汇报PPT模板", "feasibility": true, "instance": "【打开一个pdf】请帮我看这篇论文，并做一页总结ppt", "dataset": "600"}

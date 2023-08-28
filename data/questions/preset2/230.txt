@@ -14,7 +14,7 @@
 {"type": "nv1", "example_instances": ["【在相册应用中】帮我给今天的照片集体加文字和滤镜", "打开微信给导师发送收到", "拍星轨有哪些技巧", "打开腾讯会议，加入主题团日会议，关闭摄像头", "根据抖音上的推荐，规划播放电影的最近电影院的最优路线"], "instance": "【拍照后】将拍到的照片发到社交媒体上", "feasibilities": [true, true, false, true, false], "dataset": "150"}
 {"type": "1", "instance": "将刚才浏览时间较长的文献下载到作业文件夹"}
 {"type": "1", "instance": "帮我收集一下网上蔡徐坤的信息"}
-{"type": "nv1", "example_instances": ["请帮我翻译学术名词xxx", "根据我提供的主要观点和参考文献，写一篇discussion paper", "帮我润色一下这段对于实验结果的描述:\"xxx\""], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我翻译学术名词xxx", "根据我提供的主要观点和参考文献，写一篇discussion paper", "帮我润色一下这段对于实验结果的描述:xxx"], "instance": "你是一位生物科学的博士，请帮我解析以上实验步骤：“xxx”", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "nv1", "example_instances": ["搜集一些法律知识的书籍和视频", "解释一下眼动仪的心理学原理", "解释一下蔡徐坤是什么情况"], "instance": "什么是股份回购知识", "feasibilities": [true, true, false], "dataset": "150"}
 {"type": "1v1", "example_instance": "看一下冰箱里有什么食材能做什么菜，找个菜谱", "feasibility": true, "instance": "今天中午想吃麻婆豆腐", "dataset": "600"}
 {"type": "1v1", "example_instance": "故宫明天的门票预约满了吗", "feasibility": true, "instance": "请帮我协调其他人的时间，并安排会议", "dataset": "600"}

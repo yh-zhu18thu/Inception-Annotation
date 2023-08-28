@@ -134,7 +134,7 @@
 {"type": "1v1", "example_instance": "下周二有个中期汇报，帮我设定一下行程安排规划，并且提醒我", "feasibility": false, "instance": "请在15分钟后叫我", "dataset": "600"}
 {"type": "1v1", "example_instance": "根据抖音上的推荐，规划播放电影的最近电影院的最优路线", "feasibility": false, "instance": "搜一搜最近有什么新上的电影，评价如何？", "dataset": "150"}
 {"type": "1", "instance": "搜一搜最近有什么新上的电影，评价如何？"}
-{"type": "nv1", "example_instances": ["请帮我查一下下面这个报错如何解决", "如果你是一名码农，请检查这个代码是否存在错误", "【判生物作业时】帮我检查一下这道题目的正确性", "帮我润色一下这段对于实验结果的描述:\"xxx\"", "【在代码编辑器中】代码是否存在问题"], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [true, true, false, false, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["请帮我查一下下面这个报错如何解决", "如果你是一名码农，请检查这个代码是否存在错误", "【判生物作业时】帮我检查一下这道题目的正确性", "帮我润色一下这段对于实验结果的描述:xxx", "【在代码编辑器中】代码是否存在问题"], "instance": "请帮我检查一下这段代码中的bug：“xxx”", "feasibilities": [true, true, false, false, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "告诉我应该怎么提高我的写作技巧", "feasibility": true, "instance": "【在和老师的聊天界面，老师刚布置了一个写稿任务】帮我完成老师给我的这个任务，不需要太认真但是不要让人觉得是AI写的", "dataset": "600"}
 {"type": "1", "instance": "打开网易云音乐播放爱人错过"}
 {"type": "1", "instance": "我明天要汇报AIGC主题的文献，告诉我需要从哪些方面进行汇报"}

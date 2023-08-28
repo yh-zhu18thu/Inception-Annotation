@@ -19,7 +19,7 @@
 {"type": "1", "instance": "帮我给李小刚回复“稍等我一下，我马上下楼”消息"}
 {"type": "nv1", "example_instances": ["查一下附近的酒店价格和距离", "查一下附近的景点", "帮我做个去东南亚的旅行规划，顺便刷一下南航的会员等级"], "instance": "看看最近去哪里比较便宜", "feasibilities": [true, true, true], "dataset": "600"}
 {"type": "1v1", "example_instance": "【在使用闲鱼浏览某商品时】对比市场价格", "feasibility": true, "instance": "【在闲鱼发布页】帮我决定转让物品的价格并发布链接", "dataset": "600"}
-{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:\"xxx\"", "feasibility": false, "instance": "生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复", "dataset": "600"}
+{"type": "1v1", "example_instance": "帮我润色一下这段对于实验结果的描述:xxx", "feasibility": false, "instance": "生成一段matlab代码，功能如下，输入为长度为2*N的数组，输出为z，功能未知；以上代码报错时，请修复", "dataset": "600"}
 {"type": "1", "instance": "看看最近去哪里比较便宜"}
 {"type": "1v1", "example_instance": "【在做菜app浏览一个菜谱】帮我根据这个菜谱做菜", "feasibility": false, "instance": "在我运动完后帮我做好今天的晚饭", "dataset": "600"}
 {"type": "1", "instance": "在我运动完后帮我做好今天的晚饭"}

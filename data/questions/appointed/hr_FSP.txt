@@ -125,7 +125,7 @@
 {"type": "1v1", "example_instance": "调研一下脊髓硬膜电刺激恢复运动领域有哪些课题组", "feasibility": false, "instance": "规划到学校最近路线及时间", "dataset": "600"}
 {"type": "1", "instance": "帮我与标准答案核对一下作业文档中第2题的计算结果是否正确"}
 {"type": "1v1", "example_instance": "你看看我这学期哪几门课有论文，帮我想几个选题，收集对应素材", "feasibility": true, "instance": "请帮我调研一下有哪些课题组正在做事件验证法相关的内容", "dataset": "600"}
-{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:\"xxx\"", "请帮我翻译学术名词xxx", "请帮我翻译以下文章：“xxx”", "【产品相关资料上传后】生成某产品的文案，要求简洁明了。", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [true, true, true, true, true], "dataset": "600"}
+{"type": "nv1", "example_instances": ["帮我润色一下这段对于实验结果的描述:xxx", "请帮我翻译学术名词xxx", "请帮我翻译以下文章：“xxx”", "【产品相关资料上传后】生成某产品的文案，要求简洁明了。", "请帮我将以下内容翻译成英语，注意信达雅：“xxx”"], "instance": "请帮我润色并翻译以下段落，要求重复率不高于20%：“xxx”", "feasibilities": [true, true, true, true, true], "dataset": "600"}
 {"type": "1", "instance": "【对着一个论文网页】你是超导领域的专家，请帮我概括一下这篇论文的主旨"}
 {"type": "nv1", "example_instances": ["查询附近的美食", "找个好吃的粤菜馆", "帮我美团上点一个“酸菜鱼”的外卖"], "instance": "找找附近评分高的甜品店", "feasibilities": [false, true, false], "dataset": "600"}
 {"type": "1", "instance": "hey，siri，外卖打电话过来就自动回复外卖就放门口吧"}
