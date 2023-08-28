@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["播放一首周深的歌曲", "切歌", "请播放一首我爱听的类型的歌曲"], "example_feasibilities": [true, true, true], "instance": "换一首歌", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["特定执行动作", "接近"]}]}
+{"type": "1", "instance": "换一首歌", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["用学术的语言润色这段话：“xxx”", "设置下午一点的事项，需要去清华大学经管学院开会", "把以下这段话翻译为英文：“xxx”"], "example_feasibilities": [true, true, true], "instance": "请以更学术的方式表达下面这段话的意思：“xxx”", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["专业", "接近"]}]}
+{"type": "nv1", "example_instances": ["打开微信软件中我和王熙凤的对话", "请打开抖音", "请帮我打开好友王小五的聊天框"], "example_feasibilities": [true, false, true], "instance": "hi Siri，打开微信", "belief_rating": "6", "statements": [{"option": "option1", "expression": ["特定执行动作", "强于"]}]}
+{"type": "1v1", "example_instance": "告诉我我买的吉他快递到哪了", "example_feasibility": "能够稳定", "instance": "导航去天坛", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["特定语义功能", "接近"]}]}
+{"type": "1", "instance": "请以更学术的方式表达下面这段话的意思：“xxx”", "belief_rating": "6"}
+{"type": "1", "instance": "导航去天坛", "belief_rating": "6"}
+{"type": "1", "instance": "hi Siri，打开微信", "belief_rating": "6"}
+{"type": "nv1", "example_instances": ["我想知道关于国际关系问题目前的前沿研究", "帮我查找近两年在社会心理学领域的高被引文章", "请帮我调研一下有哪些课题组正在做事件验证法相关的内容"], "example_feasibilities": [true, true, false], "instance": "请帮我查询“社会心理学”的最新专业术语", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["自主寻找", "强于"]}]}
+{"type": "1", "instance": "请帮我查询“社会心理学”的最新专业术语", "belief_rating": "6"}

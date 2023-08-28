@@ -1,0 +1,8 @@
+{"type": "1v1", "example_instance": "帮我设置一个明天早上7点的闹钟", "example_feasibility": "能够稳定", "instance": "打开车内空调", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["设置条件触发", "接近"]}, {"option": "option1", "expression": ["操作", "强于"]}]}
+{"type": "1", "instance": "打开车内空调", "belief_rating": "7"}
+{"type": "1v1", "example_instance": "帮我拒绝不必要的社交", "example_feasibility": "不能正确", "instance": "帮我在室友群问一下他们晚上的安排", "belief_rating": "1", "statements": [{"option": "option3", "expression": ["当前指令", "执行"]}, {"option": "option2", "expression": ["理解", "弱于", "理解"]}]}
+{"type": "nv1", "example_instances": ["播放高效视频", "半小时后自动关闭B站", "播放搞笑视频"], "example_feasibilities": [true, false, true], "instance": "老番茄更新的视频在我休息时自动跳出播放", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["设置条件触发", "接近"]}, {"option": "option1", "expression": ["操作", "接近"]}]}
+{"type": "1v1", "example_instance": "帮我收拾宿舍", "example_feasibility": "能够稳定", "instance": "帮我和闺蜜说今晚累了不出门", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["口语化表达理解", "接近"]}, {"option": "option1", "expression": ["信息存储与提取", "强于"]}, {"option": "option2", "expression": ["识别与理解", "接近", "识别与理解"]}]}
+{"type": "nv1", "example_instances": ["【对着一个论文网页】你是超导领域的专家，请帮我概括一下这篇论文的主旨", "你是一位社会科学国际关系的博士生导师，阅读这篇文献，帮我总结主要内容", "帮我翻译一下这个文章"], "example_feasibilities": [true, true, true], "instance": "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "belief_rating": "7", "statements": [{"option": "option1", "expression": ["口语化表达理解", "接近"]}, {"option": "option2", "expression": ["特定语义功能", "接近", "特定语义功能"]}]}
+{"type": "1", "instance": "老番茄更新的视频在我休息时自动跳出播放", "belief_rating": "7"}
+{"type": "1", "instance": "【对着论文pdf】请帮我总结这篇论文的主要内容，用人话", "belief_rating": "7"}

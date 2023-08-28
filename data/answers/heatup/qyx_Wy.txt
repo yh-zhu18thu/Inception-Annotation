@@ -1,0 +1,10 @@
+{"type": "nv1", "example_instances": ["根据我提供的主要观点和参考文献，写一篇discussion paper", "我想知道关于国际关系问题目前的前沿研究", "你是公共管理领域的硕士一年级学生，请写一份2000字左右的学年总结", "【写论文时】你现在是一名计算机专业的学生，你需要完成一篇以NLP语言理解为主题的论文，请写出该论文的大纲框架", "【对着一个论文网页】你是超导领域的专家，请帮我概括一下这篇论文的主旨"], "example_feasibilities": [true, true, true, true, true], "instance": "请帮我写一篇关于密码学的文献综述，2000-3000字左右，要求涵盖近五年来这一领域的主要进展，并且包括必要的梳理、对比和讨论", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1v1", "example_instance": "用鲁迅的风格改写这段小说：“xxx”", "example_feasibility": "不能正确", "instance": "帮我把这个文档做成好看的ppt", "belief_rating": "2", "statements": [{"option": "option2", "expression": ["xxx", "强于", "xxx"]}]}
+{"type": "1v1", "example_instance": "打电话给李小云", "example_feasibility": "不能正确", "instance": "打开微信，找到小马宝莉", "belief_rating": "4", "statements": [{"option": "option1", "expression": ["xxx", "强于"]}]}
+{"type": "1", "instance": "帮我把这个文档做成好看的ppt", "belief_rating": "2"}
+{"type": "1", "instance": "打开微信，找到小马宝莉", "belief_rating": "3"}
+{"type": "1", "instance": "请帮我写一篇关于密码学的文献综述，2000-3000字左右，要求涵盖近五年来这一领域的主要进展，并且包括必要的梳理、对比和讨论", "belief_rating": "6"}
+{"type": "1v1", "example_instance": "推荐汇报PPT模板", "example_feasibility": "能够稳定", "instance": "打开最近文档里的ppt模板", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "打开最近文档里的ppt模板", "belief_rating": "2"}
+{"type": "nv1", "example_instances": ["请帮我检查一下这段代码中的bug：“xxx”", "帮我查查这个案例涉及到的相关的法律条例", "请帮我写一段代码，主要功能是：构建平衡二叉树，代码语言是：c++"], "example_feasibilities": [true, true, false], "instance": "请帮我查一下下面这个报错如何解决", "belief_rating": "5", "statements": [{"option": "option1", "expression": ["xxx", "接近"]}]}
+{"type": "1", "instance": "请帮我查一下下面这个报错如何解决", "belief_rating": "5"}
